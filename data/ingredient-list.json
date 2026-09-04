@@ -1,0 +1,1961 @@
+[
+  {
+    "id": "abecean-longfin",
+    "name": "Abecean Longfin",
+    "wikiPath": "/wiki/Skyrim:Abecean_Longfin",
+    "effects": [
+      "fortify-restoration",
+      "fortify-sneak",
+      "weakness-to-frost",
+      "weakness-to-poison"
+    ]
+  },
+  {
+    "id": "alocasia-fruit",
+    "name": "Alocasia Fruit",
+    "wikiPath": "/wiki/Skyrim:Alocasia_Fruit",
+    "effects": [
+      "light",
+      "ravage-magicka",
+      "regenerate-health",
+      "regenerate-stamina"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "ambrosia",
+    "name": "Ambrosia",
+    "wikiPath": "/wiki/Skyrim:Ambrosia",
+    "effects": [
+      "cure-poison",
+      "fortify-health",
+      "regenerate-health",
+      "restore-health"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "ancestor-moth-wing",
+    "name": "Ancestor Moth Wing",
+    "wikiPath": "/wiki/Skyrim:Ancestor_Moth_Wing",
+    "effects": [
+      "damage-magicka-regen",
+      "damage-stamina",
+      "fortify-conjuration",
+      "fortify-enchanting"
+    ],
+    "source": "DG"
+  },
+  {
+    "id": "ash-creep-cluster",
+    "name": "Ash Creep Cluster",
+    "wikiPath": "/wiki/Skyrim:Ash_Creep_Cluster",
+    "effects": [
+      "damage-stamina",
+      "fortify-destruction",
+      "invisibility",
+      "resist-fire"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "ash-hopper-jelly",
+    "name": "Ash Hopper Jelly",
+    "wikiPath": "/wiki/Skyrim:Ash_Hopper_Jelly",
+    "effects": [
+      "fortify-light-armor",
+      "resist-shock",
+      "restore-health",
+      "weakness-to-frost"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "ashen-grass-pod",
+    "name": "Ashen Grass Pod",
+    "wikiPath": "/wiki/Skyrim:Ashen_Grass_Pod",
+    "effects": [
+      "fortify-lockpicking",
+      "fortify-sneak",
+      "resist-fire",
+      "weakness-to-shock"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "aster-bloom-core",
+    "name": "Aster Bloom Core",
+    "wikiPath": "/wiki/Skyrim:Aster_Bloom_Core",
+    "effects": [
+      "fortify-block",
+      "fortify-light-armor",
+      "paralysis",
+      "resist-magic"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "bear-claws",
+    "name": "Bear Claws",
+    "wikiPath": "/wiki/Skyrim:Bear_Claws",
+    "effects": [
+      "damage-magicka-regen",
+      "fortify-health",
+      "fortify-one-handed",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "bee",
+    "name": "Bee",
+    "wikiPath": "/wiki/Skyrim:Bee",
+    "effects": [
+      "ravage-stamina",
+      "regenerate-stamina",
+      "restore-stamina",
+      "weakness-to-shock"
+    ]
+  },
+  {
+    "id": "beehive-husk",
+    "name": "Beehive Husk",
+    "wikiPath": "/wiki/Skyrim:Beehive_Husk",
+    "effects": [
+      "fortify-destruction",
+      "fortify-light-armor",
+      "fortify-sneak",
+      "resist-poison"
+    ]
+  },
+  {
+    "id": "berit-s-ashes",
+    "name": "Berit's Ashes",
+    "wikiPath": "/wiki/Skyrim:Berit%27s_Ashes",
+    "effects": [
+      "damage-stamina",
+      "fortify-conjuration",
+      "ravage-stamina",
+      "resist-fire"
+    ]
+  },
+  {
+    "id": "bittergreen-petals",
+    "name": "Bittergreen Petals",
+    "wikiPath": "/wiki/Skyrim:Bittergreen_Petals",
+    "effects": [
+      "cure-poison",
+      "damage-magicka",
+      "invisibility",
+      "lingering-damage-stamina"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "bleeding-crown",
+    "name": "Bleeding Crown",
+    "wikiPath": "/wiki/Skyrim:Bleeding_Crown",
+    "effects": [
+      "fortify-block",
+      "resist-magic",
+      "weakness-to-fire",
+      "weakness-to-poison"
+    ]
+  },
+  {
+    "id": "blind-watcher-s-eye",
+    "name": "Blind Watcher's Eye",
+    "wikiPath": "/wiki/Skyrim:Blind_Watcher%27s_Eye",
+    "effects": [
+      "fortify-alteration",
+      "fortify-magicka",
+      "light",
+      "spell-absorption"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "bliss-bug-thorax",
+    "name": "Bliss Bug Thorax",
+    "wikiPath": "/wiki/Skyrim:Bliss_Bug_Thorax",
+    "effects": [
+      "fortify-heavy-armor",
+      "fortify-illusion",
+      "resist-fire",
+      "weakness-to-fire"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "blister-pod-cap",
+    "name": "Blister Pod Cap",
+    "wikiPath": "/wiki/Skyrim:Blister_Pod_Cap",
+    "effects": [
+      "fortify-magicka",
+      "invisibility",
+      "night-eye",
+      "restore-magicka"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "blisterwort",
+    "name": "Blisterwort",
+    "wikiPath": "/wiki/Skyrim:Blisterwort",
+    "effects": [
+      "damage-stamina",
+      "fortify-smithing",
+      "frenzy",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "blue-butterfly-wing",
+    "name": "Blue Butterfly Wing",
+    "wikiPath": "/wiki/Skyrim:Blue_Butterfly_Wing",
+    "effects": [
+      "damage-magicka-regen",
+      "damage-stamina",
+      "fortify-conjuration",
+      "fortify-enchanting"
+    ]
+  },
+  {
+    "id": "blue-dartwing",
+    "name": "Blue Dartwing",
+    "wikiPath": "/wiki/Skyrim:Blue_Dartwing",
+    "effects": [
+      "fear",
+      "fortify-pickpocket",
+      "resist-shock",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "blue-mountain-flower",
+    "name": "Blue Mountain Flower",
+    "wikiPath": "/wiki/Skyrim:Blue_Mountain_Flower",
+    "effects": [
+      "damage-magicka-regen",
+      "fortify-conjuration",
+      "fortify-health",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "boar-tusk",
+    "name": "Boar Tusk",
+    "wikiPath": "/wiki/Skyrim:Boar_Tusk",
+    "effects": [
+      "fortify-block",
+      "fortify-health",
+      "fortify-stamina",
+      "frenzy"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "bog-beacon",
+    "name": "Bog Beacon",
+    "wikiPath": "/wiki/Skyrim:Bog_Beacon",
+    "effects": [
+      "damage-stamina",
+      "fear",
+      "fortify-heavy-armor",
+      "restore-magicka"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "bone-meal",
+    "name": "Bone Meal",
+    "wikiPath": "/wiki/Skyrim:Bone_Meal",
+    "effects": [
+      "damage-stamina",
+      "fortify-conjuration",
+      "ravage-stamina",
+      "resist-fire"
+    ]
+  },
+  {
+    "id": "briar-heart",
+    "name": "Briar Heart",
+    "wikiPath": "/wiki/Skyrim:Briar_Heart",
+    "effects": [
+      "fortify-block",
+      "fortify-magicka",
+      "paralysis",
+      "restore-magicka"
+    ]
+  },
+  {
+    "id": "bungler-s-bane",
+    "name": "Bungler's Bane",
+    "wikiPath": "/wiki/Skyrim:Bungler%27s_Bane",
+    "effects": [
+      "damage-stamina-regen",
+      "ravage-stamina",
+      "resist-magic",
+      "slow"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "burnt-spriggan-wood",
+    "name": "Burnt Spriggan Wood",
+    "wikiPath": "/wiki/Skyrim:Burnt_Spriggan_Wood",
+    "effects": [
+      "damage-magicka-regen",
+      "fortify-alteration",
+      "slow",
+      "weakness-to-fire"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "butterfly-wing",
+    "name": "Butterfly Wing",
+    "wikiPath": "/wiki/Skyrim:Butterfly_Wing",
+    "effects": [
+      "damage-magicka",
+      "fortify-barter",
+      "lingering-damage-stamina",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "canis-root",
+    "name": "Canis Root",
+    "wikiPath": "/wiki/Skyrim:Canis_Root",
+    "effects": [
+      "damage-stamina",
+      "fortify-marksman",
+      "fortify-one-handed",
+      "paralysis"
+    ]
+  },
+  {
+    "id": "charred-skeever-hide",
+    "name": "Charred Skeever Hide",
+    "wikiPath": "/wiki/Skyrim:Charred_Skeever_Hide",
+    "effects": [
+      "cure-disease",
+      "resist-poison",
+      "restore-health",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "chaurus-eggs",
+    "name": "Chaurus Eggs",
+    "wikiPath": "/wiki/Skyrim:Chaurus_Eggs",
+    "effects": [
+      "damage-magicka",
+      "fortify-stamina",
+      "invisibility",
+      "weakness-to-poison"
+    ]
+  },
+  {
+    "id": "chaurus-hunter-antennae",
+    "name": "Chaurus Hunter Antennae",
+    "wikiPath": "/wiki/Skyrim:Chaurus_Hunter_Antennae",
+    "effects": [
+      "damage-magicka-regen",
+      "damage-stamina",
+      "fortify-conjuration",
+      "fortify-enchanting"
+    ],
+    "source": "DG"
+  },
+  {
+    "id": "chicken-s-egg",
+    "name": "Chicken's Egg",
+    "wikiPath": "/wiki/Skyrim:Chicken%27s_Egg",
+    "effects": [
+      "damage-magicka-regen",
+      "lingering-damage-stamina",
+      "resist-magic",
+      "waterbreathing"
+    ]
+  },
+  {
+    "id": "chokeberry",
+    "name": "Chokeberry",
+    "wikiPath": "/wiki/Skyrim:Chokeberry",
+    "effects": [
+      "damage-health",
+      "lingering-damage-health",
+      "ravage-health",
+      "weakness-to-poison"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "chokeweed",
+    "name": "Chokeweed",
+    "wikiPath": "/wiki/Skyrim:Chokeweed",
+    "effects": [
+      "cure-disease",
+      "damage-magicka",
+      "restore-stamina",
+      "weakness-to-frost"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "coda-flower",
+    "name": "Coda Flower",
+    "wikiPath": "/wiki/Skyrim:Coda_Flower",
+    "effects": [
+      "damage-health",
+      "fortify-carry-weight",
+      "lingering-damage-stamina",
+      "ravage-magicka"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "comberry",
+    "name": "Comberry",
+    "wikiPath": "/wiki/Skyrim:Comberry",
+    "effects": [
+      "damage-stamina",
+      "fortify-destruction",
+      "restore-magicka",
+      "spell-absorption"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "congealed-putrescence",
+    "name": "Congealed Putrescence",
+    "wikiPath": "/wiki/Skyrim:Congealed_Putrescence",
+    "effects": [
+      "fortify-conjuration",
+      "ravage-health",
+      "restore-magicka",
+      "weakness-to-fire"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "corkbulb-root",
+    "name": "Corkbulb Root",
+    "wikiPath": "/wiki/Skyrim:Corkbulb_Root",
+    "effects": [
+      "fortify-marksman",
+      "paralysis",
+      "resist-shock",
+      "restore-health"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "creep-cluster",
+    "name": "Creep Cluster",
+    "wikiPath": "/wiki/Skyrim:Creep_Cluster",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-carry-weight",
+      "restore-magicka",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "crimson-nirnroot",
+    "name": "Crimson Nirnroot",
+    "wikiPath": "/wiki/Skyrim:Crimson_Nirnroot",
+    "effects": [
+      "damage-health",
+      "damage-stamina",
+      "invisibility",
+      "resist-magic"
+    ]
+  },
+  {
+    "id": "cyrodilic-spadetail",
+    "name": "Cyrodilic Spadetail",
+    "wikiPath": "/wiki/Skyrim:Cyrodilic_Spadetail",
+    "effects": [
+      "damage-stamina",
+      "fear",
+      "fortify-restoration",
+      "ravage-health"
+    ]
+  },
+  {
+    "id": "daedra-heart",
+    "name": "Daedra Heart",
+    "wikiPath": "/wiki/Skyrim:Daedra_Heart",
+    "effects": [
+      "damage-magicka",
+      "damage-stamina-regen",
+      "fear",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "daedra-silk",
+    "name": "Daedra Silk",
+    "wikiPath": "/wiki/Skyrim:Daedra_Silk",
+    "effects": [
+      "invisibility",
+      "lingering-damage-stamina",
+      "night-eye",
+      "paralysis"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "daedra-venin",
+    "name": "Daedra Venin",
+    "wikiPath": "/wiki/Skyrim:Daedra_Venin",
+    "effects": [
+      "fortify-destruction",
+      "paralysis",
+      "ravage-health",
+      "spell-absorption"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "daedroth-teeth",
+    "name": "Daedroth Teeth",
+    "wikiPath": "/wiki/Skyrim:Daedroth_Teeth",
+    "effects": [
+      "damage-magicka-regen",
+      "light",
+      "regenerate-stamina",
+      "resist-frost"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "deathbell",
+    "name": "Deathbell",
+    "wikiPath": "/wiki/Skyrim:Deathbell",
+    "effects": [
+      "damage-health",
+      "ravage-stamina",
+      "slow",
+      "weakness-to-poison"
+    ]
+  },
+  {
+    "id": "dragon-s-tongue",
+    "name": "Dragon's Tongue",
+    "wikiPath": "/wiki/Skyrim:Dragon%27s_Tongue",
+    "effects": [
+      "fortify-barter",
+      "fortify-illusion",
+      "fortify-two-handed",
+      "resist-fire"
+    ]
+  },
+  {
+    "id": "dreugh-wax",
+    "name": "Dreugh Wax",
+    "wikiPath": "/wiki/Skyrim:Dreugh_Wax",
+    "effects": [
+      "fortify-enchanting",
+      "fortify-smithing",
+      "frenzy",
+      "weakness-to-magic"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "dwarven-oil",
+    "name": "Dwarven Oil",
+    "wikiPath": "/wiki/Skyrim:Dwarven_Oil",
+    "effects": [
+      "fortify-illusion",
+      "regenerate-magicka",
+      "restore-magicka",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "ectoplasm",
+    "name": "Ectoplasm",
+    "wikiPath": "/wiki/Skyrim:Ectoplasm",
+    "effects": [
+      "damage-health",
+      "fortify-destruction",
+      "fortify-magicka",
+      "restore-magicka"
+    ]
+  },
+  {
+    "id": "elves-ear",
+    "name": "Elves Ear",
+    "wikiPath": "/wiki/Skyrim:Elves_Ear",
+    "effects": [
+      "fortify-marksman",
+      "resist-fire",
+      "restore-magicka",
+      "weakness-to-frost"
+    ]
+  },
+  {
+    "id": "elytra-ichor",
+    "name": "Elytra Ichor",
+    "wikiPath": "/wiki/Skyrim:Elytra_Ichor",
+    "effects": [
+      "fear",
+      "invisibility",
+      "restore-magicka",
+      "slow"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "emperor-parasol-moss",
+    "name": "Emperor Parasol Moss",
+    "wikiPath": "/wiki/Skyrim:Emperor_Parasol_Moss",
+    "effects": [
+      "damage-health",
+      "fortify-magicka",
+      "fortify-two-handed",
+      "regenerate-health"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "eye-of-sabre-cat",
+    "name": "Eye of Sabre Cat",
+    "wikiPath": "/wiki/Skyrim:Eye_of_Sabre_Cat",
+    "effects": [
+      "damage-magicka",
+      "ravage-health",
+      "restore-health",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "falmer-ear",
+    "name": "Falmer Ear",
+    "wikiPath": "/wiki/Skyrim:Falmer_Ear",
+    "effects": [
+      "damage-health",
+      "fortify-lockpicking",
+      "frenzy",
+      "resist-poison"
+    ]
+  },
+  {
+    "id": "felsaad-tern-feathers",
+    "name": "Felsaad Tern Feathers",
+    "wikiPath": "/wiki/Skyrim:Felsaad_Tern_Feathers",
+    "effects": [
+      "cure-disease",
+      "fortify-light-armor",
+      "resist-magic",
+      "restore-health"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "fire-petal",
+    "name": "Fire Petal",
+    "wikiPath": "/wiki/Skyrim:Fire_Petal",
+    "effects": [
+      "damage-health",
+      "paralysis",
+      "resist-fire",
+      "spell-absorption"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "fire-salts",
+    "name": "Fire Salts",
+    "wikiPath": "/wiki/Skyrim:Fire_Salts",
+    "effects": [
+      "regenerate-magicka",
+      "resist-fire",
+      "restore-magicka",
+      "weakness-to-frost"
+    ]
+  },
+  {
+    "id": "flame-stalk",
+    "name": "Flame Stalk",
+    "wikiPath": "/wiki/Skyrim:Flame_Stalk",
+    "effects": [
+      "invisibility",
+      "resist-frost",
+      "restore-health",
+      "weakness-to-fire"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "fly-amanita",
+    "name": "Fly Amanita",
+    "wikiPath": "/wiki/Skyrim:Fly_Amanita",
+    "effects": [
+      "fortify-two-handed",
+      "frenzy",
+      "regenerate-stamina",
+      "resist-fire"
+    ]
+  },
+  {
+    "id": "frost-mirriam",
+    "name": "Frost Mirriam",
+    "wikiPath": "/wiki/Skyrim:Frost_Mirriam",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-sneak",
+      "ravage-magicka",
+      "resist-frost"
+    ]
+  },
+  {
+    "id": "frost-salts",
+    "name": "Frost Salts",
+    "wikiPath": "/wiki/Skyrim:Frost_Salts",
+    "effects": [
+      "fortify-conjuration",
+      "resist-frost",
+      "restore-magicka",
+      "weakness-to-fire"
+    ]
+  },
+  {
+    "id": "fungus-stalk",
+    "name": "Fungus Stalk",
+    "wikiPath": "/wiki/Skyrim:Fungus_Stalk",
+    "effects": [
+      "fortify-health",
+      "fortify-stamina",
+      "restore-magicka",
+      "waterbreathing"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "wikiPath": "/wiki/Skyrim:Garlic",
+    "effects": [
+      "fortify-stamina",
+      "regenerate-health",
+      "regenerate-magicka",
+      "resist-poison"
+    ]
+  },
+  {
+    "id": "giant-lichen",
+    "name": "Giant Lichen",
+    "wikiPath": "/wiki/Skyrim:Giant_Lichen",
+    "effects": [
+      "ravage-health",
+      "restore-magicka",
+      "weakness-to-poison",
+      "weakness-to-shock"
+    ]
+  },
+  {
+    "id": "giant-s-toe",
+    "name": "Giant's Toe",
+    "wikiPath": "/wiki/Skyrim:Giant%27s_Toe",
+    "effects": [
+      "damage-stamina",
+      "damage-stamina-regen",
+      "fortify-carry-weight",
+      "fortify-health"
+    ]
+  },
+  {
+    "id": "gleamblossom",
+    "name": "Gleamblossom",
+    "wikiPath": "/wiki/Skyrim:Gleamblossom",
+    "effects": [
+      "fear",
+      "paralysis",
+      "regenerate-health",
+      "resist-magic"
+    ],
+    "source": "DG"
+  },
+  {
+    "id": "glow-dust",
+    "name": "Glow Dust",
+    "wikiPath": "/wiki/Skyrim:Glow_Dust",
+    "effects": [
+      "damage-magicka",
+      "damage-magicka-regen",
+      "fortify-destruction",
+      "resist-shock"
+    ]
+  },
+  {
+    "id": "glowing-mushroom",
+    "name": "Glowing Mushroom",
+    "wikiPath": "/wiki/Skyrim:Glowing_Mushroom",
+    "effects": [
+      "fortify-destruction",
+      "fortify-health",
+      "fortify-smithing",
+      "resist-shock"
+    ]
+  },
+  {
+    "id": "gnarl-bark",
+    "name": "Gnarl Bark",
+    "wikiPath": "/wiki/Skyrim:Gnarl_Bark",
+    "effects": [
+      "damage-health",
+      "fortify-heavy-armor",
+      "regenerate-health",
+      "resist-fire"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "gold-kanet",
+    "name": "Gold Kanet",
+    "wikiPath": "/wiki/Skyrim:Gold_Kanet",
+    "effects": [
+      "fortify-smithing",
+      "paralysis",
+      "ravage-health",
+      "weakness-to-frost"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "grass-pod",
+    "name": "Grass Pod",
+    "wikiPath": "/wiki/Skyrim:Grass_Pod",
+    "effects": [
+      "fortify-alteration",
+      "ravage-magicka",
+      "resist-poison",
+      "restore-magicka"
+    ]
+  },
+  {
+    "id": "green-butterfly-wing",
+    "name": "Green Butterfly Wing",
+    "wikiPath": "/wiki/Skyrim:Green_Butterfly_Wing",
+    "effects": [
+      "fear",
+      "invisibility",
+      "restore-magicka",
+      "slow"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "hackle-lo-leaf",
+    "name": "Hackle-Lo Leaf",
+    "wikiPath": "/wiki/Skyrim:Hackle-Lo_Leaf",
+    "effects": [
+      "fortify-restoration",
+      "paralysis",
+      "restore-stamina",
+      "waterbreathing"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "hagraven-claw",
+    "name": "Hagraven Claw",
+    "wikiPath": "/wiki/Skyrim:Hagraven_Claw",
+    "effects": [
+      "fortify-barter",
+      "fortify-enchanting",
+      "lingering-damage-magicka",
+      "resist-magic"
+    ]
+  },
+  {
+    "id": "hagraven-feathers",
+    "name": "Hagraven Feathers",
+    "wikiPath": "/wiki/Skyrim:Hagraven_Feathers",
+    "effects": [
+      "damage-magicka",
+      "fortify-conjuration",
+      "frenzy",
+      "weakness-to-shock"
+    ]
+  },
+  {
+    "id": "hanging-moss",
+    "name": "Hanging Moss",
+    "wikiPath": "/wiki/Skyrim:Hanging_Moss",
+    "effects": [
+      "damage-magicka",
+      "damage-magicka-regen",
+      "fortify-health",
+      "fortify-one-handed"
+    ]
+  },
+  {
+    "id": "hawk-beak",
+    "name": "Hawk Beak",
+    "wikiPath": "/wiki/Skyrim:Hawk_Beak",
+    "effects": [
+      "fortify-carry-weight",
+      "resist-frost",
+      "resist-shock",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "hawk-feathers",
+    "name": "Hawk Feathers",
+    "wikiPath": "/wiki/Skyrim:Hawk_Feathers",
+    "effects": [
+      "cure-disease",
+      "fortify-light-armor",
+      "fortify-one-handed",
+      "fortify-sneak"
+    ]
+  },
+  {
+    "id": "hawk-s-egg",
+    "name": "Hawk's Egg",
+    "wikiPath": "/wiki/Skyrim:Hawk%27s_Egg",
+    "effects": [
+      "damage-magicka-regen",
+      "lingering-damage-stamina",
+      "resist-magic",
+      "waterbreathing"
+    ],
+    "source": "HF"
+  },
+  {
+    "id": "heart-of-order",
+    "name": "Heart of Order",
+    "wikiPath": "/wiki/Skyrim:Heart_of_Order",
+    "effects": [
+      "fortify-health",
+      "fortify-one-handed",
+      "fortify-two-handed",
+      "restore-health"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "histcarp",
+    "name": "Histcarp",
+    "wikiPath": "/wiki/Skyrim:Histcarp",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-magicka",
+      "restore-stamina",
+      "waterbreathing"
+    ]
+  },
+  {
+    "id": "honeycomb",
+    "name": "Honeycomb",
+    "wikiPath": "/wiki/Skyrim:Honeycomb",
+    "effects": [
+      "fortify-block",
+      "fortify-light-armor",
+      "ravage-stamina",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "human-flesh",
+    "name": "Human Flesh",
+    "wikiPath": "/wiki/Skyrim:Human_Flesh",
+    "effects": [
+      "damage-health",
+      "fortify-sneak",
+      "paralysis",
+      "restore-magicka"
+    ]
+  },
+  {
+    "id": "human-heart",
+    "name": "Human Heart",
+    "wikiPath": "/wiki/Skyrim:Human_Heart",
+    "effects": [
+      "damage-health",
+      "damage-magicka",
+      "damage-magicka-regen",
+      "frenzy"
+    ]
+  },
+  {
+    "id": "hunger-tongue",
+    "name": "Hunger Tongue",
+    "wikiPath": "/wiki/Skyrim:Hunger_Tongue",
+    "effects": [
+      "cure-disease",
+      "cure-poison",
+      "fortify-magicka",
+      "weakness-to-fire"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "hydnum-azure-giant-spore",
+    "name": "Hydnum Azure Giant Spore",
+    "wikiPath": "/wiki/Skyrim:Hydnum_Azure_Giant_Spore",
+    "effects": [
+      "fortify-health",
+      "light",
+      "regenerate-health",
+      "resist-frost"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "hypha-facia",
+    "name": "Hypha Facia",
+    "wikiPath": "/wiki/Skyrim:Hypha_Facia",
+    "effects": [
+      "frenzy",
+      "ravage-stamina",
+      "resist-magic",
+      "weakness-to-poison"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "ice-wraith-teeth",
+    "name": "Ice Wraith Teeth",
+    "wikiPath": "/wiki/Skyrim:Ice_Wraith_Teeth",
+    "effects": [
+      "fortify-heavy-armor",
+      "invisibility",
+      "weakness-to-fire",
+      "weakness-to-frost"
+    ]
+  },
+  {
+    "id": "imp-gall",
+    "name": "Imp Gall",
+    "wikiPath": "/wiki/Skyrim:Imp_Gall",
+    "effects": [
+      "cure-poison",
+      "damage-health",
+      "fortify-barter",
+      "weakness-to-fire"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "imp-stool",
+    "name": "Imp Stool",
+    "wikiPath": "/wiki/Skyrim:Imp_Stool",
+    "effects": [
+      "damage-health",
+      "lingering-damage-health",
+      "paralysis",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "jarrin-root",
+    "name": "Jarrin Root",
+    "wikiPath": "/wiki/Skyrim:Jarrin_Root",
+    "effects": [
+      "damage-health",
+      "damage-magicka",
+      "damage-magicka-regen",
+      "damage-stamina"
+    ]
+  },
+  {
+    "id": "jazbay-grapes",
+    "name": "Jazbay Grapes",
+    "wikiPath": "/wiki/Skyrim:Jazbay_Grapes",
+    "effects": [
+      "fortify-magicka",
+      "ravage-health",
+      "regenerate-magicka",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "juniper-berries",
+    "name": "Juniper Berries",
+    "wikiPath": "/wiki/Skyrim:Juniper_Berries",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-marksman",
+      "regenerate-health",
+      "weakness-to-fire"
+    ]
+  },
+  {
+    "id": "kagouti-hide",
+    "name": "Kagouti Hide",
+    "wikiPath": "/wiki/Skyrim:Kagouti_Hide",
+    "effects": [
+      "fortify-carry-weight",
+      "lingering-damage-stamina",
+      "night-eye",
+      "resist-shock"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "kresh-fiber",
+    "name": "Kresh Fiber",
+    "wikiPath": "/wiki/Skyrim:Kresh_Fiber",
+    "effects": [
+      "fortify-pickpocket",
+      "fortify-sneak",
+      "slow",
+      "weakness-to-magic"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "large-antlers",
+    "name": "Large Antlers",
+    "wikiPath": "/wiki/Skyrim:Large_Antlers",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-stamina",
+      "restore-stamina",
+      "slow"
+    ]
+  },
+  {
+    "id": "lavender",
+    "name": "Lavender",
+    "wikiPath": "/wiki/Skyrim:Lavender",
+    "effects": [
+      "fortify-conjuration",
+      "fortify-stamina",
+      "ravage-magicka",
+      "resist-magic"
+    ]
+  },
+  {
+    "id": "lichor",
+    "name": "Lichor",
+    "wikiPath": "/wiki/Skyrim:Lichor",
+    "effects": [
+      "fortify-magicka",
+      "regenerate-magicka",
+      "restore-magicka",
+      "spell-absorption"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "luminous-russula",
+    "name": "Luminous Russula",
+    "wikiPath": "/wiki/Skyrim:Luminous_Russula",
+    "effects": [
+      "fear",
+      "lingering-damage-health",
+      "lingering-damage-stamina",
+      "waterbreathing"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "luna-moth-wing",
+    "name": "Luna Moth Wing",
+    "wikiPath": "/wiki/Skyrim:Luna_Moth_Wing",
+    "effects": [
+      "damage-magicka",
+      "fortify-light-armor",
+      "invisibility",
+      "regenerate-health"
+    ]
+  },
+  {
+    "id": "marshmerrow",
+    "name": "Marshmerrow",
+    "wikiPath": "/wiki/Skyrim:Marshmerrow",
+    "effects": [
+      "damage-stamina",
+      "fortify-carry-weight",
+      "restore-health",
+      "weakness-to-magic"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "minotaur-horn",
+    "name": "Minotaur Horn",
+    "wikiPath": "/wiki/Skyrim:Minotaur_Horn",
+    "effects": [
+      "damage-magicka-regen",
+      "regenerate-health",
+      "regenerate-magicka",
+      "resist-poison"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "moon-sugar",
+    "name": "Moon Sugar",
+    "wikiPath": "/wiki/Skyrim:Moon_Sugar",
+    "effects": [
+      "regenerate-magicka",
+      "resist-frost",
+      "restore-magicka",
+      "weakness-to-fire"
+    ]
+  },
+  {
+    "id": "mora-tapinella",
+    "name": "Mora Tapinella",
+    "wikiPath": "/wiki/Skyrim:Mora_Tapinella",
+    "effects": [
+      "fortify-illusion",
+      "lingering-damage-health",
+      "regenerate-stamina",
+      "restore-magicka"
+    ]
+  },
+  {
+    "id": "mort-flesh",
+    "name": "Mort Flesh",
+    "wikiPath": "/wiki/Skyrim:Mort_Flesh",
+    "effects": [
+      "damage-health",
+      "damage-magicka",
+      "damage-magicka-regen",
+      "frenzy"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "mudcrab-chitin",
+    "name": "Mudcrab Chitin",
+    "wikiPath": "/wiki/Skyrim:Mudcrab_Chitin",
+    "effects": [
+      "cure-disease",
+      "resist-fire",
+      "resist-poison",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "namira-s-rot",
+    "name": "Namira's Rot",
+    "wikiPath": "/wiki/Skyrim:Namira%27s_Rot",
+    "effects": [
+      "damage-magicka",
+      "fear",
+      "fortify-lockpicking",
+      "regenerate-health"
+    ]
+  },
+  {
+    "id": "netch-jelly",
+    "name": "Netch Jelly",
+    "wikiPath": "/wiki/Skyrim:Netch_Jelly",
+    "effects": [
+      "fear",
+      "fortify-carry-weight",
+      "paralysis",
+      "restore-stamina"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "nightshade",
+    "name": "Nightshade",
+    "wikiPath": "/wiki/Skyrim:Nightshade",
+    "effects": [
+      "damage-health",
+      "damage-magicka-regen",
+      "fortify-destruction",
+      "lingering-damage-stamina"
+    ]
+  },
+  {
+    "id": "nirnroot",
+    "name": "Nirnroot",
+    "wikiPath": "/wiki/Skyrim:Nirnroot",
+    "effects": [
+      "damage-health",
+      "damage-stamina",
+      "invisibility",
+      "resist-magic"
+    ]
+  },
+  {
+    "id": "nordic-barnacle",
+    "name": "Nordic Barnacle",
+    "wikiPath": "/wiki/Skyrim:Nordic_Barnacle",
+    "effects": [
+      "damage-magicka",
+      "fortify-pickpocket",
+      "regenerate-health",
+      "waterbreathing"
+    ]
+  },
+  {
+    "id": "ogre-s-teeth",
+    "name": "Ogre's Teeth",
+    "wikiPath": "/wiki/Skyrim:Ogre%27s_Teeth",
+    "effects": [
+      "lingering-damage-magicka",
+      "regenerate-health",
+      "resist-poison",
+      "weakness-to-shock"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "orange-dartwing",
+    "name": "Orange Dartwing",
+    "wikiPath": "/wiki/Skyrim:Orange_Dartwing",
+    "effects": [
+      "fortify-pickpocket",
+      "lingering-damage-health",
+      "ravage-magicka",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "pearl",
+    "name": "Pearl",
+    "wikiPath": "/wiki/Skyrim:Pearl",
+    "effects": [
+      "fortify-block",
+      "resist-shock",
+      "restore-magicka",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "pine-thrush-egg",
+    "name": "Pine Thrush Egg",
+    "wikiPath": "/wiki/Skyrim:Pine_Thrush_Egg",
+    "effects": [
+      "fortify-lockpicking",
+      "resist-shock",
+      "restore-stamina",
+      "weakness-to-poison"
+    ]
+  },
+  {
+    "id": "poison-bloom",
+    "name": "Poison Bloom",
+    "wikiPath": "/wiki/Skyrim:Poison_Bloom",
+    "effects": [
+      "damage-health",
+      "fear",
+      "fortify-carry-weight",
+      "slow"
+    ],
+    "source": "DG"
+  },
+  {
+    "id": "powdered-mammoth-tusk",
+    "name": "Powdered Mammoth Tusk",
+    "wikiPath": "/wiki/Skyrim:Powdered_Mammoth_Tusk",
+    "effects": [
+      "fear",
+      "fortify-sneak",
+      "restore-stamina",
+      "weakness-to-fire"
+    ]
+  },
+  {
+    "id": "purple-butterfly-wing",
+    "name": "Purple Butterfly Wing",
+    "wikiPath": "/wiki/Skyrim:Purple_Butterfly_Wing",
+    "effects": [
+      "paralysis",
+      "regenerate-health",
+      "regenerate-magicka",
+      "regenerate-stamina"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "purple-mountain-flower",
+    "name": "Purple Mountain Flower",
+    "wikiPath": "/wiki/Skyrim:Purple_Mountain_Flower",
+    "effects": [
+      "fortify-sneak",
+      "lingering-damage-magicka",
+      "resist-frost",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "red-kelp-gas-bladder",
+    "name": "Red Kelp Gas Bladder",
+    "wikiPath": "/wiki/Skyrim:Red_Kelp_Gas_Bladder",
+    "effects": [
+      "cure-disease",
+      "fortify-magicka",
+      "regenerate-stamina",
+      "waterbreathing"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "red-mountain-flower",
+    "name": "Red Mountain Flower",
+    "wikiPath": "/wiki/Skyrim:Red_Mountain_Flower",
+    "effects": [
+      "damage-health",
+      "fortify-magicka",
+      "ravage-magicka",
+      "restore-magicka"
+    ]
+  },
+  {
+    "id": "redwort-flower",
+    "name": "Redwort Flower",
+    "wikiPath": "/wiki/Skyrim:Redwort_Flower",
+    "effects": [
+      "cure-poison",
+      "damage-health",
+      "invisibility",
+      "resist-frost"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "river-betty",
+    "name": "River Betty",
+    "wikiPath": "/wiki/Skyrim:River_Betty",
+    "effects": [
+      "damage-health",
+      "fortify-alteration",
+      "fortify-carry-weight",
+      "slow"
+    ]
+  },
+  {
+    "id": "rock-warbler-egg",
+    "name": "Rock Warbler Egg",
+    "wikiPath": "/wiki/Skyrim:Rock_Warbler_Egg",
+    "effects": [
+      "damage-stamina",
+      "fortify-one-handed",
+      "restore-health",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "roobrush",
+    "name": "Roobrush",
+    "wikiPath": "/wiki/Skyrim:Roobrush",
+    "effects": [
+      "cure-poison",
+      "fortify-sneak",
+      "lingering-damage-health",
+      "weakness-to-magic"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "rot-scale",
+    "name": "Rot Scale",
+    "wikiPath": "/wiki/Skyrim:Rot_Scale",
+    "effects": [
+      "fear",
+      "lingering-damage-health",
+      "paralysis",
+      "slow"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "sabre-cat-tooth",
+    "name": "Sabre Cat Tooth",
+    "wikiPath": "/wiki/Skyrim:Sabre_Cat_Tooth",
+    "effects": [
+      "fortify-heavy-armor",
+      "fortify-smithing",
+      "restore-stamina",
+      "weakness-to-poison"
+    ]
+  },
+  {
+    "id": "salmon-roe",
+    "name": "Salmon Roe",
+    "wikiPath": "/wiki/Skyrim:Salmon_Roe",
+    "effects": [
+      "fortify-magicka",
+      "regenerate-magicka",
+      "restore-stamina",
+      "waterbreathing"
+    ],
+    "source": "HF"
+  },
+  {
+    "id": "salt-pile",
+    "name": "Salt Pile",
+    "wikiPath": "/wiki/Skyrim:Salt_Pile",
+    "effects": [
+      "fortify-restoration",
+      "regenerate-magicka",
+      "slow",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "saltrice",
+    "name": "Saltrice",
+    "wikiPath": "/wiki/Skyrim:Saltrice",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-magicka",
+      "restore-health",
+      "restore-stamina"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "scalon-fin",
+    "name": "Scalon Fin",
+    "wikiPath": "/wiki/Skyrim:Scalon_Fin",
+    "effects": [
+      "damage-health",
+      "damage-magicka-regen",
+      "lingering-damage-magicka",
+      "waterbreathing"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "scaly-pholiota",
+    "name": "Scaly Pholiota",
+    "wikiPath": "/wiki/Skyrim:Scaly_Pholiota",
+    "effects": [
+      "fortify-carry-weight",
+      "fortify-illusion",
+      "regenerate-stamina",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "scathecraw",
+    "name": "Scathecraw",
+    "wikiPath": "/wiki/Skyrim:Scathecraw",
+    "effects": [
+      "lingering-damage-health",
+      "ravage-health",
+      "ravage-magicka",
+      "ravage-stamina"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "screaming-maw",
+    "name": "Screaming Maw",
+    "wikiPath": "/wiki/Skyrim:Screaming_Maw",
+    "effects": [
+      "fortify-alteration",
+      "invisibility",
+      "regenerate-health",
+      "regenerate-magicka"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "scrib-jelly",
+    "name": "Scrib Jelly",
+    "wikiPath": "/wiki/Skyrim:Scrib_Jelly",
+    "effects": [
+      "cure-disease",
+      "cure-poison",
+      "regenerate-magicka",
+      "regenerate-stamina"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "scrib-jerky",
+    "name": "Scrib Jerky",
+    "wikiPath": "/wiki/Skyrim:Scrib_Jerky",
+    "effects": [
+      "fortify-stamina",
+      "paralysis",
+      "restore-stamina",
+      "waterbreathing"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "silverside-perch",
+    "name": "Silverside Perch",
+    "wikiPath": "/wiki/Skyrim:Silverside_Perch",
+    "effects": [
+      "damage-stamina-regen",
+      "ravage-health",
+      "resist-frost",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "skeever-tail",
+    "name": "Skeever Tail",
+    "wikiPath": "/wiki/Skyrim:Skeever_Tail",
+    "effects": [
+      "damage-health",
+      "damage-stamina-regen",
+      "fortify-light-armor",
+      "ravage-health"
+    ]
+  },
+  {
+    "id": "slaughterfish-egg",
+    "name": "Slaughterfish Egg",
+    "wikiPath": "/wiki/Skyrim:Slaughterfish_Egg",
+    "effects": [
+      "fortify-pickpocket",
+      "fortify-stamina",
+      "lingering-damage-health",
+      "resist-poison"
+    ]
+  },
+  {
+    "id": "slaughterfish-scales",
+    "name": "Slaughterfish Scales",
+    "wikiPath": "/wiki/Skyrim:Slaughterfish_Scales",
+    "effects": [
+      "fortify-block",
+      "fortify-heavy-armor",
+      "lingering-damage-health",
+      "resist-frost"
+    ]
+  },
+  {
+    "id": "sload-soap",
+    "name": "Sload Soap",
+    "wikiPath": "/wiki/Skyrim:Sload_Soap",
+    "effects": [
+      "fear",
+      "fortify-alteration",
+      "fortify-conjuration",
+      "resist-fire"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "small-antlers",
+    "name": "Small Antlers",
+    "wikiPath": "/wiki/Skyrim:Small_Antlers",
+    "effects": [
+      "damage-health",
+      "fortify-restoration",
+      "lingering-damage-stamina",
+      "weakness-to-poison"
+    ]
+  },
+  {
+    "id": "small-pearl",
+    "name": "Small Pearl",
+    "wikiPath": "/wiki/Skyrim:Small_Pearl",
+    "effects": [
+      "fortify-one-handed",
+      "fortify-restoration",
+      "resist-frost",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "snowberries",
+    "name": "Snowberries",
+    "wikiPath": "/wiki/Skyrim:Snowberries",
+    "effects": [
+      "fortify-enchanting",
+      "resist-fire",
+      "resist-frost",
+      "resist-shock"
+    ]
+  },
+  {
+    "id": "spawn-ash",
+    "name": "Spawn Ash",
+    "wikiPath": "/wiki/Skyrim:Spawn_Ash",
+    "effects": [
+      "fortify-enchanting",
+      "ravage-magicka",
+      "ravage-stamina",
+      "resist-fire"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "spider-egg",
+    "name": "Spider Egg",
+    "wikiPath": "/wiki/Skyrim:Spider_Egg",
+    "effects": [
+      "damage-magicka-regen",
+      "damage-stamina",
+      "fortify-lockpicking",
+      "fortify-marksman"
+    ]
+  },
+  {
+    "id": "spriggan-sap",
+    "name": "Spriggan Sap",
+    "wikiPath": "/wiki/Skyrim:Spriggan_Sap",
+    "effects": [
+      "damage-magicka-regen",
+      "fortify-alteration",
+      "fortify-enchanting",
+      "fortify-smithing"
+    ]
+  },
+  {
+    "id": "steel-blue-entoloma",
+    "name": "Steel-Blue Entoloma",
+    "wikiPath": "/wiki/Skyrim:Steel-Blue_Entoloma",
+    "effects": [
+      "fortify-carry-weight",
+      "fortify-destruction",
+      "resist-frost",
+      "restore-magicka"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "stoneflower-petals",
+    "name": "Stoneflower Petals",
+    "wikiPath": "/wiki/Skyrim:Stoneflower_Petals",
+    "effects": [
+      "fortify-enchanting",
+      "fortify-magicka",
+      "fortify-one-handed",
+      "weakness-to-shock"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "swamp-fungal-pod",
+    "name": "Swamp Fungal Pod",
+    "wikiPath": "/wiki/Skyrim:Swamp_Fungal_Pod",
+    "effects": [
+      "lingering-damage-magicka",
+      "paralysis",
+      "resist-shock",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "taproot",
+    "name": "Taproot",
+    "wikiPath": "/wiki/Skyrim:Taproot",
+    "effects": [
+      "fortify-illusion",
+      "regenerate-magicka",
+      "restore-magicka",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "thistle-branch",
+    "name": "Thistle Branch",
+    "wikiPath": "/wiki/Skyrim:Thistle_Branch",
+    "effects": [
+      "fortify-heavy-armor",
+      "ravage-stamina",
+      "resist-frost",
+      "resist-poison"
+    ]
+  },
+  {
+    "id": "thorn-hook",
+    "name": "Thorn Hook",
+    "wikiPath": "/wiki/Skyrim:Thorn_Hook",
+    "effects": [
+      "lingering-damage-health",
+      "paralysis",
+      "regenerate-health",
+      "regenerate-magicka"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "torchbug-thorax",
+    "name": "Torchbug Thorax",
+    "wikiPath": "/wiki/Skyrim:Torchbug_Thorax",
+    "effects": [
+      "fortify-stamina",
+      "lingering-damage-magicka",
+      "restore-stamina",
+      "weakness-to-magic"
+    ]
+  },
+  {
+    "id": "trama-root",
+    "name": "Trama Root",
+    "wikiPath": "/wiki/Skyrim:Trama_Root",
+    "effects": [
+      "damage-magicka",
+      "fortify-carry-weight",
+      "slow",
+      "weakness-to-shock"
+    ],
+    "source": "DB"
+  },
+  {
+    "id": "troll-fat",
+    "name": "Troll Fat",
+    "wikiPath": "/wiki/Skyrim:Troll_Fat",
+    "effects": [
+      "damage-health",
+      "fortify-two-handed",
+      "frenzy",
+      "resist-poison"
+    ]
+  },
+  {
+    "id": "tundra-cotton",
+    "name": "Tundra Cotton",
+    "wikiPath": "/wiki/Skyrim:Tundra_Cotton",
+    "effects": [
+      "fortify-barter",
+      "fortify-block",
+      "fortify-magicka",
+      "resist-magic"
+    ]
+  },
+  {
+    "id": "vampire-dust",
+    "name": "Vampire Dust",
+    "wikiPath": "/wiki/Skyrim:Vampire_Dust",
+    "effects": [
+      "cure-disease",
+      "invisibility",
+      "regenerate-health",
+      "restore-magicka"
+    ]
+  },
+  {
+    "id": "void-essence",
+    "name": "Void Essence",
+    "wikiPath": "/wiki/Skyrim:Void_Essence",
+    "effects": [
+      "fortify-health",
+      "fortify-stamina",
+      "regenerate-health",
+      "restore-health"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "void-salts",
+    "name": "Void Salts",
+    "wikiPath": "/wiki/Skyrim:Void_Salts",
+    "effects": [
+      "damage-health",
+      "fortify-magicka",
+      "resist-magic",
+      "weakness-to-shock"
+    ]
+  },
+  {
+    "id": "watcher-s-eye",
+    "name": "Watcher's Eye",
+    "wikiPath": "/wiki/Skyrim:Watcher%27s_Eye",
+    "effects": [
+      "fortify-illusion",
+      "fortify-magicka",
+      "night-eye",
+      "spell-absorption"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "wikiPath": "/wiki/Skyrim:Wheat",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-health",
+      "lingering-damage-magicka",
+      "restore-health"
+    ]
+  },
+  {
+    "id": "white-cap",
+    "name": "White Cap",
+    "wikiPath": "/wiki/Skyrim:White_Cap",
+    "effects": [
+      "fortify-heavy-armor",
+      "ravage-magicka",
+      "restore-magicka",
+      "weakness-to-frost"
+    ]
+  },
+  {
+    "id": "wild-grass-pod",
+    "name": "Wild Grass Pod",
+    "wikiPath": "/wiki/Skyrim:Wild_Grass_Pod",
+    "effects": [
+      "fortify-alteration",
+      "ravage-magicka",
+      "resist-poison",
+      "restore-magicka"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "wisp-stalk-caps",
+    "name": "Wisp Stalk Caps",
+    "wikiPath": "/wiki/Skyrim:Wisp_Stalk_Caps",
+    "effects": [
+      "damage-health",
+      "frenzy",
+      "regenerate-stamina",
+      "weakness-to-poison"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "wisp-wrappings",
+    "name": "Wisp Wrappings",
+    "wikiPath": "/wiki/Skyrim:Wisp_Wrappings",
+    "effects": [
+      "fortify-carry-weight",
+      "fortify-destruction",
+      "resist-magic",
+      "restore-stamina"
+    ]
+  },
+  {
+    "id": "withering-moon",
+    "name": "Withering Moon",
+    "wikiPath": "/wiki/Skyrim:Withering_Moon",
+    "effects": [
+      "cure-disease",
+      "fortify-light-armor",
+      "restore-magicka",
+      "spell-absorption"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "worm-s-head-cap",
+    "name": "Worm's Head Cap",
+    "wikiPath": "/wiki/Skyrim:Worm%27s_Head_Cap",
+    "effects": [
+      "fortify-carry-weight",
+      "fortify-lockpicking",
+      "night-eye",
+      "slow"
+    ],
+    "source": "CC"
+  },
+  {
+    "id": "yellow-mountain-flower",
+    "name": "Yellow Mountain Flower",
+    "wikiPath": "/wiki/Skyrim:Yellow_Mountain_Flower",
+    "effects": [
+      "damage-stamina-regen",
+      "fortify-health",
+      "fortify-restoration",
+      "resist-poison"
+    ],
+    "source": "DG"
+  }
+]
