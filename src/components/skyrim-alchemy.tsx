@@ -66,31 +66,48 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 	return (
 		<>
 			<Input
+				className="my-4"
+				placeholder="Search effects and ingredients..."
 				onChange={(event) => setSearchTerm(event.target.value)}
 				value={searchTerm}
 			/>
 			<Table>
 				<TableHeader>
 					<TableRow>
-						<TableHead>Effect</TableHead>
-						<TableHead>Ingredients</TableHead>
+						<TableHead className="w-1/4">Effect</TableHead>
+						<TableHead className="w-3/4">Ingredients</TableHead>
 					</TableRow>
 				</TableHeader>
 				<TableBody>
-					{searchResults.map((row) => (
-						<TableRow key={row.effect.id}>
-							<TableHead>{row.effect.name}</TableHead>
-							<TableCell>
-								<ul>
-									{row.ingredients.map((ingredient) => (
-										<li key={ingredient.id}>
-											{ingredient.name}
-										</li>
-									))}
-								</ul>
+					{searchResults.length === 0 ? (
+						<TableRow>
+							<TableCell
+								className="h-48 text-center whitespace-normal"
+								colSpan={2}
+							>
+								<p className="text-center text-muted-foreground text-2xl">
+									No ingredient or effect matched &quot;
+									{searchTerm}
+									&quot;.
+								</p>
 							</TableCell>
 						</TableRow>
-					))}
+					) : (
+						searchResults.map((row) => (
+							<TableRow key={row.effect.id}>
+								<TableHead>{row.effect.name}</TableHead>
+								<TableCell>
+									<ul>
+										{row.ingredients.map((ingredient) => (
+											<li key={ingredient.id}>
+												{ingredient.name}
+											</li>
+										))}
+									</ul>
+								</TableCell>
+							</TableRow>
+						))
+					)}
 				</TableBody>
 			</Table>
 		</>
