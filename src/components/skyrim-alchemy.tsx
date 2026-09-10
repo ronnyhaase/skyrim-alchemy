@@ -8,11 +8,12 @@ import {
 } from "lucide-react";
 
 import { EffectsView } from "@/components/effects-view";
+import { IngredientsView } from "@/components/ingredients-view";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { Input } from "@/components/ui/input";
 import type { Effect, Ingredient } from "@/types";
-import { searchByEffect } from "@/utils/search";
+import { searchByEffect, searchByIngredient } from "@/utils/search";
 
 type SkyrimAlchemyProps = {
 	effects: Effect[];
@@ -25,8 +26,12 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [activeView, setActiveView] = useState<AlchemyView>("effect");
 
-	const searchResults = useMemo(() => {
+	const effectSearchResults = useMemo(() => {
 		return searchByEffect(effects, ingredients, searchTerm);
+	}, [effects, ingredients, searchTerm]);
+
+	const ingredientSearchResults = useMemo(() => {
+		return searchByIngredient(effects, ingredients, searchTerm);
 	}, [effects, ingredients, searchTerm]);
 
 	return (
@@ -68,9 +73,20 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 					Split-View
 				</Button>
 			</ButtonGroup>
-			{activeView === "effect" ? (
-				<EffectsView rows={searchResults} searchTerm={searchTerm} />
-			) : null}
+			<div>
+				{activeView === "effect" ? (
+					<EffectsView
+						rows={effectSearchResults}
+						searchTerm={searchTerm}
+					/>
+				) : null}
+				{activeView === "ingredient" ? (
+					<IngredientsView
+						rows={ingredientSearchResults}
+						searchTerm={searchTerm}
+					/>
+				) : null}
+			</div>
 		</>
 	);
 }
