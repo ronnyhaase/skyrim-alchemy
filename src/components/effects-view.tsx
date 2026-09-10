@@ -7,19 +7,19 @@ import {
 	TableRow,
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
-import type { EffectSearchResult } from "@/utils/search";
+import {
+	matchesSearch,
+	normalizeSearchTerm,
+	type EffectSearchResult,
+} from "@/utils/search";
 
 type EffectsViewProps = {
 	rows: EffectSearchResult[];
 	searchTerm: string;
 };
 
-function matchesSearch(value: string, normalizedSearchTerm: string) {
-	return value.toLowerCase().includes(normalizedSearchTerm);
-}
-
 export function EffectsView({ rows, searchTerm }: EffectsViewProps) {
-	const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
 
 	return (
 		<Table>

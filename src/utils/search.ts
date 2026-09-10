@@ -10,7 +10,11 @@ export type IngredientSearchResult = {
 	effects: Effect[];
 };
 
-function matchesSearch(value: string, normalizedSearchTerm: string) {
+export function normalizeSearchTerm(searchTerm: string) {
+	return searchTerm.trim().toLowerCase();
+}
+
+export function matchesSearch(value: string, normalizedSearchTerm: string) {
 	return value.toLowerCase().includes(normalizedSearchTerm);
 }
 
@@ -29,7 +33,7 @@ export function searchByEffect(
 	ingredients: Ingredient[],
 	searchTerm: string,
 ): EffectSearchResult[] {
-	const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
 
 	if (!normalizedSearchTerm) {
 		return effects.map((effect) => ({
@@ -72,7 +76,7 @@ export function searchByIngredient(
 	ingredients: Ingredient[],
 	searchTerm: string,
 ): IngredientSearchResult[] {
-	const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
 
 	if (!normalizedSearchTerm) {
 		return ingredients.map((ingredient) => ({

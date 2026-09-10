@@ -7,19 +7,19 @@ import {
 	TableRow,
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
-import type { IngredientSearchResult } from "@/utils/search";
+import {
+	matchesSearch,
+	normalizeSearchTerm,
+	type IngredientSearchResult,
+} from "@/utils/search";
 
 type IngredientsViewProps = {
 	rows: IngredientSearchResult[];
 	searchTerm: string;
 };
 
-function matchesSearch(value: string, normalizedSearchTerm: string) {
-	return value.toLowerCase().includes(normalizedSearchTerm);
-}
-
 export function IngredientsView({ rows, searchTerm }: IngredientsViewProps) {
-	const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
 
 	return (
 		<Table>
