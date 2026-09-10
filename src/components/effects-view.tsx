@@ -6,6 +6,7 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
+import { cn } from "@/lib/utils";
 import type { EffectSearchResult } from "@/utils/search";
 
 type EffectsViewProps = {
@@ -13,7 +14,13 @@ type EffectsViewProps = {
 	searchTerm: string;
 };
 
+function matchesSearch(value: string, normalizedSearchTerm: string) {
+	return value.toLowerCase().includes(normalizedSearchTerm);
+}
+
 export function EffectsView({ rows, searchTerm }: EffectsViewProps) {
+	const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+
 	return (
 		<Table>
 			<TableHeader>
@@ -36,11 +43,31 @@ export function EffectsView({ rows, searchTerm }: EffectsViewProps) {
 				) : (
 					rows.map((row) => (
 						<TableRow key={row.effect.id}>
-							<TableHead>{row.effect.name}</TableHead>
+							<TableHead
+								className={cn(
+									normalizedSearchTerm &&
+										!matchesSearch(row.effect.name, normalizedSearchTerm) &&
+										"text-muted-foreground",
+								)}
+							>
+								{row.effect.name}
+							</TableHead>
 							<TableCell>
 								<ul>
 									{row.ingredients.map((ingredient) => (
-										<li key={ingredient.id}>{ingredient.name}</li>
+										<li
+											className={cn(
+												normalizedSearchTerm &&
+													!matchesSearch(
+														ingredient.name,
+														normalizedSearchTerm,
+													) &&
+													"text-muted-foreground",
+											)}
+											key={ingredient.id}
+										>
+											{ingredient.name}
+										</li>
 									))}
 								</ul>
 							</TableCell>
