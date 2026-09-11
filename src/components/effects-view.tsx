@@ -9,18 +9,20 @@ import {
 import { cn } from "cn";
 import {
 	matchesSearch,
-	normalizeSearchTerm,
 	type EffectSearchResult,
 } from "@/utils/search";
 
 type EffectsViewProps = {
 	rows: EffectSearchResult[];
 	searchTerm: string;
+	normalizedSearchTerm: string;
 };
 
-export function EffectsView({ rows, searchTerm }: EffectsViewProps) {
-	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
-
+export function EffectsView({
+	rows,
+	searchTerm,
+	normalizedSearchTerm,
+}: EffectsViewProps) {
 	return (
 		<Table>
 			<TableHeader>

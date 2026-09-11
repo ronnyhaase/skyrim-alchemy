@@ -31,10 +31,8 @@ function getEffectsForIngredient(ingredient: Ingredient, effects: Effect[]) {
 export function searchByEffect(
 	effects: Effect[],
 	ingredients: Ingredient[],
-	searchTerm: string,
+	normalizedSearchTerm: string,
 ): EffectSearchResult[] {
-	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
-
 	if (!normalizedSearchTerm) {
 		return effects.map((effect) => ({
 			effect,
@@ -74,10 +72,8 @@ export function searchByEffect(
 export function searchByIngredient(
 	effects: Effect[],
 	ingredients: Ingredient[],
-	searchTerm: string,
+	normalizedSearchTerm: string,
 ): IngredientSearchResult[] {
-	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
-
 	if (!normalizedSearchTerm) {
 		return ingredients.map((ingredient) => ({
 			ingredient,

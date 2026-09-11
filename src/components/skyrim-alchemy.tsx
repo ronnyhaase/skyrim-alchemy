@@ -14,7 +14,11 @@ import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { Input } from "@/components/ui/input";
 import type { Effect, Ingredient } from "@/types";
-import { searchByEffect, searchByIngredient } from "@/utils/search";
+import {
+	normalizeSearchTerm,
+	searchByEffect,
+	searchByIngredient,
+} from "@/utils/search";
 
 type SkyrimAlchemyProps = {
 	effects: Effect[];
@@ -26,14 +30,15 @@ type AlchemyView = "effect" | "ingredient" | "split";
 export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [activeView, setActiveView] = useState<AlchemyView>("effect");
+	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
 
 	const effectSearchResults = useMemo(() => {
-		return searchByEffect(effects, ingredients, searchTerm);
-	}, [effects, ingredients, searchTerm]);
+		return searchByEffect(effects, ingredients, normalizedSearchTerm);
+	}, [effects, ingredients, normalizedSearchTerm]);
 
 	const ingredientSearchResults = useMemo(() => {
-		return searchByIngredient(effects, ingredients, searchTerm);
-	}, [effects, ingredients, searchTerm]);
+		return searchByIngredient(effects, ingredients, normalizedSearchTerm);
+	}, [effects, ingredients, normalizedSearchTerm]);
 
 	return (
 		<>
@@ -77,12 +82,14 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 			<div>
 				{activeView === "effect" ? (
 					<EffectsView
+						normalizedSearchTerm={normalizedSearchTerm}
 						rows={effectSearchResults}
 						searchTerm={searchTerm}
 					/>
 				) : null}
 				{activeView === "ingredient" ? (
 					<IngredientsView
+						normalizedSearchTerm={normalizedSearchTerm}
 						rows={ingredientSearchResults}
 						searchTerm={searchTerm}
 					/>
@@ -91,6 +98,8 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 					<SplitView
 						effectRows={effectSearchResults}
 						ingredientRows={ingredientSearchResults}
+						normalizedSearchTerm={normalizedSearchTerm}
+						searchTerm={searchTerm}
 					/>
 				) : null}
 			</div>

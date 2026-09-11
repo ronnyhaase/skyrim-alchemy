@@ -9,18 +9,20 @@ import {
 import { cn } from "cn";
 import {
 	matchesSearch,
-	normalizeSearchTerm,
 	type IngredientSearchResult,
 } from "@/utils/search";
 
 type IngredientsViewProps = {
 	rows: IngredientSearchResult[];
 	searchTerm: string;
+	normalizedSearchTerm: string;
 };
 
-export function IngredientsView({ rows, searchTerm }: IngredientsViewProps) {
-	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
-
+export function IngredientsView({
+	rows,
+	searchTerm,
+	normalizedSearchTerm,
+}: IngredientsViewProps) {
 	return (
 		<Table>
 			<TableHeader>
