@@ -9,6 +9,7 @@ import {
 
 import { EffectsView } from "@/components/effects-view";
 import { IngredientsView } from "@/components/ingredients-view";
+import { SplitView } from "@/components/split-view";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { Input } from "@/components/ui/input";
@@ -84,6 +85,12 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 					<IngredientsView
 						rows={ingredientSearchResults}
 						searchTerm={searchTerm}
+					/>
+				) : null}
+				{activeView === "split" ? (
+					<SplitView
+						effectRows={effectSearchResults}
+						ingredientRows={ingredientSearchResults}
 					/>
 				) : null}
 			</div>
