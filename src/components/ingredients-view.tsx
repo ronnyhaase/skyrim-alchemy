@@ -7,10 +7,7 @@ import {
 	TableRow,
 } from "@/components/ui/table";
 import { cn } from "cn";
-import {
-	matchesSearch,
-	type IngredientSearchResult,
-} from "@/utils/search";
+import { matchesSearch, type IngredientSearchResult } from "@/utils/search";
 
 type IngredientsViewProps = {
 	rows: IngredientSearchResult[];
@@ -24,7 +21,7 @@ export function IngredientsView({
 	normalizedSearchTerm,
 }: IngredientsViewProps) {
 	return (
-		<Table>
+		<Table className="border border-border bg-background">
 			<TableHeader>
 				<TableRow>
 					<TableHead className="w-1/4">Ingredient</TableHead>

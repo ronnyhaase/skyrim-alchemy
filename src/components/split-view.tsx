@@ -31,7 +31,7 @@ export function SplitView({
 
 	return (
 		<div className="grid grid-cols-2 gap-4">
-			<ul className="grid gap-2 content-start list-none m-0 p-0">
+			<ul className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 content-start list-none m-0 p-0">
 				{ingredientRows.map((row) => (
 					<li key={row.ingredient.id}>
 						<Card size="sm">
@@ -72,7 +72,7 @@ export function SplitView({
 					</li>
 				))}
 			</ul>
-			<ul className="grid gap-2 content-start list-none m-0 p-0">
+			<ul className="grid grid-cols-1 gap-2 content-start list-none m-0 p-0">
 				{effectRows.map((row) => (
 					<li key={row.effect.id}>
 						<Card size="sm">
@@ -91,7 +91,7 @@ export function SplitView({
 								</CardTitle>
 							</CardHeader>
 							<CardContent>
-								<ul className="list-none m-0 p-0">
+								<ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 list-none m-0 p-0">
 									{row.ingredients.map((ingredient) => (
 										<li
 											className={cn(

@@ -21,9 +21,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 	return (
 		<html
 			lang="en"
-			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased [scrollbar-gutter:stable]`}
+			className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scrollbar-gutter-stable`}
 		>
-			<body className="min-h-full flex flex-col font-sans">
+			<body className="min-h-full flex flex-col font-sans bg-accent">
 				{children}
 			</body>
 		</html>

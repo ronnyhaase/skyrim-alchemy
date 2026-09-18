@@ -7,10 +7,7 @@ import {
 	TableRow,
 } from "@/components/ui/table";
 import { cn } from "cn";
-import {
-	matchesSearch,
-	type EffectSearchResult,
-} from "@/utils/search";
+import { matchesSearch, type EffectSearchResult } from "@/utils/search";
 
 type EffectsViewProps = {
 	rows: EffectSearchResult[];
@@ -24,7 +21,7 @@ export function EffectsView({
 	normalizedSearchTerm,
 }: EffectsViewProps) {
 	return (
-		<Table>
+		<Table className="border border-border bg-background">
 			<TableHeader>
 				<TableRow>
 					<TableHead className="w-1/4">Effect</TableHead>
@@ -34,7 +31,10 @@ export function EffectsView({
 			<TableBody>
 				{rows.length === 0 ? (
 					<TableRow>
-						<TableCell className="h-48 text-center whitespace-normal" colSpan={2}>
+						<TableCell
+							className="h-48 text-center whitespace-normal"
+							colSpan={2}
+						>
 							<p className="text-center text-muted-foreground text-2xl">
 								No ingredient or effect matched &quot;
 								{searchTerm}
@@ -48,7 +48,10 @@ export function EffectsView({
 							<TableHead
 								className={cn(
 									normalizedSearchTerm &&
-										!matchesSearch(row.effect.name, normalizedSearchTerm) &&
+										!matchesSearch(
+											row.effect.name,
+											normalizedSearchTerm,
+										) &&
 										"text-muted-foreground",
 								)}
 							>

@@ -2,7 +2,9 @@
 
 import { useMemo, useState } from "react";
 import {
+	CircleXIcon,
 	LeafIcon,
+	SearchIcon,
 	SquareSplitHorizontalIcon,
 	WandSparklesIcon,
 } from "lucide-react";
@@ -19,6 +21,12 @@ import {
 	searchByEffect,
 	searchByIngredient,
 } from "@/utils/search";
+import {
+	InputGroup,
+	InputGroupAddon,
+	InputGroupButton,
+	InputGroupInput,
+} from "./ui/input-group";
 
 type SkyrimAlchemyProps = {
 	effects: Effect[];
@@ -42,44 +50,61 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 
 	return (
 		<>
-			<Input
-				className="my-4"
-				placeholder="Search effects and ingredients..."
-				onChange={(event) => setSearchTerm(event.target.value)}
-				value={searchTerm}
-			/>
-			<ButtonGroup className="mb-4">
-				<Button
-					aria-pressed={activeView === "effect"}
-					onClick={() => setActiveView("effect")}
-					type="button"
-					variant={activeView === "effect" ? "default" : "outline"}
-				>
-					<WandSparklesIcon />
-					By Effect
-				</Button>
-				<Button
-					aria-pressed={activeView === "ingredient"}
-					onClick={() => setActiveView("ingredient")}
-					type="button"
-					variant={
-						activeView === "ingredient" ? "default" : "outline"
-					}
-				>
-					<LeafIcon />
-					By Ingredient
-				</Button>
-				<Button
-					aria-pressed={activeView === "split"}
-					onClick={() => setActiveView("split")}
-					type="button"
-					variant={activeView === "split" ? "default" : "outline"}
-				>
-					<SquareSplitHorizontalIcon />
-					Split-View
-				</Button>
-			</ButtonGroup>
-			<div>
+			<header>
+				<InputGroup className="my-4 [--radius:9999px] bg-background">
+					<InputGroupInput
+						placeholder="Search effects and ingredients..."
+						onChange={(event) => setSearchTerm(event.target.value)}
+						value={searchTerm}
+					/>
+					<InputGroupAddon>
+						<SearchIcon />
+					</InputGroupAddon>
+					<InputGroupAddon align="inline-end">
+						<InputGroupButton
+							onClick={() => {
+								setSearchTerm("");
+							}}
+						>
+							<CircleXIcon />
+						</InputGroupButton>
+					</InputGroupAddon>
+				</InputGroup>
+				<ButtonGroup className="mb-4">
+					<Button
+						aria-pressed={activeView === "effect"}
+						onClick={() => setActiveView("effect")}
+						type="button"
+						variant={
+							activeView === "effect" ? "default" : "outline"
+						}
+					>
+						<WandSparklesIcon />
+						By Effect
+					</Button>
+					<Button
+						aria-pressed={activeView === "ingredient"}
+						onClick={() => setActiveView("ingredient")}
+						type="button"
+						variant={
+							activeView === "ingredient" ? "default" : "outline"
+						}
+					>
+						<LeafIcon />
+						By Ingredient
+					</Button>
+					<Button
+						aria-pressed={activeView === "split"}
+						onClick={() => setActiveView("split")}
+						type="button"
+						variant={activeView === "split" ? "default" : "outline"}
+					>
+						<SquareSplitHorizontalIcon />
+						Split-View
+					</Button>
+				</ButtonGroup>
+			</header>
+			<main>
 				{activeView === "effect" ? (
 					<EffectsView
 						normalizedSearchTerm={normalizedSearchTerm}
@@ -102,7 +127,10 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 						searchTerm={searchTerm}
 					/>
 				) : null}
-			</div>
+			</main>
+			<footer className="my-4 text-center text-sm">
+				Copyright &copy; Ronny Haase, 2026
+			</footer>
 		</>
 	);
 }
