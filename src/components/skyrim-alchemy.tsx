@@ -12,12 +12,12 @@ import {
 import { EffectsView } from "@/components/effects-view";
 import { IngredientsView } from "@/components/ingredients-view";
 import { ItemProvider } from "@/components/item";
+import { SearchProvider, useSearch } from "@/components/search";
 import { SplitView } from "@/components/split-view";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import type { Effect, Ingredient } from "@/types";
 import {
-	normalizeSearchTerm,
 	searchByEffect,
 	searchByIngredient,
 } from "@/utils/search";
@@ -36,9 +36,18 @@ type SkyrimAlchemyProps = {
 type AlchemyView = "effect" | "ingredient" | "split";
 
 export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
-	const [searchTerm, setSearchTerm] = useState("");
+	return (
+		<SearchProvider>
+			<ItemProvider>
+				<SkyrimAlchemyContent effects={effects} ingredients={ingredients} />
+			</ItemProvider>
+		</SearchProvider>
+	);
+}
+
+function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
+	const { normalizedSearchTerm, searchTerm, setSearchTerm } = useSearch();
 	const [activeView, setActiveView] = useState<AlchemyView>("effect");
-	const normalizedSearchTerm = normalizeSearchTerm(searchTerm);
 
 	const effectSearchResults = useMemo(() => {
 		return searchByEffect(effects, ingredients, normalizedSearchTerm);
@@ -49,7 +58,7 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 	}, [effects, ingredients, normalizedSearchTerm]);
 
 	return (
-		<ItemProvider setSearchTerm={setSearchTerm}>
+		<>
 			<header>
 				<InputGroup className="my-4 [--radius:9999px] bg-background">
 					<InputGroupInput
@@ -131,6 +140,6 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 			<footer className="my-4 text-center text-sm">
 				Copyright &copy; Ronny Haase, 2026
 			</footer>
-		</ItemProvider>
+		</>
 	);
 }

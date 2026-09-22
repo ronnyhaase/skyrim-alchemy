@@ -7,6 +7,8 @@ import {
 } from "react";
 import { cn } from "cn";
 
+import { useSearch } from "@/components/search";
+
 type ItemKind = "effect" | "ingredient";
 
 type HighlightedItem = {
@@ -17,17 +19,15 @@ type HighlightedItem = {
 type ItemContextValue = {
 	highlightedItem: HighlightedItem | null;
 	setHighlightedItem: (item: HighlightedItem | null) => void;
-	setSearchTerm: (searchTerm: string) => void;
 };
 
 const ItemContext = createContext<ItemContextValue | null>(null);
 
 type ItemProviderProps = {
 	children: ReactNode;
-	setSearchTerm: (searchTerm: string) => void;
 };
 
-export function ItemProvider({ children, setSearchTerm }: ItemProviderProps) {
+export function ItemProvider({ children }: ItemProviderProps) {
 	const [highlightedItem, setHighlightedItem] =
 		useState<HighlightedItem | null>(null);
 
@@ -35,9 +35,8 @@ export function ItemProvider({ children, setSearchTerm }: ItemProviderProps) {
 		() => ({
 			highlightedItem,
 			setHighlightedItem,
-			setSearchTerm,
 		}),
-		[highlightedItem, setSearchTerm],
+		[highlightedItem],
 	);
 
 	return (
@@ -59,6 +58,7 @@ function itemsAreEqual(item: HighlightedItem | null, other: HighlightedItem) {
 
 export function Item({ children, className, id, kind, name }: ItemProps) {
 	const context = useContext(ItemContext);
+	const { setSearchTerm } = useSearch();
 
 	if (!context) {
 		throw new Error("Item must be used within an ItemProvider.");
@@ -74,7 +74,7 @@ export function Item({ children, className, id, kind, name }: ItemProps) {
 				isHighlighted && "bg-primary text-primary-foreground",
 				className,
 			)}
-			onClick={() => context.setSearchTerm(name)}
+			onClick={() => setSearchTerm(name)}
 			onMouseEnter={() => context.setHighlightedItem(item)}
 			onMouseLeave={() => {
 				if (itemsAreEqual(context.highlightedItem, item)) {
