@@ -11,10 +11,10 @@ import {
 
 import { EffectsView } from "@/components/effects-view";
 import { IngredientsView } from "@/components/ingredients-view";
+import { ItemProvider } from "@/components/item";
 import { SplitView } from "@/components/split-view";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
-import { Input } from "@/components/ui/input";
 import type { Effect, Ingredient } from "@/types";
 import {
 	normalizeSearchTerm,
@@ -49,7 +49,7 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 	}, [effects, ingredients, normalizedSearchTerm]);
 
 	return (
-		<>
+		<ItemProvider setSearchTerm={setSearchTerm}>
 			<header>
 				<InputGroup className="my-4 [--radius:9999px] bg-background">
 					<InputGroupInput
@@ -131,6 +131,6 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 			<footer className="my-4 text-center text-sm">
 				Copyright &copy; Ronny Haase, 2026
 			</footer>
-		</>
+		</ItemProvider>
 	);
 }

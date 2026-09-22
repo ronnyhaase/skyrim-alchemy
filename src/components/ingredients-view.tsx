@@ -6,6 +6,7 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
+import { Item } from "@/components/item";
 import { cn } from "cn";
 import { matchesSearch, type IngredientSearchResult } from "@/utils/search";
 
@@ -55,7 +56,11 @@ export function IngredientsView({
 										"text-muted-foreground",
 								)}
 							>
-								{row.ingredient.name}
+								<Item
+									id={row.ingredient.id}
+									kind="ingredient"
+									name={row.ingredient.name}
+								/>
 							</TableHead>
 							<TableCell>
 								<ul>
@@ -71,7 +76,11 @@ export function IngredientsView({
 											)}
 											key={effect.id}
 										>
-											{effect.name}
+											<Item
+												id={effect.id}
+												kind="effect"
+												name={effect.name}
+											/>
 										</li>
 									))}
 								</ul>

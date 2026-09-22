@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Item } from "@/components/item";
 import { cn } from "cn";
 import type {
 	EffectSearchResult,
@@ -46,7 +47,11 @@ export function SplitView({
 											"text-muted-foreground",
 									)}
 								>
-									{row.ingredient.name}
+									<Item
+										id={row.ingredient.id}
+										kind="ingredient"
+										name={row.ingredient.name}
+									/>
 								</CardTitle>
 							</CardHeader>
 							<CardContent>
@@ -63,7 +68,11 @@ export function SplitView({
 											)}
 											key={effect.id}
 										>
-											{effect.name}
+											<Item
+												id={effect.id}
+												kind="effect"
+												name={effect.name}
+											/>
 										</li>
 									))}
 								</ul>
@@ -87,7 +96,11 @@ export function SplitView({
 											"text-muted-foreground",
 									)}
 								>
-									{row.effect.name}
+									<Item
+										id={row.effect.id}
+										kind="effect"
+										name={row.effect.name}
+									/>
 								</CardTitle>
 							</CardHeader>
 							<CardContent>
@@ -104,7 +117,11 @@ export function SplitView({
 											)}
 											key={ingredient.id}
 										>
-											{ingredient.name}
+											<Item
+												id={ingredient.id}
+												kind="ingredient"
+												name={ingredient.name}
+											/>
 										</li>
 									))}
 								</ul>

@@ -6,6 +6,7 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
+import { Item } from "@/components/item";
 import { cn } from "cn";
 import { matchesSearch, type EffectSearchResult } from "@/utils/search";
 
@@ -55,7 +56,11 @@ export function EffectsView({
 										"text-muted-foreground",
 								)}
 							>
-								{row.effect.name}
+								<Item
+									id={row.effect.id}
+									kind="effect"
+									name={row.effect.name}
+								/>
 							</TableHead>
 							<TableCell>
 								<ul>
@@ -71,7 +76,11 @@ export function EffectsView({
 											)}
 											key={ingredient.id}
 										>
-											{ingredient.name}
+											<Item
+												id={ingredient.id}
+												kind="ingredient"
+												name={ingredient.name}
+											/>
 										</li>
 									))}
 								</ul>
