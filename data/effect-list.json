@@ -1,3930 +1,3930 @@
 [
-  {
-    "id": "cure-disease",
-    "formId": "000AE722",
-    "name": "Cure Disease",
-    "wikiPath": "/wiki/Skyrim:Cure_Disease",
-    "kind": "positive",
-    "description": "Cures all diseases.",
-    "baseCost": 0.5,
-    "baseMagnitude": 5,
-    "baseDuration": 0,
-    "valueAt100": 21,
-    "ingredients": [
-      {
-        "id": "charred-skeever-hide",
-        "multipliers": {
-          "value": 0.36
-        }
-      },
-      {
-        "id": "chokeweed",
-        "multipliers": {
-          "value": 0.36
-        }
-      },
-      {
-        "id": "hawk-feathers",
-        "multipliers": {
-          "value": 0.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "hunger-tongue",
-        "multipliers": {
-          "value": 0.36
-        }
-      },
-      {
-        "id": "red-kelp-gas-bladder",
-        "multipliers": {
-          "value": 0.36
-        }
-      },
-      {
-        "id": "scrib-jelly",
-        "multipliers": {
-          "value": 0.36
-        }
-      },
-      {
-        "id": "withering-moon",
-        "multipliers": {
-          "value": 0.36
-        }
-      },
-      {
-        "id": "felsaad-tern-feathers"
-      },
-      {
-        "id": "mudcrab-chitin"
-      },
-      {
-        "id": "vampire-dust"
-      }
-    ]
-  },
-  {
-    "id": "cure-poison",
-    "formId": "00109ADD",
-    "name": "Cure Poison",
-    "wikiPath": "/wiki/Skyrim:Cure_Poison",
-    "kind": "positive",
-    "description": "Stops poison's continuing effects.",
-    "baseCost": 0.2,
-    "baseMagnitude": 2,
-    "baseDuration": 0,
-    "valueAt100": 3,
-    "ingredients": [
-      {
-        "id": "ambrosia",
-        "multipliers": {
-          "value": 1.56
-        }
-      },
-      {
-        "id": "bittergreen-petals"
-      },
-      {
-        "id": "hunger-tongue"
-      },
-      {
-        "id": "imp-gall"
-      },
-      {
-        "id": "redwort-flower"
-      },
-      {
-        "id": "roobrush"
-      },
-      {
-        "id": "scrib-jelly"
-      }
-    ]
-  },
-  {
-    "id": "damage-health",
-    "formId": "0003EB42",
-    "name": "Damage Health",
-    "wikiPath": "/wiki/Skyrim:Damage_Health",
-    "kind": "negative",
-    "description": "Causes <mag> points of poison damage.",
-    "baseCost": 3,
-    "baseMagnitude": 2,
-    "baseDuration": 1,
-    "valueAt100": 3,
-    "ingredients": [
-      {
-        "id": "jarrin-root",
-        "multipliers": {
-          "magnitude": 100,
-          "value": 158.5
-        },
-        "highlighted": true
-      },
-      {
-        "id": "river-betty",
-        "multipliers": {
-          "magnitude": 2.5,
-          "value": 34.5
-        },
-        "highlighted": true
-      },
-      {
-        "id": "emperor-parasol-moss",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 19.7
-        },
-        "highlighted": true
-      },
-      {
-        "id": "nirnroot",
-        "multipliers": {
-          "value": 12.6
-        },
-        "highlighted": true
-      },
-      {
-        "id": "crimson-nirnroot",
-        "multipliers": {
-          "magnitude": 3,
-          "value": 3.3
-        },
-        "highlighted": true
-      },
-      {
-        "id": "chokeberry",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "coda-flower",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "deathbell",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.6
-        },
-        "highlighted": true
-      },
-      {
-        "id": "fire-petal",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "gnarl-bark",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "imp-gall",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "poison-bloom",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.6
-        },
-        "highlighted": true
-      },
-      {
-        "id": "redwort-flower",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "scalon-fin",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "wisp-stalk-caps",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "ectoplasm"
-      },
-      {
-        "id": "falmer-ear",
-        "highlighted": true
-      },
-      {
-        "id": "human-flesh",
-        "highlighted": true
-      },
-      {
-        "id": "human-heart",
-        "highlighted": true
-      },
-      {
-        "id": "imp-stool",
-        "highlighted": true
-      },
-      {
-        "id": "mort-flesh",
-        "highlighted": true
-      },
-      {
-        "id": "nightshade",
-        "highlighted": true
-      },
-      {
-        "id": "red-mountain-flower"
-      },
-      {
-        "id": "skeever-tail"
-      },
-      {
-        "id": "small-antlers"
-      },
-      {
-        "id": "troll-fat"
-      },
-      {
-        "id": "void-salts"
-      }
-    ]
-  },
-  {
-    "id": "damage-magicka",
-    "formId": "0003A2B6",
-    "name": "Damage Magicka",
-    "wikiPath": "/wiki/Skyrim:Damage_Magicka",
-    "kind": "negative",
-    "description": "Drains the target's Magicka by <mag> points.",
-    "baseCost": 2.2,
-    "baseMagnitude": 3,
-    "baseDuration": 0,
-    "valueAt100": 52,
-    "ingredients": [
-      {
-        "id": "bittergreen-petals",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "chokeweed",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "butterfly-wing"
-      },
-      {
-        "id": "chaurus-eggs"
-      },
-      {
-        "id": "daedra-heart"
-      },
-      {
-        "id": "eye-of-sabre-cat"
-      },
-      {
-        "id": "glow-dust",
-        "highlighted": true
-      },
-      {
-        "id": "hagraven-feathers",
-        "highlighted": true
-      },
-      {
-        "id": "hanging-moss",
-        "highlighted": true
-      },
-      {
-        "id": "human-heart"
-      },
-      {
-        "id": "jarrin-root"
-      },
-      {
-        "id": "luna-moth-wing",
-        "highlighted": true
-      },
-      {
-        "id": "mort-flesh"
-      },
-      {
-        "id": "namira-s-rot",
-        "highlighted": true
-      },
-      {
-        "id": "nordic-barnacle",
-        "highlighted": true
-      },
-      {
-        "id": "trama-root"
-      }
-    ]
-  },
-  {
-    "id": "damage-magicka-regen",
-    "formId": "00073F2B",
-    "name": "Damage Magicka Regen",
-    "wikiPath": "/wiki/Skyrim:Damage_Magicka_Regen",
-    "kind": "negative",
-    "description": "Decrease the target's Magicka regeneration by <mag>% for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 100,
-    "baseDuration": 5,
-    "valueAt100": 265,
-    "ingredients": [
-      {
-        "id": "daedroth-teeth",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "minotaur-horn",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "scalon-fin",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "ancestor-moth-wing"
-      },
-      {
-        "id": "bear-claws"
-      },
-      {
-        "id": "blue-butterfly-wing"
-      },
-      {
-        "id": "blue-mountain-flower"
-      },
-      {
-        "id": "burnt-spriggan-wood"
-      },
-      {
-        "id": "chaurus-hunter-antennae"
-      },
-      {
-        "id": "chicken-s-egg"
-      },
-      {
-        "id": "glow-dust"
-      },
-      {
-        "id": "hanging-moss"
-      },
-      {
-        "id": "hawk-s-egg"
-      },
-      {
-        "id": "human-heart"
-      },
-      {
-        "id": "mort-flesh"
-      },
-      {
-        "id": "jarrin-root"
-      },
-      {
-        "id": "nightshade"
-      },
-      {
-        "id": "spider-egg"
-      },
-      {
-        "id": "spriggan-sap",
-        "highlighted": true
-      }
-    ]
-  },
-  {
-    "id": "damage-stamina",
-    "formId": "0003A2C6",
-    "name": "Damage Stamina",
-    "wikiPath": "/wiki/Skyrim:Damage_Stamina",
-    "kind": "negative",
-    "description": "Drain the target's Stamina by <mag> points.",
-    "baseCost": 1.8,
-    "baseMagnitude": 3,
-    "baseDuration": 0,
-    "valueAt100": 43,
-    "ingredients": [
-      {
-        "id": "crimson-nirnroot",
-        "multipliers": {
-          "magnitude": 3
-        }
-      },
-      {
-        "id": "bog-beacon",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "comberry",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "marshmerrow",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "ancestor-moth-wing",
-        "highlighted": true
-      },
-      {
-        "id": "ash-creep-cluster",
-        "highlighted": true
-      },
-      {
-        "id": "berit-s-ashes",
-        "highlighted": true
-      },
-      {
-        "id": "blisterwort",
-        "highlighted": true
-      },
-      {
-        "id": "blue-butterfly-wing",
-        "highlighted": true
-      },
-      {
-        "id": "bone-meal",
-        "highlighted": true
-      },
-      {
-        "id": "canis-root",
-        "highlighted": true
-      },
-      {
-        "id": "chaurus-hunter-antennae",
-        "highlighted": true
-      },
-      {
-        "id": "cyrodilic-spadetail",
-        "highlighted": true
-      },
-      {
-        "id": "giant-s-toe",
-        "highlighted": true
-      },
-      {
-        "id": "jarrin-root"
-      },
-      {
-        "id": "nirnroot"
-      },
-      {
-        "id": "rock-warbler-egg"
-      },
-      {
-        "id": "spider-egg",
-        "highlighted": true
-      }
-    ]
-  },
-  {
-    "id": "damage-stamina-regen",
-    "formId": "00073F2C",
-    "name": "Damage Stamina Regen",
-    "wikiPath": "/wiki/Skyrim:Damage_Stamina_Regen",
-    "kind": "negative",
-    "description": "Decrease the target's Stamina regeneration by <mag>% for <dur> seconds.",
-    "baseCost": 0.3,
-    "baseMagnitude": 100,
-    "baseDuration": 5,
-    "valueAt100": 159,
-    "ingredients": [
-      {
-        "id": "bungler-s-bane",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "saltrice",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "creep-cluster"
-      },
-      {
-        "id": "daedra-heart"
-      },
-      {
-        "id": "frost-mirriam"
-      },
-      {
-        "id": "giant-s-toe"
-      },
-      {
-        "id": "histcarp"
-      },
-      {
-        "id": "juniper-berries"
-      },
-      {
-        "id": "large-antlers"
-      },
-      {
-        "id": "silverside-perch"
-      },
-      {
-        "id": "skeever-tail",
-        "highlighted": true
-      },
-      {
-        "id": "wheat"
-      },
-      {
-        "id": "yellow-mountain-flower"
-      }
-    ]
-  },
-  {
-    "id": "fear",
-    "formId": "00073F20",
-    "name": "Fear",
-    "wikiPath": "/wiki/Skyrim:Fear_(effect)",
-    "kind": "negative",
-    "description": "Creatures and people up to level <mag> flee from combat for <dur> seconds.",
-    "baseCost": 5,
-    "baseMagnitude": 1,
-    "baseDuration": 30,
-    "valueAt100": 120,
-    "ingredients": [
-      {
-        "id": "bog-beacon",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "elytra-ichor",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "luminous-russula",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "sload-soap",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "blue-dartwing"
-      },
-      {
-        "id": "cyrodilic-spadetail"
-      },
-      {
-        "id": "daedra-heart"
-      },
-      {
-        "id": "gleamblossom"
-      },
-      {
-        "id": "green-butterfly-wing"
-      },
-      {
-        "id": "namira-s-rot"
-      },
-      {
-        "id": "netch-jelly"
-      },
-      {
-        "id": "poison-bloom"
-      },
-      {
-        "id": "powdered-mammoth-tusk"
-      },
-      {
-        "id": "rot-scale",
-        "multipliers": {
-          "duration": 0.16,
-          "value": 0.14
-        }
-      }
-    ]
-  },
-  {
-    "id": "fortify-alteration",
-    "formId": "0003EB24",
-    "name": "Fortify Alteration",
-    "wikiPath": "/wiki/Skyrim:Fortify_Alteration",
-    "kind": "positive",
-    "description": "Alteration spells last <mag>% longer for <dur> seconds.",
-    "baseCost": 0.2,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 47,
-    "ingredients": [
-      {
-        "id": "blind-watcher-s-eye",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "screaming-maw",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "sload-soap",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "burnt-spriggan-wood"
-      },
-      {
-        "id": "grass-pod"
-      },
-      {
-        "id": "river-betty"
-      },
-      {
-        "id": "spriggan-sap"
-      },
-      {
-        "id": "wild-grass-pod"
-      }
-    ]
-  },
-  {
-    "id": "fortify-barter",
-    "formId": "0003EB23",
-    "name": "Fortify Barter",
-    "wikiPath": "/wiki/Skyrim:Fortify_Barter",
-    "kind": "positive",
-    "description": "You haggle for <mag>% better prices for <dur> seconds.",
-    "baseCost": 2,
-    "baseMagnitude": 1,
-    "baseDuration": 30,
-    "valueAt100": 48,
-    "ingredients": [
-      {
-        "id": "imp-gall",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "butterfly-wing"
-      },
-      {
-        "id": "dragon-s-tongue"
-      },
-      {
-        "id": "hagraven-claw"
-      },
-      {
-        "id": "tundra-cotton"
-      }
-    ]
-  },
-  {
-    "id": "fortify-block",
-    "formId": "0003EB1C",
-    "name": "Fortify Block",
-    "wikiPath": "/wiki/Skyrim:Fortify_Block",
-    "kind": "positive",
-    "description": "Blocking absorbs <mag>% more damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "aster-bloom-core",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "bleeding-crown"
-      },
-      {
-        "id": "boar-tusk"
-      },
-      {
-        "id": "pearl"
-      },
-      {
-        "id": "slaughterfish-scales"
-      },
-      {
-        "id": "tundra-cotton"
-      },
-      {
-        "id": "briar-heart",
-        "multipliers": {
-          "magnitude": 0.5
-        }
-      },
-      {
-        "id": "honeycomb",
-        "multipliers": {
-          "magnitude": 0.5
-        }
-      }
-    ]
-  },
-  {
-    "id": "fortify-carry-weight",
-    "formId": "0003EB01",
-    "name": "Fortify Carry Weight",
-    "wikiPath": "/wiki/Skyrim:Fortify_Carry_Weight",
-    "kind": "positive",
-    "description": "Carrying capacity increases by <mag> for <dur> seconds.",
-    "baseCost": 0.15,
-    "baseMagnitude": 4,
-    "baseDuration": 300,
-    "valueAt100": 208,
-    "ingredients": [
-      {
-        "id": "coda-flower",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "kagouti-hide",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "marshmerrow",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "worm-s-head-cap",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "creep-cluster"
-      },
-      {
-        "id": "giant-s-toe"
-      },
-      {
-        "id": "hawk-beak"
-      },
-      {
-        "id": "netch-jelly"
-      },
-      {
-        "id": "poison-bloom"
-      },
-      {
-        "id": "river-betty"
-      },
-      {
-        "id": "scaly-pholiota"
-      },
-      {
-        "id": "steel-blue-entoloma"
-      },
-      {
-        "id": "trama-root"
-      },
-      {
-        "id": "wisp-wrappings"
-      }
-    ]
-  },
-  {
-    "id": "fortify-conjuration",
-    "formId": "0003EB25",
-    "name": "Fortify Conjuration",
-    "wikiPath": "/wiki/Skyrim:Fortify_Conjuration",
-    "kind": "positive",
-    "description": "Conjurations spells last <mag>% longer for <dur> seconds.",
-    "baseCost": 0.25,
-    "baseMagnitude": 5,
-    "baseDuration": 60,
-    "valueAt100": 75,
-    "ingredients": [
-      {
-        "id": "congealed-putrescence",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "sload-soap",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "ancestor-moth-wing"
-      },
-      {
-        "id": "berit-s-ashes"
-      },
-      {
-        "id": "blue-butterfly-wing"
-      },
-      {
-        "id": "blue-mountain-flower"
-      },
-      {
-        "id": "bone-meal"
-      },
-      {
-        "id": "chaurus-hunter-antennae"
-      },
-      {
-        "id": "frost-salts"
-      },
-      {
-        "id": "hagraven-feathers"
-      },
-      {
-        "id": "lavender"
-      }
-    ]
-  },
-  {
-    "id": "fortify-destruction",
-    "formId": "0003EB26",
-    "name": "Fortify Destruction",
-    "wikiPath": "/wiki/Skyrim:Fortify_Destruction",
-    "kind": "positive",
-    "description": "Destruction spells are <mag>% stronger for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 5,
-    "baseDuration": 60,
-    "valueAt100": 151,
-    "ingredients": [
-      {
-        "id": "comberry",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "daedra-venin",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "ash-creep-cluster"
-      },
-      {
-        "id": "beehive-husk"
-      },
-      {
-        "id": "glow-dust"
-      },
-      {
-        "id": "glowing-mushroom"
-      },
-      {
-        "id": "steel-blue-entoloma"
-      },
-      {
-        "id": "wisp-wrappings"
-      },
-      {
-        "id": "ectoplasm",
-        "multipliers": {
-          "magnitude": 0.8
-        }
-      },
-      {
-        "id": "nightshade",
-        "multipliers": {
-          "magnitude": 0.8
-        }
-      }
-    ]
-  },
-  {
-    "id": "fortify-enchanting",
-    "formId": "0003EB29",
-    "name": "Fortify Enchanting",
-    "wikiPath": "/wiki/Skyrim:Fortify_Enchanting",
-    "kind": "positive",
-    "description": "For <dur> seconds, items are enchanted <mag>% stronger.",
-    "baseCost": 0.6,
-    "baseMagnitude": 1,
-    "baseDuration": 30,
-    "valueAt100": 14,
-    "ingredients": [
-      {
-        "id": "dreugh-wax",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "stoneflower-petals",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "ancestor-moth-wing"
-      },
-      {
-        "id": "blue-butterfly-wing"
-      },
-      {
-        "id": "chaurus-hunter-antennae"
-      },
-      {
-        "id": "hagraven-claw"
-      },
-      {
-        "id": "snowberries"
-      },
-      {
-        "id": "spawn-ash"
-      },
-      {
-        "id": "spriggan-sap"
-      }
-    ]
-  },
-  {
-    "id": "fortify-health",
-    "formId": "0003EAF3",
-    "name": "Fortify Health",
-    "wikiPath": "/wiki/Skyrim:Fortify_Health",
-    "kind": "positive",
-    "description": "Health is increased by <mag> points for <dur> seconds.",
-    "baseCost": 0.35,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 82,
-    "ingredients": [
-      {
-        "id": "fungus-stalk",
-        "multipliers": {
-          "magnitude": 1.25,
-          "duration": 5,
-          "value": 7.5
-        }
-      },
-      {
-        "id": "heart-of-order",
-        "multipliers": {
-          "magnitude": 1.25,
-          "duration": 5,
-          "value": 7.5
-        }
-      },
-      {
-        "id": "hydnum-azure-giant-spore",
-        "multipliers": {
-          "magnitude": 1.25,
-          "duration": 5,
-          "value": 7.5
-        }
-      },
-      {
-        "id": "void-essence",
-        "multipliers": {
-          "magnitude": 1.25,
-          "duration": 5,
-          "value": 7.5
-        }
-      },
-      {
-        "id": "ambrosia",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "boar-tusk",
-        "multipliers": {
-          "duration": 5,
-          "value": 5.9
-        }
-      },
-      {
-        "id": "giant-s-toe",
-        "multipliers": {
-          "duration": 5,
-          "value": 5.9
-        }
-      },
-      {
-        "id": "bear-claws"
-      },
-      {
-        "id": "blue-mountain-flower"
-      },
-      {
-        "id": "glowing-mushroom"
-      },
-      {
-        "id": "hanging-moss"
-      },
-      {
-        "id": "wheat"
-      },
-      {
-        "id": "yellow-mountain-flower"
-      }
-    ]
-  },
-  {
-    "id": "fortify-heavy-armor",
-    "formId": "0003EB1E",
-    "name": "Fortify Heavy Armor",
-    "wikiPath": "/wiki/Skyrim:Fortify_Heavy_Armor",
-    "kind": "positive",
-    "description": "Increase Heavy Armor skill by <mag> points for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 2,
-    "baseDuration": 60,
-    "valueAt100": 55,
-    "ingredients": [
-      {
-        "id": "bog-beacon",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "gnarl-bark",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "bliss-bug-thorax"
-      },
-      {
-        "id": "ice-wraith-teeth"
-      },
-      {
-        "id": "sabre-cat-tooth"
-      },
-      {
-        "id": "slaughterfish-scales"
-      },
-      {
-        "id": "thistle-branch"
-      },
-      {
-        "id": "white-cap"
-      }
-    ]
-  },
-  {
-    "id": "fortify-illusion",
-    "formId": "0003EB27",
-    "name": "Fortify Illusion",
-    "wikiPath": "/wiki/Skyrim:Fortify_Illusion",
-    "kind": "positive",
-    "description": "Illusion spells are <mag>% stronger for <dur> seconds.",
-    "baseCost": 0.4,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 94,
-    "ingredients": [
-      {
-        "id": "watcher-s-eye",
-        "multipliers": {
-          "magnitude": 5,
-          "value": 5.87
-        }
-      },
-      {
-        "id": "dwarven-oil"
-      },
-      {
-        "id": "mora-tapinella"
-      },
-      {
-        "id": "scaly-pholiota"
-      },
-      {
-        "id": "taproot"
-      },
-      {
-        "id": "dragon-s-tongue"
-      },
-      {
-        "id": "bliss-bug-thorax",
-        "multipliers": {
-          "magnitude": 0.25,
-          "value": 0.21
-        }
-      }
-    ]
-  },
-  {
-    "id": "fortify-light-armor",
-    "formId": "0003EB1F",
-    "name": "Fortify Light Armor",
-    "wikiPath": "/wiki/Skyrim:Fortify_Light_Armor",
-    "kind": "positive",
-    "description": "Increases Light Armor skill by <mag> points for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 2,
-    "baseDuration": 60,
-    "valueAt100": 55,
-    "ingredients": [
-      {
-        "id": "aster-bloom-core",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "withering-moon",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "ash-hopper-jelly"
-      },
-      {
-        "id": "beehive-husk"
-      },
-      {
-        "id": "felsaad-tern-feathers"
-      },
-      {
-        "id": "hawk-feathers"
-      },
-      {
-        "id": "honeycomb"
-      },
-      {
-        "id": "luna-moth-wing"
-      },
-      {
-        "id": "skeever-tail"
-      }
-    ]
-  },
-  {
-    "id": "fortify-lockpicking",
-    "formId": "0003EB21",
-    "name": "Fortify Lockpicking",
-    "wikiPath": "/wiki/Skyrim:Fortify_Lockpicking",
-    "kind": "positive",
-    "description": "Lockpicking is <mag>% easier for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 2,
-    "baseDuration": 30,
-    "valueAt100": 25,
-    "ingredients": [
-      {
-        "id": "worm-s-head-cap",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "ashen-grass-pod"
-      },
-      {
-        "id": "falmer-ear"
-      },
-      {
-        "id": "namira-s-rot"
-      },
-      {
-        "id": "pine-thrush-egg"
-      },
-      {
-        "id": "spider-egg"
-      }
-    ]
-  },
-  {
-    "id": "fortify-magicka",
-    "formId": "0003EAF8",
-    "name": "Fortify Magicka",
-    "wikiPath": "/wiki/Skyrim:Fortify_Magicka",
-    "kind": "positive",
-    "description": "Magicka is increased by <mag> points for <dur> seconds.",
-    "baseCost": 0.3,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 71,
-    "ingredients": [
-      {
-        "id": "salmon-roe",
-        "multipliers": {
-          "magnitude": 12.5,
-          "duration": 0.08,
-          "value": 1.05
-        }
-      },
-      {
-        "id": "blind-watcher-s-eye",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "blister-pod-cap",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "hunger-tongue",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "lichor",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "red-kelp-gas-bladder",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "saltrice",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "stoneflower-petals",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "watcher-s-eye",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "briar-heart"
-      },
-      {
-        "id": "ectoplasm"
-      },
-      {
-        "id": "emperor-parasol-moss"
-      },
-      {
-        "id": "histcarp"
-      },
-      {
-        "id": "jazbay-grapes"
-      },
-      {
-        "id": "red-mountain-flower"
-      },
-      {
-        "id": "tundra-cotton"
-      },
-      {
-        "id": "void-salts"
-      }
-    ]
-  },
-  {
-    "id": "fortify-marksman",
-    "formId": "0003EB1B",
-    "name": "Fortify Marksman",
-    "wikiPath": null,
-    "kind": "positive",
-    "description": "Bows do <mag>% more damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "corkbulb-root",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "canis-root"
-      },
-      {
-        "id": "elves-ear"
-      },
-      {
-        "id": "juniper-berries"
-      },
-      {
-        "id": "spider-egg"
-      }
-    ]
-  },
-  {
-    "id": "fortify-one-handed",
-    "formId": "0003EB19",
-    "name": "Fortify One-handed",
-    "wikiPath": "/wiki/Skyrim:Fortify_One-handed",
-    "kind": "positive",
-    "description": "One-handed weapons do <mag>% more damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "heart-of-order",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "stoneflower-petals",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "bear-claws"
-      },
-      {
-        "id": "canis-root"
-      },
-      {
-        "id": "hanging-moss"
-      },
-      {
-        "id": "hawk-feathers"
-      },
-      {
-        "id": "rock-warbler-egg"
-      },
-      {
-        "id": "small-pearl"
-      }
-    ]
-  },
-  {
-    "id": "fortify-pickpocket",
-    "formId": "0003EB20",
-    "name": "Fortify Pickpocket",
-    "wikiPath": "/wiki/Skyrim:Fortify_Pickpocket",
-    "kind": "positive",
-    "description": "Pickpocketing is <mag>% easier for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "blue-dartwing"
-      },
-      {
-        "id": "kresh-fiber",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "nordic-barnacle"
-      },
-      {
-        "id": "orange-dartwing"
-      },
-      {
-        "id": "slaughterfish-egg"
-      }
-    ]
-  },
-  {
-    "id": "fortify-restoration",
-    "formId": "0003EB28",
-    "name": "Fortify Restoration",
-    "wikiPath": "/wiki/Skyrim:Fortify_Restoration",
-    "kind": "positive",
-    "description": "Restoration spells are <mag>% stronger for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "hackle-lo-leaf",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "yellow-mountain-flower",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "abecean-longfin"
-      },
-      {
-        "id": "cyrodilic-spadetail"
-      },
-      {
-        "id": "salt-pile"
-      },
-      {
-        "id": "small-antlers"
-      },
-      {
-        "id": "small-pearl"
-      }
-    ]
-  },
-  {
-    "id": "fortify-smithing",
-    "formId": "0003EB1D",
-    "name": "Fortify Smithing",
-    "wikiPath": "/wiki/Skyrim:Fortify_Smithing",
-    "kind": "positive",
-    "description": "For <dur> seconds, weapon and armor improving is <mag>% better.",
-    "baseCost": 0.75,
-    "baseMagnitude": 4,
-    "baseDuration": 30,
-    "valueAt100": 82,
-    "ingredients": [
-      {
-        "id": "dreugh-wax",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "gold-kanet",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "blisterwort"
-      },
-      {
-        "id": "glowing-mushroom"
-      },
-      {
-        "id": "sabre-cat-tooth"
-      },
-      {
-        "id": "spriggan-sap"
-      }
-    ]
-  },
-  {
-    "id": "fortify-sneak",
-    "formId": "0003EB22",
-    "name": "Fortify Sneak",
-    "wikiPath": "/wiki/Skyrim:Fortify_Sneak",
-    "kind": "positive",
-    "description": "You are <mag>% harder to detect for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "kresh-fiber",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "roobrush",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "abecean-longfin"
-      },
-      {
-        "id": "ashen-grass-pod"
-      },
-      {
-        "id": "frost-mirriam"
-      },
-      {
-        "id": "hawk-feathers"
-      },
-      {
-        "id": "human-flesh"
-      },
-      {
-        "id": "powdered-mammoth-tusk"
-      },
-      {
-        "id": "purple-mountain-flower"
-      },
-      {
-        "id": "beehive-husk"
-      }
-    ]
-  },
-  {
-    "id": "fortify-stamina",
-    "formId": "0003EAF9",
-    "name": "Fortify Stamina",
-    "wikiPath": "/wiki/Skyrim:Fortify_Stamina",
-    "kind": "positive",
-    "description": "Stamina is increased by <mag> points for <dur> seconds.",
-    "baseCost": 0.3,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 71,
-    "ingredients": [
-      {
-        "id": "boar-tusk",
-        "multipliers": {
-          "magnitude": 1.25,
-          "duration": 5,
-          "value": 7.5
-        },
-        "highlighted": true
-      },
-      {
-        "id": "fungus-stalk",
-        "multipliers": {
-          "magnitude": 1.25,
-          "duration": 5,
-          "value": 7.5
-        }
-      },
-      {
-        "id": "void-essence",
-        "multipliers": {
-          "magnitude": 1.25,
-          "duration": 5,
-          "value": 7.5
-        }
-      },
-      {
-        "id": "scrib-jerky",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "chaurus-eggs"
-      },
-      {
-        "id": "garlic"
-      },
-      {
-        "id": "large-antlers"
-      },
-      {
-        "id": "lavender"
-      },
-      {
-        "id": "slaughterfish-egg"
-      },
-      {
-        "id": "torchbug-thorax"
-      }
-    ]
-  },
-  {
-    "id": "fortify-two-handed",
-    "formId": "0003EB1A",
-    "name": "Fortify Two-handed",
-    "wikiPath": "/wiki/Skyrim:Fortify_Two-handed",
-    "kind": "positive",
-    "description": "Two-handed weapons do <mag>% more damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "heart-of-order",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "dragon-s-tongue"
-      },
-      {
-        "id": "emperor-parasol-moss"
-      },
-      {
-        "id": "fly-amanita"
-      },
-      {
-        "id": "troll-fat"
-      }
-    ]
-  },
-  {
-    "id": "frenzy",
-    "formId": "00073F29",
-    "name": "Frenzy",
-    "wikiPath": "/wiki/Skyrim:Frenzy_(effect)",
-    "kind": "negative",
-    "description": "Creatures and people up to level <mag> will attack anything nearby for <dur> seconds.",
-    "baseCost": 15,
-    "baseMagnitude": 1,
-    "baseDuration": 10,
-    "valueAt100": 107,
-    "ingredients": [
-      {
-        "id": "dreugh-wax",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "hypha-facia",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "wisp-stalk-caps",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "blisterwort"
-      },
-      {
-        "id": "boar-tusk"
-      },
-      {
-        "id": "falmer-ear"
-      },
-      {
-        "id": "fly-amanita"
-      },
-      {
-        "id": "hagraven-feathers"
-      },
-      {
-        "id": "human-heart"
-      },
-      {
-        "id": "mort-flesh"
-      },
-      {
-        "id": "troll-fat"
-      }
-    ]
-  },
-  {
-    "id": "invisibility",
-    "formId": "0003EB3D",
-    "name": "Invisibility",
-    "wikiPath": "/wiki/Skyrim:Invisibility_(effect)",
-    "kind": "positive",
-    "description": "Invisibility for <dur> seconds.",
-    "baseCost": 100,
-    "baseMagnitude": 0,
-    "baseDuration": 4,
-    "valueAt100": 261,
-    "ingredients": [
-      {
-        "id": "screaming-maw",
-        "multipliers": {
-          "duration": 4,
-          "value": 4.6
-        }
-      },
-      {
-        "id": "bittergreen-petals",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "blister-pod-cap",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "daedra-silk",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "elytra-ichor",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "flame-stalk",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "redwort-flower",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "ash-creep-cluster"
-      },
-      {
-        "id": "chaurus-eggs"
-      },
-      {
-        "id": "crimson-nirnroot"
-      },
-      {
-        "id": "green-butterfly-wing"
-      },
-      {
-        "id": "ice-wraith-teeth"
-      },
-      {
-        "id": "luna-moth-wing"
-      },
-      {
-        "id": "nirnroot"
-      },
-      {
-        "id": "vampire-dust",
-        "highlighted": true
-      }
-    ]
-  },
-  {
-    "id": "light",
-    "formId": "FE",
-    "name": "Light",
-    "wikiPath": "/wiki/Skyrim:Light",
-    "kind": "positive",
-    "description": "Emits a small light that lasts for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 0,
-    "baseDuration": 60,
-    "valueAt100": 25,
-    "ingredients": [
-      {
-        "id": "alocasia-fruit"
-      },
-      {
-        "id": "blind-watcher-s-eye",
-        "highlighted": true
-      },
-      {
-        "id": "daedroth-teeth"
-      },
-      {
-        "id": "hydnum-azure-giant-spore"
-      }
-    ]
-  },
-  {
-    "id": "lingering-damage-health",
-    "formId": "0010AA4A",
-    "name": "Lingering Damage Health",
-    "wikiPath": "/wiki/Skyrim:Lingering_Damage_Health",
-    "kind": "negative",
-    "description": "Causes <mag> points of poison damage for <dur> seconds.",
-    "baseCost": 12,
-    "baseMagnitude": 1,
-    "baseDuration": 10,
-    "valueAt100": 86,
-    "ingredients": [
-      {
-        "id": "rot-scale",
-        "multipliers": {
-          "duration": 3,
-          "value": 3.34
-        }
-      },
-      {
-        "id": "chokeberry",
-        "multipliers": {
-          "magnitude": 2
-        }
-      },
-      {
-        "id": "luminous-russula",
-        "multipliers": {
-          "magnitude": 2
-        }
-      },
-      {
-        "id": "roobrush",
-        "multipliers": {
-          "magnitude": 2
-        }
-      },
-      {
-        "id": "imp-stool"
-      },
-      {
-        "id": "mora-tapinella"
-      },
-      {
-        "id": "orange-dartwing"
-      },
-      {
-        "id": "scathecraw"
-      },
-      {
-        "id": "slaughterfish-egg"
-      },
-      {
-        "id": "slaughterfish-scales"
-      },
-      {
-        "id": "thorn-hook"
-      }
-    ]
-  },
-  {
-    "id": "lingering-damage-magicka",
-    "formId": "0010DE5F",
-    "name": "Lingering Damage Magicka",
-    "wikiPath": "/wiki/Skyrim:Lingering_Damage_Magicka",
-    "kind": "negative",
-    "description": "Drains the target's Magicka by <mag> points per second for <dur> seconds.",
-    "baseCost": 10,
-    "baseMagnitude": 1,
-    "baseDuration": 10,
-    "valueAt100": 71,
-    "ingredients": [
-      {
-        "id": "ogre-s-teeth",
-        "multipliers": {
-          "magnitude": 2
-        }
-      },
-      {
-        "id": "scalon-fin",
-        "multipliers": {
-          "magnitude": 2
-        }
-      },
-      {
-        "id": "hagraven-claw"
-      },
-      {
-        "id": "purple-mountain-flower"
-      },
-      {
-        "id": "swamp-fungal-pod"
-      },
-      {
-        "id": "torchbug-thorax"
-      },
-      {
-        "id": "wheat"
-      }
-    ]
-  },
-  {
-    "id": "lingering-damage-stamina",
-    "formId": "0010DE5E",
-    "name": "Lingering Damage Stamina",
-    "wikiPath": "/wiki/Skyrim:Lingering_Damage_Stamina",
-    "kind": "negative",
-    "description": "Drain the target's Stamina by <mag> points per second for <dur> seconds.",
-    "baseCost": 1.8,
-    "baseMagnitude": 1,
-    "baseDuration": 10,
-    "valueAt100": 12,
-    "ingredients": [
-      {
-        "id": "bittergreen-petals",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        },
-        "highlighted": true
-      },
-      {
-        "id": "coda-flower",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "daedra-silk",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        },
-        "highlighted": true
-      },
-      {
-        "id": "kagouti-hide",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        },
-        "highlighted": true
-      },
-      {
-        "id": "luminous-russula",
-        "multipliers": {
-          "magnitude": 2,
-          "value": 2.14
-        },
-        "highlighted": true
-      },
-      {
-        "id": "butterfly-wing"
-      },
-      {
-        "id": "chicken-s-egg"
-      },
-      {
-        "id": "hawk-s-egg"
-      },
-      {
-        "id": "nightshade"
-      },
-      {
-        "id": "small-antlers"
-      }
-    ]
-  },
-  {
-    "id": "night-eye",
-    "formId": "FE",
-    "name": "Night Eye",
-    "wikiPath": "/wiki/Skyrim:Night_Eye_(effect)",
-    "kind": "positive",
-    "description": "Improved night vision for <dur> seconds.",
-    "baseCost": 0.75,
-    "baseMagnitude": 0,
-    "baseDuration": 60,
-    "valueAt100": 38,
-    "ingredients": [
-      {
-        "id": "blister-pod-cap"
-      },
-      {
-        "id": "daedra-silk"
-      },
-      {
-        "id": "kagouti-hide"
-      },
-      {
-        "id": "watcher-s-eye",
-        "highlighted": true
-      },
-      {
-        "id": "worm-s-head-cap"
-      }
-    ]
-  },
-  {
-    "id": "paralysis",
-    "formId": "00073F30",
-    "name": "Paralysis",
-    "wikiPath": "/wiki/Skyrim:Paralyze_(effect)",
-    "kind": "negative",
-    "description": "Target is paralyzed for <dur> seconds.",
-    "baseCost": 500,
-    "baseMagnitude": 0,
-    "baseDuration": 1,
-    "valueAt100": 285,
-    "ingredients": [
-      {
-        "id": "aster-bloom-core",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "corkbulb-root",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "daedra-silk",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "daedra-venin",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "fire-petal",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "gold-kanet",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "hackle-lo-leaf",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "scrib-jerky",
-        "multipliers": {
-          "duration": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "briar-heart"
-      },
-      {
-        "id": "canis-root"
-      },
-      {
-        "id": "gleamblossom"
-      },
-      {
-        "id": "human-flesh"
-      },
-      {
-        "id": "imp-stool"
-      },
-      {
-        "id": "netch-jelly",
-        "highlighted": true
-      },
-      {
-        "id": "purple-butterfly-wing"
-      },
-      {
-        "id": "rot-scale"
-      },
-      {
-        "id": "swamp-fungal-pod"
-      },
-      {
-        "id": "thorn-hook"
-      }
-    ]
-  },
-  {
-    "id": "ravage-health",
-    "formId": "00073F26",
-    "name": "Ravage Health",
-    "wikiPath": "/wiki/Skyrim:Ravage_Health",
-    "kind": "negative",
-    "description": "Causes <mag> points of concentrated poison damage.",
-    "baseCost": 0.4,
-    "baseMagnitude": 2,
-    "baseDuration": 10,
-    "valueAt100": 6,
-    "ingredients": [
-      {
-        "id": "chokeberry",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 3.34
-        }
-      },
-      {
-        "id": "congealed-putrescence",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 3.34
-        },
-        "highlighted": true
-      },
-      {
-        "id": "daedra-venin",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 3.34
-        },
-        "highlighted": true
-      },
-      {
-        "id": "gold-kanet",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 3.34
-        }
-      },
-      {
-        "id": "cyrodilic-spadetail"
-      },
-      {
-        "id": "eye-of-sabre-cat"
-      },
-      {
-        "id": "giant-lichen"
-      },
-      {
-        "id": "jazbay-grapes"
-      },
-      {
-        "id": "scathecraw",
-        "highlighted": true
-      },
-      {
-        "id": "silverside-perch"
-      },
-      {
-        "id": "skeever-tail"
-      }
-    ]
-  },
-  {
-    "id": "ravage-magicka",
-    "formId": "00073F27",
-    "name": "Ravage Magicka",
-    "wikiPath": "/wiki/Skyrim:Ravage_Magicka",
-    "kind": "negative",
-    "description": "Concentrated poison damages maximum magicka by <mag> points.",
-    "baseCost": 1,
-    "baseMagnitude": 2,
-    "baseDuration": 10,
-    "valueAt100": 15,
-    "ingredients": [
-      {
-        "id": "alocasia-fruit",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "coda-flower",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "frost-mirriam"
-      },
-      {
-        "id": "grass-pod"
-      },
-      {
-        "id": "lavender"
-      },
-      {
-        "id": "orange-dartwing"
-      },
-      {
-        "id": "red-mountain-flower"
-      },
-      {
-        "id": "scathecraw"
-      },
-      {
-        "id": "spawn-ash"
-      },
-      {
-        "id": "white-cap"
-      },
-      {
-        "id": "wild-grass-pod"
-      }
-    ]
-  },
-  {
-    "id": "ravage-stamina",
-    "formId": "00073F23",
-    "name": "Ravage Stamina",
-    "wikiPath": "/wiki/Skyrim:Ravage_Stamina",
-    "kind": "negative",
-    "description": "Concentrated poison damages maximum stamina by <mag> points.",
-    "baseCost": 1.6,
-    "baseMagnitude": 2,
-    "baseDuration": 10,
-    "valueAt100": 24,
-    "ingredients": [
-      {
-        "id": "deathbell",
-        "multipliers": {
-          "value": 2.1
-        }
-      },
-      {
-        "id": "bungler-s-bane",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 3.34
-        }
-      },
-      {
-        "id": "hypha-facia",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 3.34
-        }
-      },
-      {
-        "id": "bee"
-      },
-      {
-        "id": "berit-s-ashes"
-      },
-      {
-        "id": "bone-meal"
-      },
-      {
-        "id": "honeycomb"
-      },
-      {
-        "id": "scathecraw"
-      },
-      {
-        "id": "spawn-ash",
-        "highlighted": true
-      },
-      {
-        "id": "thistle-branch"
-      }
-    ]
-  },
-  {
-    "id": "regenerate-health",
-    "formId": "0003EB06",
-    "name": "Regenerate Health",
-    "wikiPath": "/wiki/Skyrim:Regenerate_Health",
-    "kind": "positive",
-    "description": "Health regenerates <mag>% faster for <dur> seconds.",
-    "baseCost": 0.1,
-    "baseMagnitude": 5,
-    "baseDuration": 300,
-    "valueAt100": 177,
-    "ingredients": [
-      {
-        "id": "screaming-maw",
-        "multipliers": {
-          "magnitude": 4,
-          "duration": 0.03,
-          "value": 0.11
-        }
-      },
-      {
-        "id": "alocasia-fruit",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "ambrosia",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "gnarl-bark",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "hydnum-azure-giant-spore",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "minotaur-horn",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "ogre-s-teeth",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "void-essence",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "emperor-parasol-moss"
-      },
-      {
-        "id": "garlic"
-      },
-      {
-        "id": "gleamblossom"
-      },
-      {
-        "id": "juniper-berries"
-      },
-      {
-        "id": "luna-moth-wing"
-      },
-      {
-        "id": "namira-s-rot"
-      },
-      {
-        "id": "nordic-barnacle"
-      },
-      {
-        "id": "purple-butterfly-wing",
-        "highlighted": true
-      },
-      {
-        "id": "vampire-dust"
-      },
-      {
-        "id": "thorn-hook",
-        "multipliers": {
-          "magnitude": 0.6,
-          "duration": 0.6,
-          "value": 0.32
-        }
-      }
-    ]
-  },
-  {
-    "id": "regenerate-magicka",
-    "formId": "0003EB07",
-    "name": "Regenerate Magicka",
-    "wikiPath": "/wiki/Skyrim:Regenerate_Magicka",
-    "kind": "positive",
-    "description": "Magicka regenerates <mag>% faster for <dur> seconds.",
-    "baseCost": 0.1,
-    "baseMagnitude": 5,
-    "baseDuration": 300,
-    "valueAt100": 177,
-    "ingredients": [
-      {
-        "id": "screaming-maw",
-        "multipliers": {
-          "magnitude": 4,
-          "duration": 0.2,
-          "value": 0.78
-        },
-        "highlighted": true
-      },
-      {
-        "id": "lichor",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "minotaur-horn",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "scrib-jelly",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "dwarven-oil"
-      },
-      {
-        "id": "fire-salts"
-      },
-      {
-        "id": "garlic"
-      },
-      {
-        "id": "jazbay-grapes"
-      },
-      {
-        "id": "moon-sugar"
-      },
-      {
-        "id": "purple-butterfly-wing"
-      },
-      {
-        "id": "salmon-roe"
-      },
-      {
-        "id": "salt-pile"
-      },
-      {
-        "id": "taproot"
-      },
-      {
-        "id": "thorn-hook",
-        "multipliers": {
-          "magnitude": 0.6,
-          "duration": 0.6,
-          "value": 0.32
-        }
-      }
-    ]
-  },
-  {
-    "id": "regenerate-stamina",
-    "formId": "0003EB08",
-    "name": "Regenerate Stamina",
-    "wikiPath": "/wiki/Skyrim:Regenerate_Stamina",
-    "kind": "positive",
-    "description": "Stamina regenerates <mag>% faster for <dur> seconds.",
-    "baseCost": 0.1,
-    "baseMagnitude": 5,
-    "baseDuration": 300,
-    "valueAt100": 177,
-    "ingredients": [
-      {
-        "id": "alocasia-fruit",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "daedroth-teeth",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "red-kelp-gas-bladder",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "scrib-jelly",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "wisp-stalk-caps",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "bee"
-      },
-      {
-        "id": "fly-amanita"
-      },
-      {
-        "id": "mora-tapinella"
-      },
-      {
-        "id": "purple-butterfly-wing"
-      },
-      {
-        "id": "scaly-pholiota"
-      }
-    ]
-  },
-  {
-    "id": "resist-fire",
-    "formId": "0003EAEA",
-    "name": "Resist Fire",
-    "wikiPath": "/wiki/Skyrim:Resist_Fire",
-    "kind": "positive",
-    "description": "Resist <mag>% of fire damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 3,
-    "baseDuration": 60,
-    "valueAt100": 86,
-    "ingredients": [
-      {
-        "id": "ashen-grass-pod",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "fire-petal",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "gnarl-bark",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "sload-soap",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "ash-creep-cluster"
-      },
-      {
-        "id": "berit-s-ashes"
-      },
-      {
-        "id": "bliss-bug-thorax"
-      },
-      {
-        "id": "bone-meal"
-      },
-      {
-        "id": "dragon-s-tongue",
-        "highlighted": true
-      },
-      {
-        "id": "elves-ear"
-      },
-      {
-        "id": "fire-salts"
-      },
-      {
-        "id": "fly-amanita",
-        "highlighted": true
-      },
-      {
-        "id": "mudcrab-chitin"
-      },
-      {
-        "id": "snowberries",
-        "highlighted": true
-      },
-      {
-        "id": "spawn-ash"
-      }
-    ]
-  },
-  {
-    "id": "resist-frost",
-    "formId": "0003EAEB",
-    "name": "Resist Frost",
-    "wikiPath": "/wiki/Skyrim:Resist_Frost",
-    "kind": "positive",
-    "description": "Resist <mag>% of frost damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 3,
-    "baseDuration": 60,
-    "valueAt100": 86,
-    "ingredients": [
-      {
-        "id": "daedroth-teeth",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "flame-stalk",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "hydnum-azure-giant-spore",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "redwort-flower",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "frost-mirriam",
-        "highlighted": true
-      },
-      {
-        "id": "frost-salts"
-      },
-      {
-        "id": "hawk-beak"
-      },
-      {
-        "id": "moon-sugar"
-      },
-      {
-        "id": "purple-mountain-flower"
-      },
-      {
-        "id": "silverside-perch"
-      },
-      {
-        "id": "slaughterfish-scales",
-        "highlighted": true
-      },
-      {
-        "id": "small-pearl"
-      },
-      {
-        "id": "snowberries"
-      },
-      {
-        "id": "steel-blue-entoloma"
-      },
-      {
-        "id": "thistle-branch",
-        "highlighted": true
-      }
-    ]
-  },
-  {
-    "id": "resist-magic",
-    "formId": "00039E51",
-    "name": "Resist Magic",
-    "wikiPath": "/wiki/Skyrim:Resist_Magic",
-    "kind": "positive",
-    "description": "Resist <mag>% of magic for <dur> seconds.",
-    "baseCost": 1,
-    "baseMagnitude": 1,
-    "baseDuration": 60,
-    "valueAt100": 51,
-    "ingredients": [
-      {
-        "id": "aster-bloom-core",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "bungler-s-bane",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "hypha-facia",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "bleeding-crown"
-      },
-      {
-        "id": "chicken-s-egg",
-        "highlighted": true
-      },
-      {
-        "id": "crimson-nirnroot"
-      },
-      {
-        "id": "felsaad-tern-feathers"
-      },
-      {
-        "id": "gleamblossom",
-        "highlighted": true
-      },
-      {
-        "id": "hagraven-claw",
-        "highlighted": true
-      },
-      {
-        "id": "hawk-s-egg",
-        "highlighted": true
-      },
-      {
-        "id": "lavender",
-        "highlighted": true
-      },
-      {
-        "id": "nirnroot"
-      },
-      {
-        "id": "tundra-cotton",
-        "highlighted": true
-      },
-      {
-        "id": "void-salts"
-      },
-      {
-        "id": "wisp-wrappings"
-      }
-    ]
-  },
-  {
-    "id": "resist-poison",
-    "formId": "00090041",
-    "name": "Resist Poison",
-    "wikiPath": "/wiki/Skyrim:Resist_Poison",
-    "kind": "positive",
-    "description": "Resist <mag>% of poison for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 4,
-    "baseDuration": 60,
-    "valueAt100": 118,
-    "ingredients": [
-      {
-        "id": "minotaur-horn",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "ogre-s-teeth",
-        "multipliers": {
-          "magnitude": 1.25,
-          "value": 1.27
-        }
-      },
-      {
-        "id": "charred-skeever-hide"
-      },
-      {
-        "id": "falmer-ear"
-      },
-      {
-        "id": "garlic",
-        "highlighted": true
-      },
-      {
-        "id": "grass-pod",
-        "highlighted": true
-      },
-      {
-        "id": "mudcrab-chitin"
-      },
-      {
-        "id": "slaughterfish-egg",
-        "highlighted": true
-      },
-      {
-        "id": "troll-fat",
-        "highlighted": true
-      },
-      {
-        "id": "wild-grass-pod",
-        "highlighted": true
-      },
-      {
-        "id": "yellow-mountain-flower",
-        "highlighted": true
-      },
-      {
-        "id": "beehive-husk",
-        "multipliers": {
-          "magnitude": 0.5,
-          "value": 0.46
-        },
-        "highlighted": true
-      },
-      {
-        "id": "thistle-branch",
-        "multipliers": {
-          "magnitude": 0.75,
-          "duration": 0,
-          "value": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "id": "resist-shock",
-    "formId": "0003EAEC",
-    "name": "Resist Shock",
-    "wikiPath": "/wiki/Skyrim:Resist_Shock",
-    "kind": "positive",
-    "description": "Resist <mag>% of shock damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 3,
-    "baseDuration": 60,
-    "valueAt100": 86,
-    "ingredients": [
-      {
-        "id": "corkbulb-root",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "kagouti-hide",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "ash-hopper-jelly"
-      },
-      {
-        "id": "blue-dartwing",
-        "highlighted": true
-      },
-      {
-        "id": "glow-dust"
-      },
-      {
-        "id": "glowing-mushroom",
-        "highlighted": true
-      },
-      {
-        "id": "hawk-beak"
-      },
-      {
-        "id": "pearl"
-      },
-      {
-        "id": "pine-thrush-egg"
-      },
-      {
-        "id": "snowberries"
-      },
-      {
-        "id": "swamp-fungal-pod",
-        "highlighted": true
-      }
-    ]
-  },
-  {
-    "id": "restore-health",
-    "formId": "0003EB15",
-    "name": "Restore Health",
-    "wikiPath": "/wiki/Skyrim:Restore_Health",
-    "kind": "positive",
-    "description": "Restore <mag> points of Health.",
-    "baseCost": 0.5,
-    "baseMagnitude": 5,
-    "baseDuration": 0,
-    "valueAt100": 21,
-    "ingredients": [
-      {
-        "id": "ambrosia",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "corkbulb-root",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "flame-stalk",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "heart-of-order",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "marshmerrow",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "saltrice",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "void-essence",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "ash-hopper-jelly",
-        "highlighted": true
-      },
-      {
-        "id": "blue-dartwing"
-      },
-      {
-        "id": "blue-mountain-flower",
-        "highlighted": true
-      },
-      {
-        "id": "butterfly-wing",
-        "highlighted": true
-      },
-      {
-        "id": "charred-skeever-hide"
-      },
-      {
-        "id": "daedra-heart",
-        "highlighted": true
-      },
-      {
-        "id": "eye-of-sabre-cat"
-      },
-      {
-        "id": "felsaad-tern-feathers",
-        "highlighted": true
-      },
-      {
-        "id": "rock-warbler-egg",
-        "highlighted": true
-      },
-      {
-        "id": "swamp-fungal-pod"
-      },
-      {
-        "id": "wheat",
-        "highlighted": true
-      },
-      {
-        "id": "blisterwort",
-        "multipliers": {
-          "magnitude": 0.6,
-          "value": 0.57
-        }
-      },
-      {
-        "id": "imp-stool",
-        "multipliers": {
-          "magnitude": 0.6,
-          "value": 0.57
-        }
-      }
-    ]
-  },
-  {
-    "id": "restore-magicka",
-    "formId": "0003EB17",
-    "name": "Restore Magicka",
-    "wikiPath": "/wiki/Skyrim:Restore_Magicka",
-    "kind": "positive",
-    "description": "Restore <mag> points of Magicka.",
-    "baseCost": 0.6,
-    "baseMagnitude": 5,
-    "baseDuration": 0,
-    "valueAt100": 25,
-    "ingredients": [
-      {
-        "id": "blister-pod-cap",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "bog-beacon",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "comberry",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "congealed-putrescence",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "elytra-ichor",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "fungus-stalk",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "lichor",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "withering-moon",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "briar-heart",
-        "highlighted": true
-      },
-      {
-        "id": "creep-cluster",
-        "highlighted": true
-      },
-      {
-        "id": "dwarven-oil"
-      },
-      {
-        "id": "ectoplasm",
-        "highlighted": true
-      },
-      {
-        "id": "elves-ear",
-        "highlighted": true
-      },
-      {
-        "id": "fire-salts"
-      },
-      {
-        "id": "frost-salts"
-      },
-      {
-        "id": "giant-lichen"
-      },
-      {
-        "id": "grass-pod"
-      },
-      {
-        "id": "green-butterfly-wing",
-        "highlighted": true
-      },
-      {
-        "id": "human-flesh"
-      },
-      {
-        "id": "moon-sugar"
-      },
-      {
-        "id": "mora-tapinella",
-        "highlighted": true
-      },
-      {
-        "id": "pearl"
-      },
-      {
-        "id": "red-mountain-flower",
-        "highlighted": true
-      },
-      {
-        "id": "steel-blue-entoloma",
-        "highlighted": true
-      },
-      {
-        "id": "taproot"
-      },
-      {
-        "id": "vampire-dust"
-      },
-      {
-        "id": "white-cap"
-      },
-      {
-        "id": "wild-grass-pod"
-      }
-    ]
-  },
-  {
-    "id": "restore-stamina",
-    "formId": "0003EB16",
-    "name": "Restore Stamina",
-    "wikiPath": "/wiki/Skyrim:Restore_Stamina",
-    "kind": "positive",
-    "description": "Restore <mag> Stamina.",
-    "baseCost": 0.6,
-    "baseMagnitude": 5,
-    "baseDuration": 0,
-    "valueAt100": 25,
-    "ingredients": [
-      {
-        "id": "netch-jelly",
-        "multipliers": {
-          "magnitude": 2
-        }
-      },
-      {
-        "id": "chokeweed",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        }
-      },
-      {
-        "id": "hackle-lo-leaf",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "saltrice",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "scrib-jerky",
-        "multipliers": {
-          "magnitude": 1.2,
-          "value": 1.22
-        },
-        "highlighted": true
-      },
-      {
-        "id": "bee",
-        "highlighted": true
-      },
-      {
-        "id": "charred-skeever-hide",
-        "highlighted": true
-      },
-      {
-        "id": "eye-of-sabre-cat",
-        "highlighted": true
-      },
-      {
-        "id": "hawk-beak",
-        "highlighted": true
-      },
-      {
-        "id": "histcarp",
-        "highlighted": true
-      },
-      {
-        "id": "honeycomb",
-        "highlighted": true
-      },
-      {
-        "id": "large-antlers",
-        "highlighted": true
-      },
-      {
-        "id": "mudcrab-chitin",
-        "highlighted": true
-      },
-      {
-        "id": "orange-dartwing",
-        "highlighted": true
-      },
-      {
-        "id": "pearl",
-        "highlighted": true
-      },
-      {
-        "id": "pine-thrush-egg",
-        "highlighted": true
-      },
-      {
-        "id": "powdered-mammoth-tusk",
-        "highlighted": true
-      },
-      {
-        "id": "purple-mountain-flower",
-        "highlighted": true
-      },
-      {
-        "id": "sabre-cat-tooth",
-        "highlighted": true
-      },
-      {
-        "id": "silverside-perch",
-        "highlighted": true
-      },
-      {
-        "id": "small-pearl",
-        "highlighted": true
-      },
-      {
-        "id": "torchbug-thorax",
-        "highlighted": true
-      },
-      {
-        "id": "wisp-wrappings",
-        "highlighted": true
-      },
-      {
-        "id": "bear-claws",
-        "multipliers": {
-          "magnitude": 0.8,
-          "value": 0.78
-        },
-        "highlighted": true
-      },
-      {
-        "id": "salmon-roe",
-        "multipliers": {
-          "magnitude": 0.4,
-          "value": 0.36
-        },
-        "highlighted": true
-      }
-    ]
-  },
-  {
-    "id": "slow",
-    "formId": "00073F25",
-    "name": "Slow",
-    "wikiPath": "/wiki/Skyrim:Slow",
-    "kind": "negative",
-    "description": "Target moves at 50% speed for <dur> seconds.",
-    "baseCost": 1,
-    "baseMagnitude": 50,
-    "baseDuration": 5,
-    "valueAt100": 247,
-    "ingredients": [
-      {
-        "id": "large-antlers",
-        "multipliers": {
-          "duration": 6,
-          "value": 1.75
-        }
-      },
-      {
-        "id": "green-butterfly-wing",
-        "multipliers": {
-          "duration": 6,
-          "value": 0.57
-        }
-      },
-      {
-        "id": "rot-scale",
-        "multipliers": {
-          "duration": 3,
-          "value": 0.26
-        },
-        "highlighted": true
-      },
-      {
-        "id": "bungler-s-bane",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        },
-        "highlighted": true
-      },
-      {
-        "id": "elytra-ichor",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "kresh-fiber",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "worm-s-head-cap",
-        "multipliers": {
-          "duration": 2,
-          "value": 2.14
-        }
-      },
-      {
-        "id": "burnt-spriggan-wood"
-      },
-      {
-        "id": "deathbell"
-      },
-      {
-        "id": "poison-bloom"
-      },
-      {
-        "id": "river-betty"
-      },
-      {
-        "id": "salt-pile"
-      },
-      {
-        "id": "trama-root"
-      }
-    ]
-  },
-  {
-    "id": "spell-absorption",
-    "formId": "FE",
-    "name": "Spell Absorption",
-    "wikiPath": "/wiki/Skyrim:Spell_Absorption",
-    "kind": "positive",
-    "description": "Absorb <mag>% of the magicka from hostile spells for <dur> seconds.",
-    "baseCost": 0.1,
-    "baseMagnitude": 50,
-    "baseDuration": 60,
-    "valueAt100": 380,
-    "ingredients": [
-      {
-        "id": "blind-watcher-s-eye"
-      },
-      {
-        "id": "comberry"
-      },
-      {
-        "id": "daedra-venin"
-      },
-      {
-        "id": "fire-petal"
-      },
-      {
-        "id": "lichor"
-      },
-      {
-        "id": "watcher-s-eye"
-      },
-      {
-        "id": "withering-moon"
-      }
-    ]
-  },
-  {
-    "id": "waterbreathing",
-    "formId": "0003AC2D",
-    "name": "Waterbreathing",
-    "wikiPath": "/wiki/Skyrim:Waterbreathing_(effect)",
-    "kind": "positive",
-    "description": "Can breathe underwater for <dur> seconds.",
-    "baseCost": 30,
-    "baseMagnitude": 0,
-    "baseDuration": 5,
-    "valueAt100": 100,
-    "ingredients": [
-      {
-        "id": "salmon-roe",
-        "multipliers": {
-          "duration": 12,
-          "value": 15.4
-        }
-      },
-      {
-        "id": "fungus-stalk",
-        "multipliers": {
-          "duration": 1.6,
-          "value": 1.67
-        }
-      },
-      {
-        "id": "hackle-lo-leaf",
-        "multipliers": {
-          "duration": 1.6,
-          "value": 1.67
-        }
-      },
-      {
-        "id": "luminous-russula",
-        "multipliers": {
-          "duration": 1.6,
-          "value": 1.67
-        }
-      },
-      {
-        "id": "red-kelp-gas-bladder",
-        "multipliers": {
-          "duration": 1.6,
-          "value": 1.67
-        }
-      },
-      {
-        "id": "scalon-fin",
-        "multipliers": {
-          "duration": 1.6,
-          "value": 1.67
-        },
-        "highlighted": true
-      },
-      {
-        "id": "scrib-jerky",
-        "multipliers": {
-          "duration": 1.6,
-          "value": 1.67
-        }
-      },
-      {
-        "id": "chicken-s-egg"
-      },
-      {
-        "id": "hawk-s-egg"
-      },
-      {
-        "id": "histcarp"
-      },
-      {
-        "id": "nordic-barnacle"
-      }
-    ]
-  },
-  {
-    "id": "weakness-to-fire",
-    "formId": "00073F2D",
-    "name": "Weakness to Fire",
-    "wikiPath": "/wiki/Skyrim:Weakness_to_Fire",
-    "kind": "negative",
-    "description": "Target is <mag>% weaker to fire damage for <dur> seconds.",
-    "baseCost": 0.6,
-    "baseMagnitude": 3,
-    "baseDuration": 30,
-    "valueAt100": 48,
-    "ingredients": [
-      {
-        "id": "hunger-tongue",
-        "multipliers": {
-          "magnitude": 1.33,
-          "duration": 2,
-          "value": 2.93
-        },
-        "highlighted": true
-      },
-      {
-        "id": "congealed-putrescence",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "flame-stalk",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "imp-gall",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "bleeding-crown",
-        "highlighted": true
-      },
-      {
-        "id": "bliss-bug-thorax",
-        "highlighted": true
-      },
-      {
-        "id": "burnt-spriggan-wood",
-        "highlighted": true
-      },
-      {
-        "id": "frost-salts",
-        "highlighted": true
-      },
-      {
-        "id": "ice-wraith-teeth"
-      },
-      {
-        "id": "juniper-berries",
-        "highlighted": true
-      },
-      {
-        "id": "moon-sugar",
-        "highlighted": true
-      },
-      {
-        "id": "powdered-mammoth-tusk"
-      }
-    ]
-  },
-  {
-    "id": "weakness-to-frost",
-    "formId": "00073F2E",
-    "name": "Weakness to Frost",
-    "wikiPath": "/wiki/Skyrim:Weakness_to_Frost",
-    "kind": "negative",
-    "description": "Target is <mag>% weaker to frost damage for <dur> seconds.",
-    "baseCost": 0.5,
-    "baseMagnitude": 3,
-    "baseDuration": 30,
-    "valueAt100": 40,
-    "ingredients": [
-      {
-        "id": "chokeweed",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "gold-kanet",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        }
-      },
-      {
-        "id": "abecean-longfin",
-        "highlighted": true
-      },
-      {
-        "id": "ash-hopper-jelly"
-      },
-      {
-        "id": "fire-salts",
-        "highlighted": true
-      },
-      {
-        "id": "ice-wraith-teeth",
-        "highlighted": true
-      },
-      {
-        "id": "white-cap",
-        "highlighted": true
-      },
-      {
-        "id": "elves-ear"
-      }
-    ]
-  },
-  {
-    "id": "weakness-to-magic",
-    "formId": "00073F51",
-    "name": "Weakness to Magic",
-    "wikiPath": "/wiki/Skyrim:Weakness_to_Magic",
-    "kind": "negative",
-    "description": "Target is <mag>% weaker to magic for <dur> seconds.",
-    "baseCost": 1,
-    "baseMagnitude": 2,
-    "baseDuration": 30,
-    "valueAt100": 51,
-    "ingredients": [
-      {
-        "id": "dreugh-wax",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "kresh-fiber",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "marshmerrow",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "roobrush",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "creep-cluster"
-      },
-      {
-        "id": "dwarven-oil",
-        "highlighted": true
-      },
-      {
-        "id": "jazbay-grapes",
-        "highlighted": true
-      },
-      {
-        "id": "rock-warbler-egg"
-      },
-      {
-        "id": "salt-pile",
-        "highlighted": true
-      },
-      {
-        "id": "scaly-pholiota",
-        "highlighted": true
-      },
-      {
-        "id": "taproot",
-        "highlighted": true
-      },
-      {
-        "id": "torchbug-thorax"
-      }
-    ]
-  },
-  {
-    "id": "weakness-to-poison",
-    "formId": "00090042",
-    "name": "Weakness to Poison",
-    "wikiPath": "/wiki/Skyrim:Weakness_to_Poison",
-    "kind": "negative",
-    "description": "Target is <mag>% weaker to poison for <dur> seconds.",
-    "baseCost": 1,
-    "baseMagnitude": 2,
-    "baseDuration": 30,
-    "valueAt100": 51,
-    "ingredients": [
-      {
-        "id": "chokeberry",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "hypha-facia",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        },
-        "highlighted": true
-      },
-      {
-        "id": "wisp-stalk-caps",
-        "multipliers": {
-          "magnitude": 1.5,
-          "value": 1.56
-        }
-      },
-      {
-        "id": "abecean-longfin"
-      },
-      {
-        "id": "bleeding-crown"
-      },
-      {
-        "id": "chaurus-eggs",
-        "highlighted": true
-      },
-      {
-        "id": "deathbell"
-      },
-      {
-        "id": "giant-lichen"
-      },
-      {
-        "id": "pine-thrush-egg"
-      },
-      {
-        "id": "sabre-cat-tooth"
-      },
-      {
-        "id": "small-antlers",
-        "highlighted": true
-      }
-    ]
-  },
-  {
-    "id": "weakness-to-shock",
-    "formId": "00073F2F",
-    "name": "Weakness to Shock",
-    "wikiPath": "/wiki/Skyrim:Weakness_to_Shock",
-    "kind": "negative",
-    "description": "Target is <mag>% weaker to shock damage for <dur> seconds.",
-    "baseCost": 0.7,
-    "baseMagnitude": 3,
-    "baseDuration": 30,
-    "valueAt100": 56,
-    "ingredients": [
-      {
-        "id": "ogre-s-teeth",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "stoneflower-petals",
-        "multipliers": {
-          "magnitude": 1.33,
-          "value": 1.36
-        },
-        "highlighted": true
-      },
-      {
-        "id": "ashen-grass-pod"
-      },
-      {
-        "id": "bee"
-      },
-      {
-        "id": "giant-lichen",
-        "highlighted": true
-      },
-      {
-        "id": "hagraven-feathers"
-      },
-      {
-        "id": "trama-root",
-        "highlighted": true
-      },
-      {
-        "id": "void-salts",
-        "highlighted": true
-      }
-    ]
-  }
+	{
+		"id": "cure-disease",
+		"formId": "000AE722",
+		"name": "Cure Disease",
+		"wikiPath": "/wiki/Skyrim:Cure_Disease",
+		"kind": "positive",
+		"description": "Cures all diseases.",
+		"baseCost": 0.5,
+		"baseMagnitude": 5,
+		"baseDuration": 0,
+		"valueAt100": 21,
+		"ingredients": [
+			{
+				"id": "charred-skeever-hide",
+				"multipliers": {
+					"value": 0.36
+				}
+			},
+			{
+				"id": "chokeweed",
+				"multipliers": {
+					"value": 0.36
+				}
+			},
+			{
+				"id": "hawk-feathers",
+				"multipliers": {
+					"value": 0.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "hunger-tongue",
+				"multipliers": {
+					"value": 0.36
+				}
+			},
+			{
+				"id": "red-kelp-gas-bladder",
+				"multipliers": {
+					"value": 0.36
+				}
+			},
+			{
+				"id": "scrib-jelly",
+				"multipliers": {
+					"value": 0.36
+				}
+			},
+			{
+				"id": "withering-moon",
+				"multipliers": {
+					"value": 0.36
+				}
+			},
+			{
+				"id": "felsaad-tern-feathers"
+			},
+			{
+				"id": "mudcrab-chitin"
+			},
+			{
+				"id": "vampire-dust"
+			}
+		]
+	},
+	{
+		"id": "cure-poison",
+		"formId": "00109ADD",
+		"name": "Cure Poison",
+		"wikiPath": "/wiki/Skyrim:Cure_Poison",
+		"kind": "positive",
+		"description": "Stops poison's continuing effects.",
+		"baseCost": 0.2,
+		"baseMagnitude": 2,
+		"baseDuration": 0,
+		"valueAt100": 3,
+		"ingredients": [
+			{
+				"id": "ambrosia",
+				"multipliers": {
+					"value": 1.56
+				}
+			},
+			{
+				"id": "bittergreen-petals"
+			},
+			{
+				"id": "hunger-tongue"
+			},
+			{
+				"id": "imp-gall"
+			},
+			{
+				"id": "redwort-flower"
+			},
+			{
+				"id": "roobrush"
+			},
+			{
+				"id": "scrib-jelly"
+			}
+		]
+	},
+	{
+		"id": "damage-health",
+		"formId": "0003EB42",
+		"name": "Damage Health",
+		"wikiPath": "/wiki/Skyrim:Damage_Health",
+		"kind": "negative",
+		"description": "Causes <mag> points of poison damage.",
+		"baseCost": 3,
+		"baseMagnitude": 2,
+		"baseDuration": 1,
+		"valueAt100": 3,
+		"ingredients": [
+			{
+				"id": "jarrin-root",
+				"multipliers": {
+					"magnitude": 100,
+					"value": 158.5
+				},
+				"highlighted": true
+			},
+			{
+				"id": "river-betty",
+				"multipliers": {
+					"magnitude": 2.5,
+					"value": 34.5
+				},
+				"highlighted": true
+			},
+			{
+				"id": "emperor-parasol-moss",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 19.7
+				},
+				"highlighted": true
+			},
+			{
+				"id": "nirnroot",
+				"multipliers": {
+					"value": 12.6
+				},
+				"highlighted": true
+			},
+			{
+				"id": "crimson-nirnroot",
+				"multipliers": {
+					"magnitude": 3,
+					"value": 3.3
+				},
+				"highlighted": true
+			},
+			{
+				"id": "chokeberry",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "coda-flower",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "deathbell",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.6
+				},
+				"highlighted": true
+			},
+			{
+				"id": "fire-petal",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "gnarl-bark",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "imp-gall",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "poison-bloom",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.6
+				},
+				"highlighted": true
+			},
+			{
+				"id": "redwort-flower",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "scalon-fin",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "wisp-stalk-caps",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "ectoplasm"
+			},
+			{
+				"id": "falmer-ear",
+				"highlighted": true
+			},
+			{
+				"id": "human-flesh",
+				"highlighted": true
+			},
+			{
+				"id": "human-heart",
+				"highlighted": true
+			},
+			{
+				"id": "imp-stool",
+				"highlighted": true
+			},
+			{
+				"id": "mort-flesh",
+				"highlighted": true
+			},
+			{
+				"id": "nightshade",
+				"highlighted": true
+			},
+			{
+				"id": "red-mountain-flower"
+			},
+			{
+				"id": "skeever-tail"
+			},
+			{
+				"id": "small-antlers"
+			},
+			{
+				"id": "troll-fat"
+			},
+			{
+				"id": "void-salts"
+			}
+		]
+	},
+	{
+		"id": "damage-magicka",
+		"formId": "0003A2B6",
+		"name": "Damage Magicka",
+		"wikiPath": "/wiki/Skyrim:Damage_Magicka",
+		"kind": "negative",
+		"description": "Drains the target's Magicka by <mag> points.",
+		"baseCost": 2.2,
+		"baseMagnitude": 3,
+		"baseDuration": 0,
+		"valueAt100": 52,
+		"ingredients": [
+			{
+				"id": "bittergreen-petals",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "chokeweed",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "butterfly-wing"
+			},
+			{
+				"id": "chaurus-eggs"
+			},
+			{
+				"id": "daedra-heart"
+			},
+			{
+				"id": "eye-of-sabre-cat"
+			},
+			{
+				"id": "glow-dust",
+				"highlighted": true
+			},
+			{
+				"id": "hagraven-feathers",
+				"highlighted": true
+			},
+			{
+				"id": "hanging-moss",
+				"highlighted": true
+			},
+			{
+				"id": "human-heart"
+			},
+			{
+				"id": "jarrin-root"
+			},
+			{
+				"id": "luna-moth-wing",
+				"highlighted": true
+			},
+			{
+				"id": "mort-flesh"
+			},
+			{
+				"id": "namira-s-rot",
+				"highlighted": true
+			},
+			{
+				"id": "nordic-barnacle",
+				"highlighted": true
+			},
+			{
+				"id": "trama-root"
+			}
+		]
+	},
+	{
+		"id": "damage-magicka-regen",
+		"formId": "00073F2B",
+		"name": "Damage Magicka Regen",
+		"wikiPath": "/wiki/Skyrim:Damage_Magicka_Regen",
+		"kind": "negative",
+		"description": "Decrease the target's Magicka regeneration by <mag>% for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 100,
+		"baseDuration": 5,
+		"valueAt100": 265,
+		"ingredients": [
+			{
+				"id": "daedroth-teeth",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "minotaur-horn",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "scalon-fin",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "ancestor-moth-wing"
+			},
+			{
+				"id": "bear-claws"
+			},
+			{
+				"id": "blue-butterfly-wing"
+			},
+			{
+				"id": "blue-mountain-flower"
+			},
+			{
+				"id": "burnt-spriggan-wood"
+			},
+			{
+				"id": "chaurus-hunter-antennae"
+			},
+			{
+				"id": "chicken-s-egg"
+			},
+			{
+				"id": "glow-dust"
+			},
+			{
+				"id": "hanging-moss"
+			},
+			{
+				"id": "hawk-s-egg"
+			},
+			{
+				"id": "human-heart"
+			},
+			{
+				"id": "mort-flesh"
+			},
+			{
+				"id": "jarrin-root"
+			},
+			{
+				"id": "nightshade"
+			},
+			{
+				"id": "spider-egg"
+			},
+			{
+				"id": "spriggan-sap",
+				"highlighted": true
+			}
+		]
+	},
+	{
+		"id": "damage-stamina",
+		"formId": "0003A2C6",
+		"name": "Damage Stamina",
+		"wikiPath": "/wiki/Skyrim:Damage_Stamina",
+		"kind": "negative",
+		"description": "Drain the target's Stamina by <mag> points.",
+		"baseCost": 1.8,
+		"baseMagnitude": 3,
+		"baseDuration": 0,
+		"valueAt100": 43,
+		"ingredients": [
+			{
+				"id": "crimson-nirnroot",
+				"multipliers": {
+					"magnitude": 3
+				}
+			},
+			{
+				"id": "bog-beacon",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "comberry",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "marshmerrow",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "ancestor-moth-wing",
+				"highlighted": true
+			},
+			{
+				"id": "ash-creep-cluster",
+				"highlighted": true
+			},
+			{
+				"id": "berit-s-ashes",
+				"highlighted": true
+			},
+			{
+				"id": "blisterwort",
+				"highlighted": true
+			},
+			{
+				"id": "blue-butterfly-wing",
+				"highlighted": true
+			},
+			{
+				"id": "bone-meal",
+				"highlighted": true
+			},
+			{
+				"id": "canis-root",
+				"highlighted": true
+			},
+			{
+				"id": "chaurus-hunter-antennae",
+				"highlighted": true
+			},
+			{
+				"id": "cyrodilic-spadetail",
+				"highlighted": true
+			},
+			{
+				"id": "giant-s-toe",
+				"highlighted": true
+			},
+			{
+				"id": "jarrin-root"
+			},
+			{
+				"id": "nirnroot"
+			},
+			{
+				"id": "rock-warbler-egg"
+			},
+			{
+				"id": "spider-egg",
+				"highlighted": true
+			}
+		]
+	},
+	{
+		"id": "damage-stamina-regen",
+		"formId": "00073F2C",
+		"name": "Damage Stamina Regen",
+		"wikiPath": "/wiki/Skyrim:Damage_Stamina_Regen",
+		"kind": "negative",
+		"description": "Decrease the target's Stamina regeneration by <mag>% for <dur> seconds.",
+		"baseCost": 0.3,
+		"baseMagnitude": 100,
+		"baseDuration": 5,
+		"valueAt100": 159,
+		"ingredients": [
+			{
+				"id": "bungler-s-bane",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "saltrice",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "creep-cluster"
+			},
+			{
+				"id": "daedra-heart"
+			},
+			{
+				"id": "frost-mirriam"
+			},
+			{
+				"id": "giant-s-toe"
+			},
+			{
+				"id": "histcarp"
+			},
+			{
+				"id": "juniper-berries"
+			},
+			{
+				"id": "large-antlers"
+			},
+			{
+				"id": "silverside-perch"
+			},
+			{
+				"id": "skeever-tail",
+				"highlighted": true
+			},
+			{
+				"id": "wheat"
+			},
+			{
+				"id": "yellow-mountain-flower"
+			}
+		]
+	},
+	{
+		"id": "fear",
+		"formId": "00073F20",
+		"name": "Fear",
+		"wikiPath": "/wiki/Skyrim:Fear_(effect)",
+		"kind": "negative",
+		"description": "Creatures and people up to level <mag> flee from combat for <dur> seconds.",
+		"baseCost": 5,
+		"baseMagnitude": 1,
+		"baseDuration": 30,
+		"valueAt100": 120,
+		"ingredients": [
+			{
+				"id": "bog-beacon",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "elytra-ichor",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "luminous-russula",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "sload-soap",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "blue-dartwing"
+			},
+			{
+				"id": "cyrodilic-spadetail"
+			},
+			{
+				"id": "daedra-heart"
+			},
+			{
+				"id": "gleamblossom"
+			},
+			{
+				"id": "green-butterfly-wing"
+			},
+			{
+				"id": "namira-s-rot"
+			},
+			{
+				"id": "netch-jelly"
+			},
+			{
+				"id": "poison-bloom"
+			},
+			{
+				"id": "powdered-mammoth-tusk"
+			},
+			{
+				"id": "rot-scale",
+				"multipliers": {
+					"duration": 0.16,
+					"value": 0.14
+				}
+			}
+		]
+	},
+	{
+		"id": "fortify-alteration",
+		"formId": "0003EB24",
+		"name": "Fortify Alteration",
+		"wikiPath": "/wiki/Skyrim:Fortify_Alteration",
+		"kind": "positive",
+		"description": "Alteration spells last <mag>% longer for <dur> seconds.",
+		"baseCost": 0.2,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 47,
+		"ingredients": [
+			{
+				"id": "blind-watcher-s-eye",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "screaming-maw",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "sload-soap",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "burnt-spriggan-wood"
+			},
+			{
+				"id": "grass-pod"
+			},
+			{
+				"id": "river-betty"
+			},
+			{
+				"id": "spriggan-sap"
+			},
+			{
+				"id": "wild-grass-pod"
+			}
+		]
+	},
+	{
+		"id": "fortify-barter",
+		"formId": "0003EB23",
+		"name": "Fortify Barter",
+		"wikiPath": "/wiki/Skyrim:Fortify_Barter",
+		"kind": "positive",
+		"description": "You haggle for <mag>% better prices for <dur> seconds.",
+		"baseCost": 2,
+		"baseMagnitude": 1,
+		"baseDuration": 30,
+		"valueAt100": 48,
+		"ingredients": [
+			{
+				"id": "imp-gall",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "butterfly-wing"
+			},
+			{
+				"id": "dragon-s-tongue"
+			},
+			{
+				"id": "hagraven-claw"
+			},
+			{
+				"id": "tundra-cotton"
+			}
+		]
+	},
+	{
+		"id": "fortify-block",
+		"formId": "0003EB1C",
+		"name": "Fortify Block",
+		"wikiPath": "/wiki/Skyrim:Fortify_Block",
+		"kind": "positive",
+		"description": "Blocking absorbs <mag>% more damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "aster-bloom-core",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "bleeding-crown"
+			},
+			{
+				"id": "boar-tusk"
+			},
+			{
+				"id": "pearl"
+			},
+			{
+				"id": "slaughterfish-scales"
+			},
+			{
+				"id": "tundra-cotton"
+			},
+			{
+				"id": "briar-heart",
+				"multipliers": {
+					"magnitude": 0.5
+				}
+			},
+			{
+				"id": "honeycomb",
+				"multipliers": {
+					"magnitude": 0.5
+				}
+			}
+		]
+	},
+	{
+		"id": "fortify-carry-weight",
+		"formId": "0003EB01",
+		"name": "Fortify Carry Weight",
+		"wikiPath": "/wiki/Skyrim:Fortify_Carry_Weight",
+		"kind": "positive",
+		"description": "Carrying capacity increases by <mag> for <dur> seconds.",
+		"baseCost": 0.15,
+		"baseMagnitude": 4,
+		"baseDuration": 300,
+		"valueAt100": 208,
+		"ingredients": [
+			{
+				"id": "coda-flower",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "kagouti-hide",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "marshmerrow",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "worm-s-head-cap",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "creep-cluster"
+			},
+			{
+				"id": "giant-s-toe"
+			},
+			{
+				"id": "hawk-beak"
+			},
+			{
+				"id": "netch-jelly"
+			},
+			{
+				"id": "poison-bloom"
+			},
+			{
+				"id": "river-betty"
+			},
+			{
+				"id": "scaly-pholiota"
+			},
+			{
+				"id": "steel-blue-entoloma"
+			},
+			{
+				"id": "trama-root"
+			},
+			{
+				"id": "wisp-wrappings"
+			}
+		]
+	},
+	{
+		"id": "fortify-conjuration",
+		"formId": "0003EB25",
+		"name": "Fortify Conjuration",
+		"wikiPath": "/wiki/Skyrim:Fortify_Conjuration",
+		"kind": "positive",
+		"description": "Conjurations spells last <mag>% longer for <dur> seconds.",
+		"baseCost": 0.25,
+		"baseMagnitude": 5,
+		"baseDuration": 60,
+		"valueAt100": 75,
+		"ingredients": [
+			{
+				"id": "congealed-putrescence",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "sload-soap",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "ancestor-moth-wing"
+			},
+			{
+				"id": "berit-s-ashes"
+			},
+			{
+				"id": "blue-butterfly-wing"
+			},
+			{
+				"id": "blue-mountain-flower"
+			},
+			{
+				"id": "bone-meal"
+			},
+			{
+				"id": "chaurus-hunter-antennae"
+			},
+			{
+				"id": "frost-salts"
+			},
+			{
+				"id": "hagraven-feathers"
+			},
+			{
+				"id": "lavender"
+			}
+		]
+	},
+	{
+		"id": "fortify-destruction",
+		"formId": "0003EB26",
+		"name": "Fortify Destruction",
+		"wikiPath": "/wiki/Skyrim:Fortify_Destruction",
+		"kind": "positive",
+		"description": "Destruction spells are <mag>% stronger for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 5,
+		"baseDuration": 60,
+		"valueAt100": 151,
+		"ingredients": [
+			{
+				"id": "comberry",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "daedra-venin",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "ash-creep-cluster"
+			},
+			{
+				"id": "beehive-husk"
+			},
+			{
+				"id": "glow-dust"
+			},
+			{
+				"id": "glowing-mushroom"
+			},
+			{
+				"id": "steel-blue-entoloma"
+			},
+			{
+				"id": "wisp-wrappings"
+			},
+			{
+				"id": "ectoplasm",
+				"multipliers": {
+					"magnitude": 0.8
+				}
+			},
+			{
+				"id": "nightshade",
+				"multipliers": {
+					"magnitude": 0.8
+				}
+			}
+		]
+	},
+	{
+		"id": "fortify-enchanting",
+		"formId": "0003EB29",
+		"name": "Fortify Enchanting",
+		"wikiPath": "/wiki/Skyrim:Fortify_Enchanting",
+		"kind": "positive",
+		"description": "For <dur> seconds, items are enchanted <mag>% stronger.",
+		"baseCost": 0.6,
+		"baseMagnitude": 1,
+		"baseDuration": 30,
+		"valueAt100": 14,
+		"ingredients": [
+			{
+				"id": "dreugh-wax",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "stoneflower-petals",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "ancestor-moth-wing"
+			},
+			{
+				"id": "blue-butterfly-wing"
+			},
+			{
+				"id": "chaurus-hunter-antennae"
+			},
+			{
+				"id": "hagraven-claw"
+			},
+			{
+				"id": "snowberries"
+			},
+			{
+				"id": "spawn-ash"
+			},
+			{
+				"id": "spriggan-sap"
+			}
+		]
+	},
+	{
+		"id": "fortify-health",
+		"formId": "0003EAF3",
+		"name": "Fortify Health",
+		"wikiPath": "/wiki/Skyrim:Fortify_Health",
+		"kind": "positive",
+		"description": "Health is increased by <mag> points for <dur> seconds.",
+		"baseCost": 0.35,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 82,
+		"ingredients": [
+			{
+				"id": "fungus-stalk",
+				"multipliers": {
+					"magnitude": 1.25,
+					"duration": 5,
+					"value": 7.5
+				}
+			},
+			{
+				"id": "heart-of-order",
+				"multipliers": {
+					"magnitude": 1.25,
+					"duration": 5,
+					"value": 7.5
+				}
+			},
+			{
+				"id": "hydnum-azure-giant-spore",
+				"multipliers": {
+					"magnitude": 1.25,
+					"duration": 5,
+					"value": 7.5
+				}
+			},
+			{
+				"id": "void-essence",
+				"multipliers": {
+					"magnitude": 1.25,
+					"duration": 5,
+					"value": 7.5
+				}
+			},
+			{
+				"id": "ambrosia",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "boar-tusk",
+				"multipliers": {
+					"duration": 5,
+					"value": 5.9
+				}
+			},
+			{
+				"id": "giant-s-toe",
+				"multipliers": {
+					"duration": 5,
+					"value": 5.9
+				}
+			},
+			{
+				"id": "bear-claws"
+			},
+			{
+				"id": "blue-mountain-flower"
+			},
+			{
+				"id": "glowing-mushroom"
+			},
+			{
+				"id": "hanging-moss"
+			},
+			{
+				"id": "wheat"
+			},
+			{
+				"id": "yellow-mountain-flower"
+			}
+		]
+	},
+	{
+		"id": "fortify-heavy-armor",
+		"formId": "0003EB1E",
+		"name": "Fortify Heavy Armor",
+		"wikiPath": "/wiki/Skyrim:Fortify_Heavy_Armor",
+		"kind": "positive",
+		"description": "Increase Heavy Armor skill by <mag> points for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 2,
+		"baseDuration": 60,
+		"valueAt100": 55,
+		"ingredients": [
+			{
+				"id": "bog-beacon",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "gnarl-bark",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "bliss-bug-thorax"
+			},
+			{
+				"id": "ice-wraith-teeth"
+			},
+			{
+				"id": "sabre-cat-tooth"
+			},
+			{
+				"id": "slaughterfish-scales"
+			},
+			{
+				"id": "thistle-branch"
+			},
+			{
+				"id": "white-cap"
+			}
+		]
+	},
+	{
+		"id": "fortify-illusion",
+		"formId": "0003EB27",
+		"name": "Fortify Illusion",
+		"wikiPath": "/wiki/Skyrim:Fortify_Illusion",
+		"kind": "positive",
+		"description": "Illusion spells are <mag>% stronger for <dur> seconds.",
+		"baseCost": 0.4,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 94,
+		"ingredients": [
+			{
+				"id": "watcher-s-eye",
+				"multipliers": {
+					"magnitude": 5,
+					"value": 5.87
+				}
+			},
+			{
+				"id": "dwarven-oil"
+			},
+			{
+				"id": "mora-tapinella"
+			},
+			{
+				"id": "scaly-pholiota"
+			},
+			{
+				"id": "taproot"
+			},
+			{
+				"id": "dragon-s-tongue"
+			},
+			{
+				"id": "bliss-bug-thorax",
+				"multipliers": {
+					"magnitude": 0.25,
+					"value": 0.21
+				}
+			}
+		]
+	},
+	{
+		"id": "fortify-light-armor",
+		"formId": "0003EB1F",
+		"name": "Fortify Light Armor",
+		"wikiPath": "/wiki/Skyrim:Fortify_Light_Armor",
+		"kind": "positive",
+		"description": "Increases Light Armor skill by <mag> points for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 2,
+		"baseDuration": 60,
+		"valueAt100": 55,
+		"ingredients": [
+			{
+				"id": "aster-bloom-core",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "withering-moon",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "ash-hopper-jelly"
+			},
+			{
+				"id": "beehive-husk"
+			},
+			{
+				"id": "felsaad-tern-feathers"
+			},
+			{
+				"id": "hawk-feathers"
+			},
+			{
+				"id": "honeycomb"
+			},
+			{
+				"id": "luna-moth-wing"
+			},
+			{
+				"id": "skeever-tail"
+			}
+		]
+	},
+	{
+		"id": "fortify-lockpicking",
+		"formId": "0003EB21",
+		"name": "Fortify Lockpicking",
+		"wikiPath": "/wiki/Skyrim:Fortify_Lockpicking",
+		"kind": "positive",
+		"description": "Lockpicking is <mag>% easier for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 2,
+		"baseDuration": 30,
+		"valueAt100": 25,
+		"ingredients": [
+			{
+				"id": "worm-s-head-cap",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "ashen-grass-pod"
+			},
+			{
+				"id": "falmer-ear"
+			},
+			{
+				"id": "namira-s-rot"
+			},
+			{
+				"id": "pine-thrush-egg"
+			},
+			{
+				"id": "spider-egg"
+			}
+		]
+	},
+	{
+		"id": "fortify-magicka",
+		"formId": "0003EAF8",
+		"name": "Fortify Magicka",
+		"wikiPath": "/wiki/Skyrim:Fortify_Magicka",
+		"kind": "positive",
+		"description": "Magicka is increased by <mag> points for <dur> seconds.",
+		"baseCost": 0.3,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 71,
+		"ingredients": [
+			{
+				"id": "salmon-roe",
+				"multipliers": {
+					"magnitude": 12.5,
+					"duration": 0.08,
+					"value": 1.05
+				}
+			},
+			{
+				"id": "blind-watcher-s-eye",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "blister-pod-cap",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "hunger-tongue",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "lichor",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "red-kelp-gas-bladder",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "saltrice",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "stoneflower-petals",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "watcher-s-eye",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "briar-heart"
+			},
+			{
+				"id": "ectoplasm"
+			},
+			{
+				"id": "emperor-parasol-moss"
+			},
+			{
+				"id": "histcarp"
+			},
+			{
+				"id": "jazbay-grapes"
+			},
+			{
+				"id": "red-mountain-flower"
+			},
+			{
+				"id": "tundra-cotton"
+			},
+			{
+				"id": "void-salts"
+			}
+		]
+	},
+	{
+		"id": "fortify-marksman",
+		"formId": "0003EB1B",
+		"name": "Fortify Marksman",
+		"wikiPath": null,
+		"kind": "positive",
+		"description": "Bows do <mag>% more damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "corkbulb-root",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "canis-root"
+			},
+			{
+				"id": "elves-ear"
+			},
+			{
+				"id": "juniper-berries"
+			},
+			{
+				"id": "spider-egg"
+			}
+		]
+	},
+	{
+		"id": "fortify-one-handed",
+		"formId": "0003EB19",
+		"name": "Fortify One-handed",
+		"wikiPath": "/wiki/Skyrim:Fortify_One-handed",
+		"kind": "positive",
+		"description": "One-handed weapons do <mag>% more damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "heart-of-order",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "stoneflower-petals",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "bear-claws"
+			},
+			{
+				"id": "canis-root"
+			},
+			{
+				"id": "hanging-moss"
+			},
+			{
+				"id": "hawk-feathers"
+			},
+			{
+				"id": "rock-warbler-egg"
+			},
+			{
+				"id": "small-pearl"
+			}
+		]
+	},
+	{
+		"id": "fortify-pickpocket",
+		"formId": "0003EB20",
+		"name": "Fortify Pickpocket",
+		"wikiPath": "/wiki/Skyrim:Fortify_Pickpocket",
+		"kind": "positive",
+		"description": "Pickpocketing is <mag>% easier for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "blue-dartwing"
+			},
+			{
+				"id": "kresh-fiber",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "nordic-barnacle"
+			},
+			{
+				"id": "orange-dartwing"
+			},
+			{
+				"id": "slaughterfish-egg"
+			}
+		]
+	},
+	{
+		"id": "fortify-restoration",
+		"formId": "0003EB28",
+		"name": "Fortify Restoration",
+		"wikiPath": "/wiki/Skyrim:Fortify_Restoration",
+		"kind": "positive",
+		"description": "Restoration spells are <mag>% stronger for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "hackle-lo-leaf",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "yellow-mountain-flower",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "abecean-longfin"
+			},
+			{
+				"id": "cyrodilic-spadetail"
+			},
+			{
+				"id": "salt-pile"
+			},
+			{
+				"id": "small-antlers"
+			},
+			{
+				"id": "small-pearl"
+			}
+		]
+	},
+	{
+		"id": "fortify-smithing",
+		"formId": "0003EB1D",
+		"name": "Fortify Smithing",
+		"wikiPath": "/wiki/Skyrim:Fortify_Smithing",
+		"kind": "positive",
+		"description": "For <dur> seconds, weapon and armor improving is <mag>% better.",
+		"baseCost": 0.75,
+		"baseMagnitude": 4,
+		"baseDuration": 30,
+		"valueAt100": 82,
+		"ingredients": [
+			{
+				"id": "dreugh-wax",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "gold-kanet",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "blisterwort"
+			},
+			{
+				"id": "glowing-mushroom"
+			},
+			{
+				"id": "sabre-cat-tooth"
+			},
+			{
+				"id": "spriggan-sap"
+			}
+		]
+	},
+	{
+		"id": "fortify-sneak",
+		"formId": "0003EB22",
+		"name": "Fortify Sneak",
+		"wikiPath": "/wiki/Skyrim:Fortify_Sneak",
+		"kind": "positive",
+		"description": "You are <mag>% harder to detect for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "kresh-fiber",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "roobrush",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "abecean-longfin"
+			},
+			{
+				"id": "ashen-grass-pod"
+			},
+			{
+				"id": "frost-mirriam"
+			},
+			{
+				"id": "hawk-feathers"
+			},
+			{
+				"id": "human-flesh"
+			},
+			{
+				"id": "powdered-mammoth-tusk"
+			},
+			{
+				"id": "purple-mountain-flower"
+			},
+			{
+				"id": "beehive-husk"
+			}
+		]
+	},
+	{
+		"id": "fortify-stamina",
+		"formId": "0003EAF9",
+		"name": "Fortify Stamina",
+		"wikiPath": "/wiki/Skyrim:Fortify_Stamina",
+		"kind": "positive",
+		"description": "Stamina is increased by <mag> points for <dur> seconds.",
+		"baseCost": 0.3,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 71,
+		"ingredients": [
+			{
+				"id": "boar-tusk",
+				"multipliers": {
+					"magnitude": 1.25,
+					"duration": 5,
+					"value": 7.5
+				},
+				"highlighted": true
+			},
+			{
+				"id": "fungus-stalk",
+				"multipliers": {
+					"magnitude": 1.25,
+					"duration": 5,
+					"value": 7.5
+				}
+			},
+			{
+				"id": "void-essence",
+				"multipliers": {
+					"magnitude": 1.25,
+					"duration": 5,
+					"value": 7.5
+				}
+			},
+			{
+				"id": "scrib-jerky",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "chaurus-eggs"
+			},
+			{
+				"id": "garlic"
+			},
+			{
+				"id": "large-antlers"
+			},
+			{
+				"id": "lavender"
+			},
+			{
+				"id": "slaughterfish-egg"
+			},
+			{
+				"id": "torchbug-thorax"
+			}
+		]
+	},
+	{
+		"id": "fortify-two-handed",
+		"formId": "0003EB1A",
+		"name": "Fortify Two-handed",
+		"wikiPath": "/wiki/Skyrim:Fortify_Two-handed",
+		"kind": "positive",
+		"description": "Two-handed weapons do <mag>% more damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "heart-of-order",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "dragon-s-tongue"
+			},
+			{
+				"id": "emperor-parasol-moss"
+			},
+			{
+				"id": "fly-amanita"
+			},
+			{
+				"id": "troll-fat"
+			}
+		]
+	},
+	{
+		"id": "frenzy",
+		"formId": "00073F29",
+		"name": "Frenzy",
+		"wikiPath": "/wiki/Skyrim:Frenzy_(effect)",
+		"kind": "negative",
+		"description": "Creatures and people up to level <mag> will attack anything nearby for <dur> seconds.",
+		"baseCost": 15,
+		"baseMagnitude": 1,
+		"baseDuration": 10,
+		"valueAt100": 107,
+		"ingredients": [
+			{
+				"id": "dreugh-wax",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "hypha-facia",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "wisp-stalk-caps",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "blisterwort"
+			},
+			{
+				"id": "boar-tusk"
+			},
+			{
+				"id": "falmer-ear"
+			},
+			{
+				"id": "fly-amanita"
+			},
+			{
+				"id": "hagraven-feathers"
+			},
+			{
+				"id": "human-heart"
+			},
+			{
+				"id": "mort-flesh"
+			},
+			{
+				"id": "troll-fat"
+			}
+		]
+	},
+	{
+		"id": "invisibility",
+		"formId": "0003EB3D",
+		"name": "Invisibility",
+		"wikiPath": "/wiki/Skyrim:Invisibility_(effect)",
+		"kind": "positive",
+		"description": "Invisibility for <dur> seconds.",
+		"baseCost": 100,
+		"baseMagnitude": 0,
+		"baseDuration": 4,
+		"valueAt100": 261,
+		"ingredients": [
+			{
+				"id": "screaming-maw",
+				"multipliers": {
+					"duration": 4,
+					"value": 4.6
+				}
+			},
+			{
+				"id": "bittergreen-petals",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "blister-pod-cap",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "daedra-silk",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "elytra-ichor",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "flame-stalk",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "redwort-flower",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "ash-creep-cluster"
+			},
+			{
+				"id": "chaurus-eggs"
+			},
+			{
+				"id": "crimson-nirnroot"
+			},
+			{
+				"id": "green-butterfly-wing"
+			},
+			{
+				"id": "ice-wraith-teeth"
+			},
+			{
+				"id": "luna-moth-wing"
+			},
+			{
+				"id": "nirnroot"
+			},
+			{
+				"id": "vampire-dust",
+				"highlighted": true
+			}
+		]
+	},
+	{
+		"id": "light",
+		"formId": "FE",
+		"name": "Light",
+		"wikiPath": "/wiki/Skyrim:Light",
+		"kind": "positive",
+		"description": "Emits a small light that lasts for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 0,
+		"baseDuration": 60,
+		"valueAt100": 25,
+		"ingredients": [
+			{
+				"id": "alocasia-fruit"
+			},
+			{
+				"id": "blind-watcher-s-eye",
+				"highlighted": true
+			},
+			{
+				"id": "daedroth-teeth"
+			},
+			{
+				"id": "hydnum-azure-giant-spore"
+			}
+		]
+	},
+	{
+		"id": "lingering-damage-health",
+		"formId": "0010AA4A",
+		"name": "Lingering Damage Health",
+		"wikiPath": "/wiki/Skyrim:Lingering_Damage_Health",
+		"kind": "negative",
+		"description": "Causes <mag> points of poison damage for <dur> seconds.",
+		"baseCost": 12,
+		"baseMagnitude": 1,
+		"baseDuration": 10,
+		"valueAt100": 86,
+		"ingredients": [
+			{
+				"id": "rot-scale",
+				"multipliers": {
+					"duration": 3,
+					"value": 3.34
+				}
+			},
+			{
+				"id": "chokeberry",
+				"multipliers": {
+					"magnitude": 2
+				}
+			},
+			{
+				"id": "luminous-russula",
+				"multipliers": {
+					"magnitude": 2
+				}
+			},
+			{
+				"id": "roobrush",
+				"multipliers": {
+					"magnitude": 2
+				}
+			},
+			{
+				"id": "imp-stool"
+			},
+			{
+				"id": "mora-tapinella"
+			},
+			{
+				"id": "orange-dartwing"
+			},
+			{
+				"id": "scathecraw"
+			},
+			{
+				"id": "slaughterfish-egg"
+			},
+			{
+				"id": "slaughterfish-scales"
+			},
+			{
+				"id": "thorn-hook"
+			}
+		]
+	},
+	{
+		"id": "lingering-damage-magicka",
+		"formId": "0010DE5F",
+		"name": "Lingering Damage Magicka",
+		"wikiPath": "/wiki/Skyrim:Lingering_Damage_Magicka",
+		"kind": "negative",
+		"description": "Drains the target's Magicka by <mag> points per second for <dur> seconds.",
+		"baseCost": 10,
+		"baseMagnitude": 1,
+		"baseDuration": 10,
+		"valueAt100": 71,
+		"ingredients": [
+			{
+				"id": "ogre-s-teeth",
+				"multipliers": {
+					"magnitude": 2
+				}
+			},
+			{
+				"id": "scalon-fin",
+				"multipliers": {
+					"magnitude": 2
+				}
+			},
+			{
+				"id": "hagraven-claw"
+			},
+			{
+				"id": "purple-mountain-flower"
+			},
+			{
+				"id": "swamp-fungal-pod"
+			},
+			{
+				"id": "torchbug-thorax"
+			},
+			{
+				"id": "wheat"
+			}
+		]
+	},
+	{
+		"id": "lingering-damage-stamina",
+		"formId": "0010DE5E",
+		"name": "Lingering Damage Stamina",
+		"wikiPath": "/wiki/Skyrim:Lingering_Damage_Stamina",
+		"kind": "negative",
+		"description": "Drain the target's Stamina by <mag> points per second for <dur> seconds.",
+		"baseCost": 1.8,
+		"baseMagnitude": 1,
+		"baseDuration": 10,
+		"valueAt100": 12,
+		"ingredients": [
+			{
+				"id": "bittergreen-petals",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				},
+				"highlighted": true
+			},
+			{
+				"id": "coda-flower",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "daedra-silk",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				},
+				"highlighted": true
+			},
+			{
+				"id": "kagouti-hide",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				},
+				"highlighted": true
+			},
+			{
+				"id": "luminous-russula",
+				"multipliers": {
+					"magnitude": 2,
+					"value": 2.14
+				},
+				"highlighted": true
+			},
+			{
+				"id": "butterfly-wing"
+			},
+			{
+				"id": "chicken-s-egg"
+			},
+			{
+				"id": "hawk-s-egg"
+			},
+			{
+				"id": "nightshade"
+			},
+			{
+				"id": "small-antlers"
+			}
+		]
+	},
+	{
+		"id": "night-eye",
+		"formId": "FE",
+		"name": "Night Eye",
+		"wikiPath": "/wiki/Skyrim:Night_Eye_(effect)",
+		"kind": "positive",
+		"description": "Improved night vision for <dur> seconds.",
+		"baseCost": 0.75,
+		"baseMagnitude": 0,
+		"baseDuration": 60,
+		"valueAt100": 38,
+		"ingredients": [
+			{
+				"id": "blister-pod-cap"
+			},
+			{
+				"id": "daedra-silk"
+			},
+			{
+				"id": "kagouti-hide"
+			},
+			{
+				"id": "watcher-s-eye",
+				"highlighted": true
+			},
+			{
+				"id": "worm-s-head-cap"
+			}
+		]
+	},
+	{
+		"id": "paralysis",
+		"formId": "00073F30",
+		"name": "Paralysis",
+		"wikiPath": "/wiki/Skyrim:Paralyze_(effect)",
+		"kind": "negative",
+		"description": "Target is paralyzed for <dur> seconds.",
+		"baseCost": 500,
+		"baseMagnitude": 0,
+		"baseDuration": 1,
+		"valueAt100": 285,
+		"ingredients": [
+			{
+				"id": "aster-bloom-core",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "corkbulb-root",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "daedra-silk",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "daedra-venin",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "fire-petal",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "gold-kanet",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "hackle-lo-leaf",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "scrib-jerky",
+				"multipliers": {
+					"duration": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "briar-heart"
+			},
+			{
+				"id": "canis-root"
+			},
+			{
+				"id": "gleamblossom"
+			},
+			{
+				"id": "human-flesh"
+			},
+			{
+				"id": "imp-stool"
+			},
+			{
+				"id": "netch-jelly",
+				"highlighted": true
+			},
+			{
+				"id": "purple-butterfly-wing"
+			},
+			{
+				"id": "rot-scale"
+			},
+			{
+				"id": "swamp-fungal-pod"
+			},
+			{
+				"id": "thorn-hook"
+			}
+		]
+	},
+	{
+		"id": "ravage-health",
+		"formId": "00073F26",
+		"name": "Ravage Health",
+		"wikiPath": "/wiki/Skyrim:Ravage_Health",
+		"kind": "negative",
+		"description": "Causes <mag> points of concentrated poison damage.",
+		"baseCost": 0.4,
+		"baseMagnitude": 2,
+		"baseDuration": 10,
+		"valueAt100": 6,
+		"ingredients": [
+			{
+				"id": "chokeberry",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 3.34
+				}
+			},
+			{
+				"id": "congealed-putrescence",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 3.34
+				},
+				"highlighted": true
+			},
+			{
+				"id": "daedra-venin",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 3.34
+				},
+				"highlighted": true
+			},
+			{
+				"id": "gold-kanet",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 3.34
+				}
+			},
+			{
+				"id": "cyrodilic-spadetail"
+			},
+			{
+				"id": "eye-of-sabre-cat"
+			},
+			{
+				"id": "giant-lichen"
+			},
+			{
+				"id": "jazbay-grapes"
+			},
+			{
+				"id": "scathecraw",
+				"highlighted": true
+			},
+			{
+				"id": "silverside-perch"
+			},
+			{
+				"id": "skeever-tail"
+			}
+		]
+	},
+	{
+		"id": "ravage-magicka",
+		"formId": "00073F27",
+		"name": "Ravage Magicka",
+		"wikiPath": "/wiki/Skyrim:Ravage_Magicka",
+		"kind": "negative",
+		"description": "Concentrated poison damages maximum magicka by <mag> points.",
+		"baseCost": 1,
+		"baseMagnitude": 2,
+		"baseDuration": 10,
+		"valueAt100": 15,
+		"ingredients": [
+			{
+				"id": "alocasia-fruit",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "coda-flower",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "frost-mirriam"
+			},
+			{
+				"id": "grass-pod"
+			},
+			{
+				"id": "lavender"
+			},
+			{
+				"id": "orange-dartwing"
+			},
+			{
+				"id": "red-mountain-flower"
+			},
+			{
+				"id": "scathecraw"
+			},
+			{
+				"id": "spawn-ash"
+			},
+			{
+				"id": "white-cap"
+			},
+			{
+				"id": "wild-grass-pod"
+			}
+		]
+	},
+	{
+		"id": "ravage-stamina",
+		"formId": "00073F23",
+		"name": "Ravage Stamina",
+		"wikiPath": "/wiki/Skyrim:Ravage_Stamina",
+		"kind": "negative",
+		"description": "Concentrated poison damages maximum stamina by <mag> points.",
+		"baseCost": 1.6,
+		"baseMagnitude": 2,
+		"baseDuration": 10,
+		"valueAt100": 24,
+		"ingredients": [
+			{
+				"id": "deathbell",
+				"multipliers": {
+					"value": 2.1
+				}
+			},
+			{
+				"id": "bungler-s-bane",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 3.34
+				}
+			},
+			{
+				"id": "hypha-facia",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 3.34
+				}
+			},
+			{
+				"id": "bee"
+			},
+			{
+				"id": "berit-s-ashes"
+			},
+			{
+				"id": "bone-meal"
+			},
+			{
+				"id": "honeycomb"
+			},
+			{
+				"id": "scathecraw"
+			},
+			{
+				"id": "spawn-ash",
+				"highlighted": true
+			},
+			{
+				"id": "thistle-branch"
+			}
+		]
+	},
+	{
+		"id": "regenerate-health",
+		"formId": "0003EB06",
+		"name": "Regenerate Health",
+		"wikiPath": "/wiki/Skyrim:Regenerate_Health",
+		"kind": "positive",
+		"description": "Health regenerates <mag>% faster for <dur> seconds.",
+		"baseCost": 0.1,
+		"baseMagnitude": 5,
+		"baseDuration": 300,
+		"valueAt100": 177,
+		"ingredients": [
+			{
+				"id": "screaming-maw",
+				"multipliers": {
+					"magnitude": 4,
+					"duration": 0.03,
+					"value": 0.11
+				}
+			},
+			{
+				"id": "alocasia-fruit",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "ambrosia",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "gnarl-bark",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "hydnum-azure-giant-spore",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "minotaur-horn",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "ogre-s-teeth",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "void-essence",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "emperor-parasol-moss"
+			},
+			{
+				"id": "garlic"
+			},
+			{
+				"id": "gleamblossom"
+			},
+			{
+				"id": "juniper-berries"
+			},
+			{
+				"id": "luna-moth-wing"
+			},
+			{
+				"id": "namira-s-rot"
+			},
+			{
+				"id": "nordic-barnacle"
+			},
+			{
+				"id": "purple-butterfly-wing",
+				"highlighted": true
+			},
+			{
+				"id": "vampire-dust"
+			},
+			{
+				"id": "thorn-hook",
+				"multipliers": {
+					"magnitude": 0.6,
+					"duration": 0.6,
+					"value": 0.32
+				}
+			}
+		]
+	},
+	{
+		"id": "regenerate-magicka",
+		"formId": "0003EB07",
+		"name": "Regenerate Magicka",
+		"wikiPath": "/wiki/Skyrim:Regenerate_Magicka",
+		"kind": "positive",
+		"description": "Magicka regenerates <mag>% faster for <dur> seconds.",
+		"baseCost": 0.1,
+		"baseMagnitude": 5,
+		"baseDuration": 300,
+		"valueAt100": 177,
+		"ingredients": [
+			{
+				"id": "screaming-maw",
+				"multipliers": {
+					"magnitude": 4,
+					"duration": 0.2,
+					"value": 0.78
+				},
+				"highlighted": true
+			},
+			{
+				"id": "lichor",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "minotaur-horn",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "scrib-jelly",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "dwarven-oil"
+			},
+			{
+				"id": "fire-salts"
+			},
+			{
+				"id": "garlic"
+			},
+			{
+				"id": "jazbay-grapes"
+			},
+			{
+				"id": "moon-sugar"
+			},
+			{
+				"id": "purple-butterfly-wing"
+			},
+			{
+				"id": "salmon-roe"
+			},
+			{
+				"id": "salt-pile"
+			},
+			{
+				"id": "taproot"
+			},
+			{
+				"id": "thorn-hook",
+				"multipliers": {
+					"magnitude": 0.6,
+					"duration": 0.6,
+					"value": 0.32
+				}
+			}
+		]
+	},
+	{
+		"id": "regenerate-stamina",
+		"formId": "0003EB08",
+		"name": "Regenerate Stamina",
+		"wikiPath": "/wiki/Skyrim:Regenerate_Stamina",
+		"kind": "positive",
+		"description": "Stamina regenerates <mag>% faster for <dur> seconds.",
+		"baseCost": 0.1,
+		"baseMagnitude": 5,
+		"baseDuration": 300,
+		"valueAt100": 177,
+		"ingredients": [
+			{
+				"id": "alocasia-fruit",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "daedroth-teeth",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "red-kelp-gas-bladder",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "scrib-jelly",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "wisp-stalk-caps",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "bee"
+			},
+			{
+				"id": "fly-amanita"
+			},
+			{
+				"id": "mora-tapinella"
+			},
+			{
+				"id": "purple-butterfly-wing"
+			},
+			{
+				"id": "scaly-pholiota"
+			}
+		]
+	},
+	{
+		"id": "resist-fire",
+		"formId": "0003EAEA",
+		"name": "Resist Fire",
+		"wikiPath": "/wiki/Skyrim:Resist_Fire",
+		"kind": "positive",
+		"description": "Resist <mag>% of fire damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 3,
+		"baseDuration": 60,
+		"valueAt100": 86,
+		"ingredients": [
+			{
+				"id": "ashen-grass-pod",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "fire-petal",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "gnarl-bark",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "sload-soap",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "ash-creep-cluster"
+			},
+			{
+				"id": "berit-s-ashes"
+			},
+			{
+				"id": "bliss-bug-thorax"
+			},
+			{
+				"id": "bone-meal"
+			},
+			{
+				"id": "dragon-s-tongue",
+				"highlighted": true
+			},
+			{
+				"id": "elves-ear"
+			},
+			{
+				"id": "fire-salts"
+			},
+			{
+				"id": "fly-amanita",
+				"highlighted": true
+			},
+			{
+				"id": "mudcrab-chitin"
+			},
+			{
+				"id": "snowberries",
+				"highlighted": true
+			},
+			{
+				"id": "spawn-ash"
+			}
+		]
+	},
+	{
+		"id": "resist-frost",
+		"formId": "0003EAEB",
+		"name": "Resist Frost",
+		"wikiPath": "/wiki/Skyrim:Resist_Frost",
+		"kind": "positive",
+		"description": "Resist <mag>% of frost damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 3,
+		"baseDuration": 60,
+		"valueAt100": 86,
+		"ingredients": [
+			{
+				"id": "daedroth-teeth",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "flame-stalk",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "hydnum-azure-giant-spore",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "redwort-flower",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "frost-mirriam",
+				"highlighted": true
+			},
+			{
+				"id": "frost-salts"
+			},
+			{
+				"id": "hawk-beak"
+			},
+			{
+				"id": "moon-sugar"
+			},
+			{
+				"id": "purple-mountain-flower"
+			},
+			{
+				"id": "silverside-perch"
+			},
+			{
+				"id": "slaughterfish-scales",
+				"highlighted": true
+			},
+			{
+				"id": "small-pearl"
+			},
+			{
+				"id": "snowberries"
+			},
+			{
+				"id": "steel-blue-entoloma"
+			},
+			{
+				"id": "thistle-branch",
+				"highlighted": true
+			}
+		]
+	},
+	{
+		"id": "resist-magic",
+		"formId": "00039E51",
+		"name": "Resist Magic",
+		"wikiPath": "/wiki/Skyrim:Resist_Magic",
+		"kind": "positive",
+		"description": "Resist <mag>% of magic for <dur> seconds.",
+		"baseCost": 1,
+		"baseMagnitude": 1,
+		"baseDuration": 60,
+		"valueAt100": 51,
+		"ingredients": [
+			{
+				"id": "aster-bloom-core",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "bungler-s-bane",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "hypha-facia",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "bleeding-crown"
+			},
+			{
+				"id": "chicken-s-egg",
+				"highlighted": true
+			},
+			{
+				"id": "crimson-nirnroot"
+			},
+			{
+				"id": "felsaad-tern-feathers"
+			},
+			{
+				"id": "gleamblossom",
+				"highlighted": true
+			},
+			{
+				"id": "hagraven-claw",
+				"highlighted": true
+			},
+			{
+				"id": "hawk-s-egg",
+				"highlighted": true
+			},
+			{
+				"id": "lavender",
+				"highlighted": true
+			},
+			{
+				"id": "nirnroot"
+			},
+			{
+				"id": "tundra-cotton",
+				"highlighted": true
+			},
+			{
+				"id": "void-salts"
+			},
+			{
+				"id": "wisp-wrappings"
+			}
+		]
+	},
+	{
+		"id": "resist-poison",
+		"formId": "00090041",
+		"name": "Resist Poison",
+		"wikiPath": "/wiki/Skyrim:Resist_Poison",
+		"kind": "positive",
+		"description": "Resist <mag>% of poison for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 4,
+		"baseDuration": 60,
+		"valueAt100": 118,
+		"ingredients": [
+			{
+				"id": "minotaur-horn",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "ogre-s-teeth",
+				"multipliers": {
+					"magnitude": 1.25,
+					"value": 1.27
+				}
+			},
+			{
+				"id": "charred-skeever-hide"
+			},
+			{
+				"id": "falmer-ear"
+			},
+			{
+				"id": "garlic",
+				"highlighted": true
+			},
+			{
+				"id": "grass-pod",
+				"highlighted": true
+			},
+			{
+				"id": "mudcrab-chitin"
+			},
+			{
+				"id": "slaughterfish-egg",
+				"highlighted": true
+			},
+			{
+				"id": "troll-fat",
+				"highlighted": true
+			},
+			{
+				"id": "wild-grass-pod",
+				"highlighted": true
+			},
+			{
+				"id": "yellow-mountain-flower",
+				"highlighted": true
+			},
+			{
+				"id": "beehive-husk",
+				"multipliers": {
+					"magnitude": 0.5,
+					"value": 0.46
+				},
+				"highlighted": true
+			},
+			{
+				"id": "thistle-branch",
+				"multipliers": {
+					"magnitude": 0.75,
+					"duration": 0,
+					"value": 0.1
+				}
+			}
+		]
+	},
+	{
+		"id": "resist-shock",
+		"formId": "0003EAEC",
+		"name": "Resist Shock",
+		"wikiPath": "/wiki/Skyrim:Resist_Shock",
+		"kind": "positive",
+		"description": "Resist <mag>% of shock damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 3,
+		"baseDuration": 60,
+		"valueAt100": 86,
+		"ingredients": [
+			{
+				"id": "corkbulb-root",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "kagouti-hide",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "ash-hopper-jelly"
+			},
+			{
+				"id": "blue-dartwing",
+				"highlighted": true
+			},
+			{
+				"id": "glow-dust"
+			},
+			{
+				"id": "glowing-mushroom",
+				"highlighted": true
+			},
+			{
+				"id": "hawk-beak"
+			},
+			{
+				"id": "pearl"
+			},
+			{
+				"id": "pine-thrush-egg"
+			},
+			{
+				"id": "snowberries"
+			},
+			{
+				"id": "swamp-fungal-pod",
+				"highlighted": true
+			}
+		]
+	},
+	{
+		"id": "restore-health",
+		"formId": "0003EB15",
+		"name": "Restore Health",
+		"wikiPath": "/wiki/Skyrim:Restore_Health",
+		"kind": "positive",
+		"description": "Restore <mag> points of Health.",
+		"baseCost": 0.5,
+		"baseMagnitude": 5,
+		"baseDuration": 0,
+		"valueAt100": 21,
+		"ingredients": [
+			{
+				"id": "ambrosia",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "corkbulb-root",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "flame-stalk",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "heart-of-order",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "marshmerrow",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "saltrice",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "void-essence",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "ash-hopper-jelly",
+				"highlighted": true
+			},
+			{
+				"id": "blue-dartwing"
+			},
+			{
+				"id": "blue-mountain-flower",
+				"highlighted": true
+			},
+			{
+				"id": "butterfly-wing",
+				"highlighted": true
+			},
+			{
+				"id": "charred-skeever-hide"
+			},
+			{
+				"id": "daedra-heart",
+				"highlighted": true
+			},
+			{
+				"id": "eye-of-sabre-cat"
+			},
+			{
+				"id": "felsaad-tern-feathers",
+				"highlighted": true
+			},
+			{
+				"id": "rock-warbler-egg",
+				"highlighted": true
+			},
+			{
+				"id": "swamp-fungal-pod"
+			},
+			{
+				"id": "wheat",
+				"highlighted": true
+			},
+			{
+				"id": "blisterwort",
+				"multipliers": {
+					"magnitude": 0.6,
+					"value": 0.57
+				}
+			},
+			{
+				"id": "imp-stool",
+				"multipliers": {
+					"magnitude": 0.6,
+					"value": 0.57
+				}
+			}
+		]
+	},
+	{
+		"id": "restore-magicka",
+		"formId": "0003EB17",
+		"name": "Restore Magicka",
+		"wikiPath": "/wiki/Skyrim:Restore_Magicka",
+		"kind": "positive",
+		"description": "Restore <mag> points of Magicka.",
+		"baseCost": 0.6,
+		"baseMagnitude": 5,
+		"baseDuration": 0,
+		"valueAt100": 25,
+		"ingredients": [
+			{
+				"id": "blister-pod-cap",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "bog-beacon",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "comberry",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "congealed-putrescence",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "elytra-ichor",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "fungus-stalk",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "lichor",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "withering-moon",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "briar-heart",
+				"highlighted": true
+			},
+			{
+				"id": "creep-cluster",
+				"highlighted": true
+			},
+			{
+				"id": "dwarven-oil"
+			},
+			{
+				"id": "ectoplasm",
+				"highlighted": true
+			},
+			{
+				"id": "elves-ear",
+				"highlighted": true
+			},
+			{
+				"id": "fire-salts"
+			},
+			{
+				"id": "frost-salts"
+			},
+			{
+				"id": "giant-lichen"
+			},
+			{
+				"id": "grass-pod"
+			},
+			{
+				"id": "green-butterfly-wing",
+				"highlighted": true
+			},
+			{
+				"id": "human-flesh"
+			},
+			{
+				"id": "moon-sugar"
+			},
+			{
+				"id": "mora-tapinella",
+				"highlighted": true
+			},
+			{
+				"id": "pearl"
+			},
+			{
+				"id": "red-mountain-flower",
+				"highlighted": true
+			},
+			{
+				"id": "steel-blue-entoloma",
+				"highlighted": true
+			},
+			{
+				"id": "taproot"
+			},
+			{
+				"id": "vampire-dust"
+			},
+			{
+				"id": "white-cap"
+			},
+			{
+				"id": "wild-grass-pod"
+			}
+		]
+	},
+	{
+		"id": "restore-stamina",
+		"formId": "0003EB16",
+		"name": "Restore Stamina",
+		"wikiPath": "/wiki/Skyrim:Restore_Stamina",
+		"kind": "positive",
+		"description": "Restore <mag> Stamina.",
+		"baseCost": 0.6,
+		"baseMagnitude": 5,
+		"baseDuration": 0,
+		"valueAt100": 25,
+		"ingredients": [
+			{
+				"id": "netch-jelly",
+				"multipliers": {
+					"magnitude": 2
+				}
+			},
+			{
+				"id": "chokeweed",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				}
+			},
+			{
+				"id": "hackle-lo-leaf",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "saltrice",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "scrib-jerky",
+				"multipliers": {
+					"magnitude": 1.2,
+					"value": 1.22
+				},
+				"highlighted": true
+			},
+			{
+				"id": "bee",
+				"highlighted": true
+			},
+			{
+				"id": "charred-skeever-hide",
+				"highlighted": true
+			},
+			{
+				"id": "eye-of-sabre-cat",
+				"highlighted": true
+			},
+			{
+				"id": "hawk-beak",
+				"highlighted": true
+			},
+			{
+				"id": "histcarp",
+				"highlighted": true
+			},
+			{
+				"id": "honeycomb",
+				"highlighted": true
+			},
+			{
+				"id": "large-antlers",
+				"highlighted": true
+			},
+			{
+				"id": "mudcrab-chitin",
+				"highlighted": true
+			},
+			{
+				"id": "orange-dartwing",
+				"highlighted": true
+			},
+			{
+				"id": "pearl",
+				"highlighted": true
+			},
+			{
+				"id": "pine-thrush-egg",
+				"highlighted": true
+			},
+			{
+				"id": "powdered-mammoth-tusk",
+				"highlighted": true
+			},
+			{
+				"id": "purple-mountain-flower",
+				"highlighted": true
+			},
+			{
+				"id": "sabre-cat-tooth",
+				"highlighted": true
+			},
+			{
+				"id": "silverside-perch",
+				"highlighted": true
+			},
+			{
+				"id": "small-pearl",
+				"highlighted": true
+			},
+			{
+				"id": "torchbug-thorax",
+				"highlighted": true
+			},
+			{
+				"id": "wisp-wrappings",
+				"highlighted": true
+			},
+			{
+				"id": "bear-claws",
+				"multipliers": {
+					"magnitude": 0.8,
+					"value": 0.78
+				},
+				"highlighted": true
+			},
+			{
+				"id": "salmon-roe",
+				"multipliers": {
+					"magnitude": 0.4,
+					"value": 0.36
+				},
+				"highlighted": true
+			}
+		]
+	},
+	{
+		"id": "slow",
+		"formId": "00073F25",
+		"name": "Slow",
+		"wikiPath": "/wiki/Skyrim:Slow",
+		"kind": "negative",
+		"description": "Target moves at 50% speed for <dur> seconds.",
+		"baseCost": 1,
+		"baseMagnitude": 50,
+		"baseDuration": 5,
+		"valueAt100": 247,
+		"ingredients": [
+			{
+				"id": "large-antlers",
+				"multipliers": {
+					"duration": 6,
+					"value": 1.75
+				}
+			},
+			{
+				"id": "green-butterfly-wing",
+				"multipliers": {
+					"duration": 6,
+					"value": 0.57
+				}
+			},
+			{
+				"id": "rot-scale",
+				"multipliers": {
+					"duration": 3,
+					"value": 0.26
+				},
+				"highlighted": true
+			},
+			{
+				"id": "bungler-s-bane",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				},
+				"highlighted": true
+			},
+			{
+				"id": "elytra-ichor",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "kresh-fiber",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "worm-s-head-cap",
+				"multipliers": {
+					"duration": 2,
+					"value": 2.14
+				}
+			},
+			{
+				"id": "burnt-spriggan-wood"
+			},
+			{
+				"id": "deathbell"
+			},
+			{
+				"id": "poison-bloom"
+			},
+			{
+				"id": "river-betty"
+			},
+			{
+				"id": "salt-pile"
+			},
+			{
+				"id": "trama-root"
+			}
+		]
+	},
+	{
+		"id": "spell-absorption",
+		"formId": "FE",
+		"name": "Spell Absorption",
+		"wikiPath": "/wiki/Skyrim:Spell_Absorption",
+		"kind": "positive",
+		"description": "Absorb <mag>% of the magicka from hostile spells for <dur> seconds.",
+		"baseCost": 0.1,
+		"baseMagnitude": 50,
+		"baseDuration": 60,
+		"valueAt100": 380,
+		"ingredients": [
+			{
+				"id": "blind-watcher-s-eye"
+			},
+			{
+				"id": "comberry"
+			},
+			{
+				"id": "daedra-venin"
+			},
+			{
+				"id": "fire-petal"
+			},
+			{
+				"id": "lichor"
+			},
+			{
+				"id": "watcher-s-eye"
+			},
+			{
+				"id": "withering-moon"
+			}
+		]
+	},
+	{
+		"id": "waterbreathing",
+		"formId": "0003AC2D",
+		"name": "Waterbreathing",
+		"wikiPath": "/wiki/Skyrim:Waterbreathing_(effect)",
+		"kind": "positive",
+		"description": "Can breathe underwater for <dur> seconds.",
+		"baseCost": 30,
+		"baseMagnitude": 0,
+		"baseDuration": 5,
+		"valueAt100": 100,
+		"ingredients": [
+			{
+				"id": "salmon-roe",
+				"multipliers": {
+					"duration": 12,
+					"value": 15.4
+				}
+			},
+			{
+				"id": "fungus-stalk",
+				"multipliers": {
+					"duration": 1.6,
+					"value": 1.67
+				}
+			},
+			{
+				"id": "hackle-lo-leaf",
+				"multipliers": {
+					"duration": 1.6,
+					"value": 1.67
+				}
+			},
+			{
+				"id": "luminous-russula",
+				"multipliers": {
+					"duration": 1.6,
+					"value": 1.67
+				}
+			},
+			{
+				"id": "red-kelp-gas-bladder",
+				"multipliers": {
+					"duration": 1.6,
+					"value": 1.67
+				}
+			},
+			{
+				"id": "scalon-fin",
+				"multipliers": {
+					"duration": 1.6,
+					"value": 1.67
+				},
+				"highlighted": true
+			},
+			{
+				"id": "scrib-jerky",
+				"multipliers": {
+					"duration": 1.6,
+					"value": 1.67
+				}
+			},
+			{
+				"id": "chicken-s-egg"
+			},
+			{
+				"id": "hawk-s-egg"
+			},
+			{
+				"id": "histcarp"
+			},
+			{
+				"id": "nordic-barnacle"
+			}
+		]
+	},
+	{
+		"id": "weakness-to-fire",
+		"formId": "00073F2D",
+		"name": "Weakness to Fire",
+		"wikiPath": "/wiki/Skyrim:Weakness_to_Fire",
+		"kind": "negative",
+		"description": "Target is <mag>% weaker to fire damage for <dur> seconds.",
+		"baseCost": 0.6,
+		"baseMagnitude": 3,
+		"baseDuration": 30,
+		"valueAt100": 48,
+		"ingredients": [
+			{
+				"id": "hunger-tongue",
+				"multipliers": {
+					"magnitude": 1.33,
+					"duration": 2,
+					"value": 2.93
+				},
+				"highlighted": true
+			},
+			{
+				"id": "congealed-putrescence",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "flame-stalk",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "imp-gall",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "bleeding-crown",
+				"highlighted": true
+			},
+			{
+				"id": "bliss-bug-thorax",
+				"highlighted": true
+			},
+			{
+				"id": "burnt-spriggan-wood",
+				"highlighted": true
+			},
+			{
+				"id": "frost-salts",
+				"highlighted": true
+			},
+			{
+				"id": "ice-wraith-teeth"
+			},
+			{
+				"id": "juniper-berries",
+				"highlighted": true
+			},
+			{
+				"id": "moon-sugar",
+				"highlighted": true
+			},
+			{
+				"id": "powdered-mammoth-tusk"
+			}
+		]
+	},
+	{
+		"id": "weakness-to-frost",
+		"formId": "00073F2E",
+		"name": "Weakness to Frost",
+		"wikiPath": "/wiki/Skyrim:Weakness_to_Frost",
+		"kind": "negative",
+		"description": "Target is <mag>% weaker to frost damage for <dur> seconds.",
+		"baseCost": 0.5,
+		"baseMagnitude": 3,
+		"baseDuration": 30,
+		"valueAt100": 40,
+		"ingredients": [
+			{
+				"id": "chokeweed",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "gold-kanet",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				}
+			},
+			{
+				"id": "abecean-longfin",
+				"highlighted": true
+			},
+			{
+				"id": "ash-hopper-jelly"
+			},
+			{
+				"id": "fire-salts",
+				"highlighted": true
+			},
+			{
+				"id": "ice-wraith-teeth",
+				"highlighted": true
+			},
+			{
+				"id": "white-cap",
+				"highlighted": true
+			},
+			{
+				"id": "elves-ear"
+			}
+		]
+	},
+	{
+		"id": "weakness-to-magic",
+		"formId": "00073F51",
+		"name": "Weakness to Magic",
+		"wikiPath": "/wiki/Skyrim:Weakness_to_Magic",
+		"kind": "negative",
+		"description": "Target is <mag>% weaker to magic for <dur> seconds.",
+		"baseCost": 1,
+		"baseMagnitude": 2,
+		"baseDuration": 30,
+		"valueAt100": 51,
+		"ingredients": [
+			{
+				"id": "dreugh-wax",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "kresh-fiber",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "marshmerrow",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "roobrush",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "creep-cluster"
+			},
+			{
+				"id": "dwarven-oil",
+				"highlighted": true
+			},
+			{
+				"id": "jazbay-grapes",
+				"highlighted": true
+			},
+			{
+				"id": "rock-warbler-egg"
+			},
+			{
+				"id": "salt-pile",
+				"highlighted": true
+			},
+			{
+				"id": "scaly-pholiota",
+				"highlighted": true
+			},
+			{
+				"id": "taproot",
+				"highlighted": true
+			},
+			{
+				"id": "torchbug-thorax"
+			}
+		]
+	},
+	{
+		"id": "weakness-to-poison",
+		"formId": "00090042",
+		"name": "Weakness to Poison",
+		"wikiPath": "/wiki/Skyrim:Weakness_to_Poison",
+		"kind": "negative",
+		"description": "Target is <mag>% weaker to poison for <dur> seconds.",
+		"baseCost": 1,
+		"baseMagnitude": 2,
+		"baseDuration": 30,
+		"valueAt100": 51,
+		"ingredients": [
+			{
+				"id": "chokeberry",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "hypha-facia",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				},
+				"highlighted": true
+			},
+			{
+				"id": "wisp-stalk-caps",
+				"multipliers": {
+					"magnitude": 1.5,
+					"value": 1.56
+				}
+			},
+			{
+				"id": "abecean-longfin"
+			},
+			{
+				"id": "bleeding-crown"
+			},
+			{
+				"id": "chaurus-eggs",
+				"highlighted": true
+			},
+			{
+				"id": "deathbell"
+			},
+			{
+				"id": "giant-lichen"
+			},
+			{
+				"id": "pine-thrush-egg"
+			},
+			{
+				"id": "sabre-cat-tooth"
+			},
+			{
+				"id": "small-antlers",
+				"highlighted": true
+			}
+		]
+	},
+	{
+		"id": "weakness-to-shock",
+		"formId": "00073F2F",
+		"name": "Weakness to Shock",
+		"wikiPath": "/wiki/Skyrim:Weakness_to_Shock",
+		"kind": "negative",
+		"description": "Target is <mag>% weaker to shock damage for <dur> seconds.",
+		"baseCost": 0.7,
+		"baseMagnitude": 3,
+		"baseDuration": 30,
+		"valueAt100": 56,
+		"ingredients": [
+			{
+				"id": "ogre-s-teeth",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "stoneflower-petals",
+				"multipliers": {
+					"magnitude": 1.33,
+					"value": 1.36
+				},
+				"highlighted": true
+			},
+			{
+				"id": "ashen-grass-pod"
+			},
+			{
+				"id": "bee"
+			},
+			{
+				"id": "giant-lichen",
+				"highlighted": true
+			},
+			{
+				"id": "hagraven-feathers"
+			},
+			{
+				"id": "trama-root",
+				"highlighted": true
+			},
+			{
+				"id": "void-salts",
+				"highlighted": true
+			}
+		]
+	}
 ]

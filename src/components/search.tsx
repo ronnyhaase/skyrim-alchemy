@@ -34,7 +34,9 @@ export function SearchProvider({ children }: SearchProviderProps) {
 	);
 
 	return (
-		<SearchContext.Provider value={value}>{children}</SearchContext.Provider>
+		<SearchContext.Provider value={value}>
+			{children}
+		</SearchContext.Provider>
 	);
 }
 

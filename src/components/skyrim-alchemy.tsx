@@ -17,10 +17,7 @@ import { SplitView } from "@/components/split-view";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import type { Effect, Ingredient } from "@/types";
-import {
-	searchByEffect,
-	searchByIngredient,
-} from "@/utils/search";
+import { searchByEffect, searchByIngredient } from "@/utils/search";
 import {
 	InputGroup,
 	InputGroupAddon,
@@ -39,7 +36,10 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 	return (
 		<SearchProvider>
 			<ItemProvider>
-				<SkyrimAlchemyContent effects={effects} ingredients={ingredients} />
+				<SkyrimAlchemyContent
+					effects={effects}
+					ingredients={ingredients}
+				/>
 			</ItemProvider>
 		</SearchProvider>
 	);
