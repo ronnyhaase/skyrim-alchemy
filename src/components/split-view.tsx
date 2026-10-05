@@ -1,6 +1,7 @@
 import { cn } from "cn";
 
 import { Item } from "@/components/item";
+import { ItemValue } from "@/components/item-value";
 import { PinButton } from "@/components/pin-button";
 import {
 	Card,
@@ -47,6 +48,7 @@ export function SplitView({
 							<CardHeader>
 								<CardTitle
 									className={cn(
+										"flex items-center",
 										normalizedSearchTerm &&
 											!matchesSearch(
 												row.ingredient.name,
@@ -60,6 +62,7 @@ export function SplitView({
 										kind="ingredient"
 										name={row.ingredient.name}
 									/>
+									<ItemValue value={row.ingredient.value} />
 								</CardTitle>
 								<CardAction>
 									<PinButton
@@ -103,6 +106,7 @@ export function SplitView({
 							<CardHeader>
 								<CardTitle
 									className={cn(
+										"flex items-center",
 										normalizedSearchTerm &&
 											!matchesSearch(
 												row.effect.name,
@@ -116,6 +120,7 @@ export function SplitView({
 										kind="effect"
 										name={row.effect.name}
 									/>
+									<ItemValue value={row.effect.valueAt100} />
 								</CardTitle>
 								<CardAction>
 									<PinButton

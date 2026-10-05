@@ -1,6 +1,7 @@
 import { cn } from "cn";
 
 import { Item } from "@/components/item";
+import { ItemValue } from "@/components/item-value";
 import { PinButton } from "@/components/pin-button";
 import {
 	Table,
@@ -50,6 +51,7 @@ export function IngredientsView({
 						<TableRow key={row.ingredient.id}>
 							<TableHead
 								className={cn(
+									"align-middle",
 									normalizedSearchTerm &&
 										!matchesSearch(
 											row.ingredient.name,
@@ -58,11 +60,14 @@ export function IngredientsView({
 										"text-muted-foreground",
 								)}
 							>
-								<Item
-									id={row.ingredient.id}
-									kind="ingredient"
-									name={row.ingredient.name}
-								/>
+								<span className="flex items-center">
+									<Item
+										id={row.ingredient.id}
+										kind="ingredient"
+										name={row.ingredient.name}
+									/>
+									<ItemValue value={row.ingredient.value} />
+								</span>
 							</TableHead>
 							<TableCell className="relative pr-10">
 								<ul>

@@ -65,10 +65,6 @@ function sortPinnedFirst<Result>(
 	];
 }
 
-function getHighestEffectValue(effects: Effect[]) {
-	return Math.max(0, ...effects.map((effect) => effect.valueAt100));
-}
-
 function compareEffectSearchResults(
 	firstResult: EffectSearchResult,
 	secondResult: EffectSearchResult,
@@ -103,8 +99,8 @@ function compareIngredientSearchResults(
 	}
 
 	return compareByValue(
-		getHighestEffectValue(firstResult.effects),
-		getHighestEffectValue(secondResult.effects),
+		firstResult.ingredient.value,
+		secondResult.ingredient.value,
 		sortOption,
 	);
 }

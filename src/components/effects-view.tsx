@@ -1,6 +1,7 @@
 import { cn } from "cn";
 
 import { Item } from "@/components/item";
+import { ItemValue } from "@/components/item-value";
 import { PinButton } from "@/components/pin-button";
 import {
 	Table,
@@ -50,6 +51,7 @@ export function EffectsView({
 						<TableRow key={row.effect.id}>
 							<TableHead
 								className={cn(
+									"align-middle",
 									normalizedSearchTerm &&
 										!matchesSearch(
 											row.effect.name,
@@ -58,11 +60,14 @@ export function EffectsView({
 										"text-muted-foreground",
 								)}
 							>
-								<Item
-									id={row.effect.id}
-									kind="effect"
-									name={row.effect.name}
-								/>
+								<span className="flex items-center">
+									<Item
+										id={row.effect.id}
+										kind="effect"
+										name={row.effect.name}
+									/>
+									<ItemValue value={row.effect.valueAt100} />
+								</span>
 							</TableHead>
 							<TableCell className="relative pr-10">
 								<ul>
