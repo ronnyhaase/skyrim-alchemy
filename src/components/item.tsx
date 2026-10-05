@@ -18,10 +18,12 @@ type ItemReference = {
 };
 
 type ItemContextValue = {
+	hasPinnedItems: boolean;
 	highlightedItem: ItemReference | null;
 	isItemPinned: (id: string, kind: ItemKind) => boolean;
 	setHighlightedItem: (item: ItemReference | null) => void;
 	togglePinnedItem: (item: ItemReference) => void;
+	unpinAllItems: () => void;
 };
 
 const ItemContext = createContext<ItemContextValue | null>(null);
@@ -38,8 +40,10 @@ export function usePinnedItems() {
 	}
 
 	return {
+		hasPinnedItems: context.hasPinnedItems,
 		isItemPinned: context.isItemPinned,
 		togglePinnedItem: context.togglePinnedItem,
+		unpinAllItems: context.unpinAllItems,
 	};
 }
 
@@ -63,6 +67,7 @@ export function ItemProvider({ children }: ItemProviderProps) {
 	const [pinnedItemKeys, setPinnedItemKeys] = useState<Set<string>>(
 		new Set(),
 	);
+	const hasPinnedItems = pinnedItemKeys.size > 0;
 	const isItemPinned = useCallback(
 		(id: string, kind: ItemKind) =>
 			pinnedItemKeys.has(getItemKey({ id, kind })),
@@ -83,15 +88,26 @@ export function ItemProvider({ children }: ItemProviderProps) {
 			return nextPinnedItemKeys;
 		});
 	}, []);
+	const unpinAllItems = useCallback(() => {
+		setPinnedItemKeys(new Set());
+	}, []);
 
 	const value = useMemo(
 		() => ({
+			hasPinnedItems,
 			highlightedItem,
 			isItemPinned,
 			setHighlightedItem,
 			togglePinnedItem,
+			unpinAllItems,
 		}),
-		[highlightedItem, isItemPinned, togglePinnedItem],
+		[
+			hasPinnedItems,
+			highlightedItem,
+			isItemPinned,
+			togglePinnedItem,
+			unpinAllItems,
+		],
 	);
 
 	return (

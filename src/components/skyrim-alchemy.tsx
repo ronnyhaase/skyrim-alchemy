@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import {
 	CircleXIcon,
 	LeafIcon,
+	PinOffIcon,
 	SearchIcon,
 	SquareSplitHorizontalIcon,
 	WandSparklesIcon,
@@ -47,7 +48,7 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 
 function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 	const { normalizedSearchTerm, searchTerm, setSearchTerm } = useSearch();
-	const { isItemPinned } = usePinnedItems();
+	const { hasPinnedItems, isItemPinned, unpinAllItems } = usePinnedItems();
 	const [activeView, setActiveView] = useState<AlchemyView>("effect");
 
 	const effectSearchResults = useMemo(() => {
@@ -90,39 +91,54 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 						</InputGroupButton>
 					</InputGroupAddon>
 				</InputGroup>
-				<ButtonGroup className="mb-4">
+				<div className="flex flex-wrap items-center justify-between gap-2 mb-4">
+					<ButtonGroup>
+						<Button
+							aria-pressed={activeView === "effect"}
+							onClick={() => setActiveView("effect")}
+							type="button"
+							variant={
+								activeView === "effect" ? "default" : "outline"
+							}
+						>
+							<WandSparklesIcon />
+							By Effect
+						</Button>
+						<Button
+							aria-pressed={activeView === "ingredient"}
+							onClick={() => setActiveView("ingredient")}
+							type="button"
+							variant={
+								activeView === "ingredient"
+									? "default"
+									: "outline"
+							}
+						>
+							<LeafIcon />
+							By Ingredient
+						</Button>
+						<Button
+							aria-pressed={activeView === "split"}
+							onClick={() => setActiveView("split")}
+							type="button"
+							variant={
+								activeView === "split" ? "default" : "outline"
+							}
+						>
+							<SquareSplitHorizontalIcon />
+							Split-View
+						</Button>
+					</ButtonGroup>
 					<Button
-						aria-pressed={activeView === "effect"}
-						onClick={() => setActiveView("effect")}
+						disabled={!hasPinnedItems}
+						onClick={unpinAllItems}
 						type="button"
-						variant={
-							activeView === "effect" ? "default" : "outline"
-						}
+						variant="outline"
 					>
-						<WandSparklesIcon />
-						By Effect
+						<PinOffIcon />
+						Unpin all
 					</Button>
-					<Button
-						aria-pressed={activeView === "ingredient"}
-						onClick={() => setActiveView("ingredient")}
-						type="button"
-						variant={
-							activeView === "ingredient" ? "default" : "outline"
-						}
-					>
-						<LeafIcon />
-						By Ingredient
-					</Button>
-					<Button
-						aria-pressed={activeView === "split"}
-						onClick={() => setActiveView("split")}
-						type="button"
-						variant={activeView === "split" ? "default" : "outline"}
-					>
-						<SquareSplitHorizontalIcon />
-						Split-View
-					</Button>
-				</ButtonGroup>
+				</div>
 			</header>
 			<main>
 				{activeView === "effect" ? (
