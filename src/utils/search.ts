@@ -10,6 +10,12 @@ export type IngredientSearchResult = {
 	effects: Effect[];
 };
 
+export type SortOption =
+	| "name-ascending"
+	| "name-descending"
+	| "value-ascending"
+	| "value-descending";
+
 export function normalizeSearchTerm(searchTerm: string) {
 	return searchTerm.trim().toLowerCase();
 }
@@ -28,29 +34,101 @@ function getEffectsForIngredient(ingredient: Ingredient, effects: Effect[]) {
 	return effects.filter((effect) => ingredient.effects.includes(effect.id));
 }
 
-function putPinnedFirst<Result>(
+function compareByName(
+	firstName: string,
+	secondName: string,
+	sortOption: SortOption,
+) {
+	const direction = sortOption === "name-descending" ? -1 : 1;
+
+	return firstName.localeCompare(secondName) * direction;
+}
+
+function compareByValue(
+	firstValue: number,
+	secondValue: number,
+	sortOption: SortOption,
+) {
+	const direction = sortOption === "value-descending" ? -1 : 1;
+
+	return (firstValue - secondValue) * direction;
+}
+
+function sortPinnedFirst<Result>(
 	results: Result[],
 	isPinned: (result: Result) => boolean,
+	compareResults: (firstResult: Result, secondResult: Result) => number,
 ) {
 	return [
-		...results.filter(isPinned),
-		...results.filter((result) => !isPinned(result)),
+		...results.filter(isPinned).sort(compareResults),
+		...results.filter((result) => !isPinned(result)).sort(compareResults),
 	];
+}
+
+function getHighestEffectValue(effects: Effect[]) {
+	return Math.max(0, ...effects.map((effect) => effect.valueAt100));
+}
+
+function compareEffectSearchResults(
+	firstResult: EffectSearchResult,
+	secondResult: EffectSearchResult,
+	sortOption: SortOption,
+) {
+	if (sortOption === "name-ascending" || sortOption === "name-descending") {
+		return compareByName(
+			firstResult.effect.name,
+			secondResult.effect.name,
+			sortOption,
+		);
+	}
+
+	return compareByValue(
+		firstResult.effect.valueAt100,
+		secondResult.effect.valueAt100,
+		sortOption,
+	);
+}
+
+function compareIngredientSearchResults(
+	firstResult: IngredientSearchResult,
+	secondResult: IngredientSearchResult,
+	sortOption: SortOption,
+) {
+	if (sortOption === "name-ascending" || sortOption === "name-descending") {
+		return compareByName(
+			firstResult.ingredient.name,
+			secondResult.ingredient.name,
+			sortOption,
+		);
+	}
+
+	return compareByValue(
+		getHighestEffectValue(firstResult.effects),
+		getHighestEffectValue(secondResult.effects),
+		sortOption,
+	);
 }
 
 export function searchByEffect(
 	effects: Effect[],
 	ingredients: Ingredient[],
 	normalizedSearchTerm: string,
+	sortOption: SortOption,
 	isPinned: (id: string) => boolean = () => false,
 ): EffectSearchResult[] {
 	if (!normalizedSearchTerm) {
-		return putPinnedFirst(
+		return sortPinnedFirst(
 			effects.map((effect) => ({
 				effect,
 				ingredients: getIngredientsForEffect(effect, ingredients),
 			})),
 			(result) => isPinned(result.effect.id),
+			(firstResult, secondResult) =>
+				compareEffectSearchResults(
+					firstResult,
+					secondResult,
+					sortOption,
+				),
 		);
 	}
 
@@ -88,22 +166,34 @@ export function searchByEffect(
 		})
 		.filter((row) => row !== null);
 
-	return putPinnedFirst(results, (result) => isPinned(result.effect.id));
+	return sortPinnedFirst(
+		results,
+		(result) => isPinned(result.effect.id),
+		(firstResult, secondResult) =>
+			compareEffectSearchResults(firstResult, secondResult, sortOption),
+	);
 }
 
 export function searchByIngredient(
 	effects: Effect[],
 	ingredients: Ingredient[],
 	normalizedSearchTerm: string,
+	sortOption: SortOption,
 	isPinned: (id: string) => boolean = () => false,
 ): IngredientSearchResult[] {
 	if (!normalizedSearchTerm) {
-		return putPinnedFirst(
+		return sortPinnedFirst(
 			ingredients.map((ingredient) => ({
 				ingredient,
 				effects: getEffectsForIngredient(ingredient, effects),
 			})),
 			(result) => isPinned(result.ingredient.id),
+			(firstResult, secondResult) =>
+				compareIngredientSearchResults(
+					firstResult,
+					secondResult,
+					sortOption,
+				),
 		);
 	}
 
@@ -137,5 +227,14 @@ export function searchByIngredient(
 		})
 		.filter((row) => row !== null);
 
-	return putPinnedFirst(results, (result) => isPinned(result.ingredient.id));
+	return sortPinnedFirst(
+		results,
+		(result) => isPinned(result.ingredient.id),
+		(firstResult, secondResult) =>
+			compareIngredientSearchResults(
+				firstResult,
+				secondResult,
+				sortOption,
+			),
+	);
 }

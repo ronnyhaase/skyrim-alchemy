@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import {
+	ChevronDownIcon,
 	CircleXIcon,
 	LeafIcon,
 	PinOffIcon,
@@ -15,10 +16,22 @@ import { IngredientsView } from "@/components/ingredients-view";
 import { ItemProvider, usePinnedItems } from "@/components/item";
 import { SearchProvider, useSearch } from "@/components/search";
 import { SplitView } from "@/components/split-view";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuGroup,
+	DropdownMenuRadioGroup,
+	DropdownMenuRadioItem,
+	DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import type { Effect, Ingredient } from "@/types";
-import { searchByEffect, searchByIngredient } from "@/utils/search";
+import {
+	searchByEffect,
+	searchByIngredient,
+	type SortOption,
+} from "@/utils/search";
 import {
 	InputGroup,
 	InputGroupAddon,
@@ -32,6 +45,13 @@ type SkyrimAlchemyProps = {
 };
 
 type AlchemyView = "effect" | "ingredient" | "split";
+
+const sortOptions: { label: string; value: SortOption }[] = [
+	{ label: "Name A-Z", value: "name-ascending" },
+	{ label: "Name Z-A", value: "name-descending" },
+	{ label: "Value Low-High", value: "value-ascending" },
+	{ label: "Value High-Low", value: "value-descending" },
+];
 
 export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 	return (
@@ -50,24 +70,27 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 	const { normalizedSearchTerm, searchTerm, setSearchTerm } = useSearch();
 	const { hasPinnedItems, isItemPinned, unpinAllItems } = usePinnedItems();
 	const [activeView, setActiveView] = useState<AlchemyView>("effect");
+	const [sortOption, setSortOption] = useState<SortOption>("name-ascending");
 
 	const effectSearchResults = useMemo(() => {
 		return searchByEffect(
 			effects,
 			ingredients,
 			normalizedSearchTerm,
+			sortOption,
 			(id) => isItemPinned(id, "effect"),
 		);
-	}, [effects, ingredients, isItemPinned, normalizedSearchTerm]);
+	}, [effects, ingredients, isItemPinned, normalizedSearchTerm, sortOption]);
 
 	const ingredientSearchResults = useMemo(() => {
 		return searchByIngredient(
 			effects,
 			ingredients,
 			normalizedSearchTerm,
+			sortOption,
 			(id) => isItemPinned(id, "ingredient"),
 		);
-	}, [effects, ingredients, isItemPinned, normalizedSearchTerm]);
+	}, [effects, ingredients, isItemPinned, normalizedSearchTerm, sortOption]);
 
 	return (
 		<>
@@ -92,43 +115,80 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 					</InputGroupAddon>
 				</InputGroup>
 				<div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-					<ButtonGroup>
-						<Button
-							aria-pressed={activeView === "effect"}
-							onClick={() => setActiveView("effect")}
-							type="button"
-							variant={
-								activeView === "effect" ? "default" : "outline"
-							}
-						>
-							<WandSparklesIcon />
-							By Effect
-						</Button>
-						<Button
-							aria-pressed={activeView === "ingredient"}
-							onClick={() => setActiveView("ingredient")}
-							type="button"
-							variant={
-								activeView === "ingredient"
-									? "default"
-									: "outline"
-							}
-						>
-							<LeafIcon />
-							By Ingredient
-						</Button>
-						<Button
-							aria-pressed={activeView === "split"}
-							onClick={() => setActiveView("split")}
-							type="button"
-							variant={
-								activeView === "split" ? "default" : "outline"
-							}
-						>
-							<SquareSplitHorizontalIcon />
-							Split-View
-						</Button>
-					</ButtonGroup>
+					<div className="flex flex-wrap items-center gap-2">
+						<ButtonGroup>
+							<Button
+								aria-pressed={activeView === "effect"}
+								onClick={() => setActiveView("effect")}
+								type="button"
+								variant={
+									activeView === "effect"
+										? "default"
+										: "outline"
+								}
+							>
+								<WandSparklesIcon />
+								By Effect
+							</Button>
+							<Button
+								aria-pressed={activeView === "ingredient"}
+								onClick={() => setActiveView("ingredient")}
+								type="button"
+								variant={
+									activeView === "ingredient"
+										? "default"
+										: "outline"
+								}
+							>
+								<LeafIcon />
+								By Ingredient
+							</Button>
+							<Button
+								aria-pressed={activeView === "split"}
+								onClick={() => setActiveView("split")}
+								type="button"
+								variant={
+									activeView === "split"
+										? "default"
+										: "outline"
+								}
+							>
+								<SquareSplitHorizontalIcon />
+								Split-View
+							</Button>
+						</ButtonGroup>
+						<DropdownMenu>
+							<DropdownMenuTrigger
+								className={buttonVariants({
+									variant: "outline",
+								})}
+								type="button"
+							>
+								Sort By
+								<ChevronDownIcon />
+							</DropdownMenuTrigger>
+							<DropdownMenuContent>
+								<DropdownMenuGroup>
+									<DropdownMenuRadioGroup
+										onValueChange={(value) =>
+											setSortOption(value as SortOption)
+										}
+										value={sortOption}
+									>
+										{sortOptions.map((option) => (
+											<DropdownMenuRadioItem
+												closeOnClick
+												key={option.value}
+												value={option.value}
+											>
+												{option.label}
+											</DropdownMenuRadioItem>
+										))}
+									</DropdownMenuRadioGroup>
+								</DropdownMenuGroup>
+							</DropdownMenuContent>
+						</DropdownMenu>
+					</div>
 					<Button
 						disabled={!hasPinnedItems}
 						onClick={unpinAllItems}
