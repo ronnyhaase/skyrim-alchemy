@@ -1,11 +1,19 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Item } from "@/components/item";
 import { cn } from "cn";
-import type {
-	EffectSearchResult,
-	IngredientSearchResult,
+
+import { Item } from "@/components/item";
+import { PinButton } from "@/components/pin-button";
+import {
+	Card,
+	CardAction,
+	CardContent,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
+import {
+	type EffectSearchResult,
+	type IngredientSearchResult,
+	matchesSearch,
 } from "@/utils/search";
-import { matchesSearch } from "@/utils/search";
 
 type SplitViewProps = {
 	ingredientRows: IngredientSearchResult[];
@@ -53,6 +61,13 @@ export function SplitView({
 										name={row.ingredient.name}
 									/>
 								</CardTitle>
+								<CardAction>
+									<PinButton
+										id={row.ingredient.id}
+										kind="ingredient"
+										name={row.ingredient.name}
+									/>
+								</CardAction>
 							</CardHeader>
 							<CardContent>
 								<ul className="list-none m-0 p-0">
@@ -102,6 +117,13 @@ export function SplitView({
 										name={row.effect.name}
 									/>
 								</CardTitle>
+								<CardAction>
+									<PinButton
+										id={row.effect.id}
+										kind="effect"
+										name={row.effect.name}
+									/>
+								</CardAction>
 							</CardHeader>
 							<CardContent>
 								<ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 list-none m-0 p-0">

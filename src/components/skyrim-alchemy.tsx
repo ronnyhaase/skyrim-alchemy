@@ -11,7 +11,7 @@ import {
 
 import { EffectsView } from "@/components/effects-view";
 import { IngredientsView } from "@/components/ingredients-view";
-import { ItemProvider } from "@/components/item";
+import { ItemProvider, usePinnedItems } from "@/components/item";
 import { SearchProvider, useSearch } from "@/components/search";
 import { SplitView } from "@/components/split-view";
 import { Button } from "@/components/ui/button";
@@ -47,15 +47,26 @@ export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
 
 function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 	const { normalizedSearchTerm, searchTerm, setSearchTerm } = useSearch();
+	const { isItemPinned } = usePinnedItems();
 	const [activeView, setActiveView] = useState<AlchemyView>("effect");
 
 	const effectSearchResults = useMemo(() => {
-		return searchByEffect(effects, ingredients, normalizedSearchTerm);
-	}, [effects, ingredients, normalizedSearchTerm]);
+		return searchByEffect(
+			effects,
+			ingredients,
+			normalizedSearchTerm,
+			(id) => isItemPinned(id, "effect"),
+		);
+	}, [effects, ingredients, isItemPinned, normalizedSearchTerm]);
 
 	const ingredientSearchResults = useMemo(() => {
-		return searchByIngredient(effects, ingredients, normalizedSearchTerm);
-	}, [effects, ingredients, normalizedSearchTerm]);
+		return searchByIngredient(
+			effects,
+			ingredients,
+			normalizedSearchTerm,
+			(id) => isItemPinned(id, "ingredient"),
+		);
+	}, [effects, ingredients, isItemPinned, normalizedSearchTerm]);
 
 	return (
 		<>

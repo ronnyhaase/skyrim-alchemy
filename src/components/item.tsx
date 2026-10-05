@@ -1,6 +1,7 @@
 import {
 	createContext,
 	type ReactNode,
+	useCallback,
 	useContext,
 	useMemo,
 	useState,
@@ -9,19 +10,48 @@ import { cn } from "cn";
 
 import { useSearch } from "@/components/search";
 
-type ItemKind = "effect" | "ingredient";
+export type ItemKind = "effect" | "ingredient";
 
-type HighlightedItem = {
+type ItemReference = {
 	id: string;
 	kind: ItemKind;
 };
 
 type ItemContextValue = {
-	highlightedItem: HighlightedItem | null;
-	setHighlightedItem: (item: HighlightedItem | null) => void;
+	highlightedItem: ItemReference | null;
+	isItemPinned: (id: string, kind: ItemKind) => boolean;
+	setHighlightedItem: (item: ItemReference | null) => void;
+	togglePinnedItem: (item: ItemReference) => void;
 };
 
 const ItemContext = createContext<ItemContextValue | null>(null);
+
+function getItemKey({ id, kind }: ItemReference) {
+	return `${kind}:${id}`;
+}
+
+export function usePinnedItems() {
+	const context = useContext(ItemContext);
+
+	if (!context) {
+		throw new Error("usePinnedItems must be used within an ItemProvider.");
+	}
+
+	return {
+		isItemPinned: context.isItemPinned,
+		togglePinnedItem: context.togglePinnedItem,
+	};
+}
+
+export function useItemPin(id: string, kind: ItemKind) {
+	const { isItemPinned, togglePinnedItem } = usePinnedItems();
+	const item = { id, kind };
+
+	return {
+		isPinned: isItemPinned(item.id, item.kind),
+		togglePinned: () => togglePinnedItem(item),
+	};
+}
 
 type ItemProviderProps = {
 	children: ReactNode;
@@ -29,14 +59,39 @@ type ItemProviderProps = {
 
 export function ItemProvider({ children }: ItemProviderProps) {
 	const [highlightedItem, setHighlightedItem] =
-		useState<HighlightedItem | null>(null);
+		useState<ItemReference | null>(null);
+	const [pinnedItemKeys, setPinnedItemKeys] = useState<Set<string>>(
+		new Set(),
+	);
+	const isItemPinned = useCallback(
+		(id: string, kind: ItemKind) =>
+			pinnedItemKeys.has(getItemKey({ id, kind })),
+		[pinnedItemKeys],
+	);
+
+	const togglePinnedItem = useCallback((item: ItemReference) => {
+		setPinnedItemKeys((currentPinnedItemKeys) => {
+			const itemKey = getItemKey(item);
+			const nextPinnedItemKeys = new Set(currentPinnedItemKeys);
+
+			if (nextPinnedItemKeys.has(itemKey)) {
+				nextPinnedItemKeys.delete(itemKey);
+			} else {
+				nextPinnedItemKeys.add(itemKey);
+			}
+
+			return nextPinnedItemKeys;
+		});
+	}, []);
 
 	const value = useMemo(
 		() => ({
 			highlightedItem,
+			isItemPinned,
 			setHighlightedItem,
+			togglePinnedItem,
 		}),
-		[highlightedItem],
+		[highlightedItem, isItemPinned, togglePinnedItem],
 	);
 
 	return (
@@ -52,7 +107,7 @@ type ItemProps = {
 	name: string;
 };
 
-function itemsAreEqual(item: HighlightedItem | null, other: HighlightedItem) {
+function itemsAreEqual(item: ItemReference | null, other: ItemReference) {
 	return item?.kind === other.kind && item.id === other.id;
 }
 

@@ -28,19 +28,33 @@ function getEffectsForIngredient(ingredient: Ingredient, effects: Effect[]) {
 	return effects.filter((effect) => ingredient.effects.includes(effect.id));
 }
 
+function putPinnedFirst<Result>(
+	results: Result[],
+	isPinned: (result: Result) => boolean,
+) {
+	return [
+		...results.filter(isPinned),
+		...results.filter((result) => !isPinned(result)),
+	];
+}
+
 export function searchByEffect(
 	effects: Effect[],
 	ingredients: Ingredient[],
 	normalizedSearchTerm: string,
+	isPinned: (id: string) => boolean = () => false,
 ): EffectSearchResult[] {
 	if (!normalizedSearchTerm) {
-		return effects.map((effect) => ({
-			effect,
-			ingredients: getIngredientsForEffect(effect, ingredients),
-		}));
+		return putPinnedFirst(
+			effects.map((effect) => ({
+				effect,
+				ingredients: getIngredientsForEffect(effect, ingredients),
+			})),
+			(result) => isPinned(result.effect.id),
+		);
 	}
 
-	return effects
+	const results = effects
 		.map((effect) => {
 			const ingredientsWithEffect = getIngredientsForEffect(
 				effect,
@@ -50,38 +64,50 @@ export function searchByEffect(
 				effect.name,
 				normalizedSearchTerm,
 			);
+			const effectIsPinned = isPinned(effect.id);
 			const matchingIngredients = ingredientsWithEffect.filter(
 				(ingredient) =>
 					matchesSearch(ingredient.name, normalizedSearchTerm),
 			);
 
-			if (!effectMatches && matchingIngredients.length === 0) {
+			if (
+				!effectIsPinned &&
+				!effectMatches &&
+				matchingIngredients.length === 0
+			) {
 				return null;
 			}
 
 			return {
 				effect,
-				ingredients: effectMatches
-					? ingredientsWithEffect
-					: matchingIngredients,
+				ingredients:
+					effectIsPinned || effectMatches
+						? ingredientsWithEffect
+						: matchingIngredients,
 			};
 		})
 		.filter((row) => row !== null);
+
+	return putPinnedFirst(results, (result) => isPinned(result.effect.id));
 }
 
 export function searchByIngredient(
 	effects: Effect[],
 	ingredients: Ingredient[],
 	normalizedSearchTerm: string,
+	isPinned: (id: string) => boolean = () => false,
 ): IngredientSearchResult[] {
 	if (!normalizedSearchTerm) {
-		return ingredients.map((ingredient) => ({
-			ingredient,
-			effects: getEffectsForIngredient(ingredient, effects),
-		}));
+		return putPinnedFirst(
+			ingredients.map((ingredient) => ({
+				ingredient,
+				effects: getEffectsForIngredient(ingredient, effects),
+			})),
+			(result) => isPinned(result.ingredient.id),
+		);
 	}
 
-	return ingredients
+	const results = ingredients
 		.map((ingredient) => {
 			const effectsForIngredient = getEffectsForIngredient(
 				ingredient,
@@ -91,11 +117,16 @@ export function searchByIngredient(
 				ingredient.name,
 				normalizedSearchTerm,
 			);
+			const ingredientIsPinned = isPinned(ingredient.id);
 			const matchingEffects = effectsForIngredient.filter((effect) =>
 				matchesSearch(effect.name, normalizedSearchTerm),
 			);
 
-			if (!ingredientMatches && matchingEffects.length === 0) {
+			if (
+				!ingredientIsPinned &&
+				!ingredientMatches &&
+				matchingEffects.length === 0
+			) {
 				return null;
 			}
 
@@ -105,4 +136,6 @@ export function searchByIngredient(
 			};
 		})
 		.filter((row) => row !== null);
+
+	return putPinnedFirst(results, (result) => isPinned(result.ingredient.id));
 }

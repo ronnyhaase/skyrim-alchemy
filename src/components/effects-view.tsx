@@ -1,3 +1,7 @@
+import { cn } from "cn";
+
+import { Item } from "@/components/item";
+import { PinButton } from "@/components/pin-button";
 import {
 	Table,
 	TableBody,
@@ -6,8 +10,6 @@ import {
 	TableHeader,
 	TableRow,
 } from "@/components/ui/table";
-import { Item } from "@/components/item";
-import { cn } from "cn";
 import { matchesSearch, type EffectSearchResult } from "@/utils/search";
 
 type EffectsViewProps = {
@@ -62,7 +64,7 @@ export function EffectsView({
 									name={row.effect.name}
 								/>
 							</TableHead>
-							<TableCell>
+							<TableCell className="relative pr-10">
 								<ul>
 									{row.ingredients.map((ingredient) => (
 										<li
@@ -84,6 +86,13 @@ export function EffectsView({
 										</li>
 									))}
 								</ul>
+								<div className="absolute top-1 right-1">
+									<PinButton
+										id={row.effect.id}
+										kind="effect"
+										name={row.effect.name}
+									/>
+								</div>
 							</TableCell>
 						</TableRow>
 					))
