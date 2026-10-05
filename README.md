@@ -6,9 +6,22 @@ quickly find effects for the ingredients you have and the ingredients for your d
 All data for the app where sourced from [UESP Wiki - The Unofficial Elder Scrolls Pages - TES Wiki &
 Lore](https://en.uesp.net/wiki/Main_Page), the best source for everything _The Elder Scrolls_!
 
-<small>
 The Elder Scrolls, Skyrim and their respective logos are registered trademarks of ZeniMax Media Incorporated © 1994 - 2026.
-</small>
+
+# License
+
+Skyrim Alchemy is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Skyrim Alchemy is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Skyrim Alchemy. If not, see <http://www.gnu.org/licenses/>.
 
 # Contributing
 

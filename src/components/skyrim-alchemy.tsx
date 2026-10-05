@@ -149,7 +149,25 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 				) : null}
 			</main>
 			<footer className="my-4 text-center text-sm">
-				Copyright &copy; Ronny Haase, 2026
+				Copyright &copy;{" "}
+				<a
+					href="https://ronnyhaase.com"
+					target="_blank"
+					className="text-blue-500 underline"
+				>
+					Ronny Haase
+				</a>
+				, 2026
+				<br />
+				The{" "}
+				<a
+					href="https://github.com/ronnyhaase/skyrim-alchemy"
+					target="_blank"
+					className="text-blue-500 underline"
+				>
+					code of this website
+				</a>{" "}
+				is open source under GPL v3 or later.
 			</footer>
 		</>
 	);
