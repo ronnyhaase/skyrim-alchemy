@@ -61,11 +61,18 @@ export function IngredientsView({
 								)}
 							>
 								<span className="flex items-center">
-									<Item
-										id={row.ingredient.id}
-										kind="ingredient"
-										name={row.ingredient.name}
-									/>
+									<span>
+										<Item
+											id={row.ingredient.id}
+											kind="ingredient"
+											name={row.ingredient.name}
+										/>
+										{row.ingredient.addon && (
+											<sup className="pl-1 text-muted-foreground">
+												{row.ingredient.addon}
+											</sup>
+										)}
+									</span>
 									<ItemValue value={row.ingredient.value} />
 								</span>
 							</TableHead>

@@ -1,5 +1,7 @@
 import type { Effect, Ingredient } from "@/types";
 
+export type Addon = "CC" | "DG" | "DB" | "HF" | null;
+
 export type EffectSearchResult = {
 	effect: Effect;
 	ingredients: Ingredient[];
@@ -32,6 +34,17 @@ function getIngredientsForEffect(effect: Effect, ingredients: Ingredient[]) {
 
 function getEffectsForIngredient(ingredient: Ingredient, effects: Effect[]) {
 	return effects.filter((effect) => ingredient.effects.includes(effect.id));
+}
+
+function filterIngredientsByAddon(
+	ingredients: Ingredient[],
+	selectedAddons?: readonly Addon[],
+) {
+	return selectedAddons
+		? ingredients.filter((ingredient) =>
+				selectedAddons.some((addon) => addon === ingredient.addon),
+			)
+		: ingredients;
 }
 
 function compareByName(
@@ -111,10 +124,23 @@ export function searchByEffect(
 	normalizedSearchTerm: string,
 	sortOption: SortOption,
 	isPinned: (id: string) => boolean = () => false,
+	selectedAddons?: readonly Addon[],
 ): EffectSearchResult[] {
+	const filteredIngredients = filterIngredientsByAddon(
+		ingredients,
+		selectedAddons,
+	);
+	const filteredEffects = selectedAddons
+		? effects.filter((effect) =>
+				filteredIngredients.some((ingredient) =>
+					ingredient.effects.includes(effect.id),
+				),
+			)
+		: effects;
+
 	if (!normalizedSearchTerm) {
 		return sortPinnedFirst(
-			effects.map((effect) => ({
+			filteredEffects.map((effect) => ({
 				effect,
 				ingredients: getIngredientsForEffect(effect, ingredients),
 			})),
@@ -128,7 +154,7 @@ export function searchByEffect(
 		);
 	}
 
-	const results = effects
+	const results = filteredEffects
 		.map((effect) => {
 			const ingredientsWithEffect = getIngredientsForEffect(
 				effect,
@@ -176,10 +202,16 @@ export function searchByIngredient(
 	normalizedSearchTerm: string,
 	sortOption: SortOption,
 	isPinned: (id: string) => boolean = () => false,
+	selectedAddons?: readonly Addon[],
 ): IngredientSearchResult[] {
+	const filteredIngredients = filterIngredientsByAddon(
+		ingredients,
+		selectedAddons,
+	);
+
 	if (!normalizedSearchTerm) {
 		return sortPinnedFirst(
-			ingredients.map((ingredient) => ({
+			filteredIngredients.map((ingredient) => ({
 				ingredient,
 				effects: getEffectsForIngredient(ingredient, effects),
 			})),
@@ -193,7 +225,7 @@ export function searchByIngredient(
 		);
 	}
 
-	const results = ingredients
+	const results = filteredIngredients
 		.map((ingredient) => {
 			const effectsForIngredient = getEffectsForIngredient(
 				ingredient,

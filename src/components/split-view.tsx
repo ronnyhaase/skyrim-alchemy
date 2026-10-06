@@ -57,11 +57,18 @@ export function SplitView({
 											"text-muted-foreground",
 									)}
 								>
-									<Item
-										id={row.ingredient.id}
-										kind="ingredient"
-										name={row.ingredient.name}
-									/>
+									<span>
+										<Item
+											id={row.ingredient.id}
+											kind="ingredient"
+											name={row.ingredient.name}
+										/>
+										{row.ingredient.addon && (
+											<sup className="pl-1 text-muted-foreground">
+												{row.ingredient.addon}
+											</sup>
+										)}
+									</span>
 									<ItemValue value={row.ingredient.value} />
 								</CardTitle>
 								<CardAction>
@@ -149,6 +156,11 @@ export function SplitView({
 												kind="ingredient"
 												name={ingredient.name}
 											/>
+											{ingredient.addon && (
+												<sup className="pl-1 text-muted-foreground">
+													{ingredient.addon}
+												</sup>
+											)}
 										</li>
 									))}
 								</ul>

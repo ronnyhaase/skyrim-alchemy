@@ -1,6 +1,5 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import {
 	ChevronDownIcon,
 	CircleXIcon,
@@ -10,6 +9,7 @@ import {
 	SquareSplitHorizontalIcon,
 	WandSparklesIcon,
 } from "lucide-react";
+import { useMemo, useState } from "react";
 
 import { EffectsView } from "@/components/effects-view";
 import { IngredientsView } from "@/components/ingredients-view";
@@ -20,24 +20,26 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import {
 	DropdownMenu,
+	DropdownMenuCheckboxItem,
 	DropdownMenuContent,
 	DropdownMenuGroup,
 	DropdownMenuRadioGroup,
 	DropdownMenuRadioItem,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import type { Effect, Ingredient } from "@/types";
-import {
-	searchByEffect,
-	searchByIngredient,
-	type SortOption,
-} from "@/utils/search";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupButton,
 	InputGroupInput,
-} from "./ui/input-group";
+} from "@/components/ui/input-group";
+import type { Effect, Ingredient } from "@/types";
+import {
+	type Addon,
+	type SortOption,
+	searchByEffect,
+	searchByIngredient,
+} from "@/utils/search";
 
 type SkyrimAlchemyProps = {
 	effects: Effect[];
@@ -51,6 +53,14 @@ const sortOptions: { label: string; value: SortOption }[] = [
 	{ label: "Name Z-A", value: "name-descending" },
 	{ label: "Value Low-High", value: "value-ascending" },
 	{ label: "Value High-Low", value: "value-descending" },
+];
+
+const addonOptions: { label: string; value: Addon }[] = [
+	{ label: "Base game", value: null },
+	{ label: "Creation Club", value: "CC" },
+	{ label: "Dawnguard", value: "DG" },
+	{ label: "Dragonborn", value: "DB" },
+	{ label: "Hearthfire", value: "HF" },
 ];
 
 export function SkyrimAlchemy({ effects, ingredients }: SkyrimAlchemyProps) {
@@ -71,6 +81,9 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 	const { hasPinnedItems, isItemPinned, unpinAllItems } = usePinnedItems();
 	const [activeView, setActiveView] = useState<AlchemyView>("effect");
 	const [sortOption, setSortOption] = useState<SortOption>("name-ascending");
+	const [selectedAddons, setSelectedAddons] = useState<Addon[]>(() =>
+		addonOptions.map((option) => option.value),
+	);
 
 	const effectSearchResults = useMemo(() => {
 		return searchByEffect(
@@ -79,8 +92,16 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 			normalizedSearchTerm,
 			sortOption,
 			(id) => isItemPinned(id, "effect"),
+			selectedAddons,
 		);
-	}, [effects, ingredients, isItemPinned, normalizedSearchTerm, sortOption]);
+	}, [
+		effects,
+		ingredients,
+		isItemPinned,
+		normalizedSearchTerm,
+		selectedAddons,
+		sortOption,
+	]);
 
 	const ingredientSearchResults = useMemo(() => {
 		return searchByIngredient(
@@ -89,8 +110,16 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 			normalizedSearchTerm,
 			sortOption,
 			(id) => isItemPinned(id, "ingredient"),
+			selectedAddons,
 		);
-	}, [effects, ingredients, isItemPinned, normalizedSearchTerm, sortOption]);
+	}, [
+		effects,
+		ingredients,
+		isItemPinned,
+		normalizedSearchTerm,
+		selectedAddons,
+		sortOption,
+	]);
 
 	return (
 		<>
@@ -185,6 +214,46 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 											</DropdownMenuRadioItem>
 										))}
 									</DropdownMenuRadioGroup>
+								</DropdownMenuGroup>
+							</DropdownMenuContent>
+						</DropdownMenu>
+						<DropdownMenu>
+							<DropdownMenuTrigger
+								className={buttonVariants({
+									variant: "outline",
+								})}
+								type="button"
+							>
+								Add-ons
+								<ChevronDownIcon />
+							</DropdownMenuTrigger>
+							<DropdownMenuContent className="min-w-44">
+								<DropdownMenuGroup>
+									{addonOptions.map((option) => (
+										<DropdownMenuCheckboxItem
+											checked={selectedAddons.includes(
+												option.value,
+											)}
+											closeOnClick={false}
+											key={option.value ?? "base"}
+											onCheckedChange={(checked) =>
+												setSelectedAddons((current) =>
+													checked
+														? [
+																...current,
+																option.value,
+															]
+														: current.filter(
+																(addon) =>
+																	addon !==
+																	option.value,
+															),
+												)
+											}
+										>
+											{option.label}
+										</DropdownMenuCheckboxItem>
+									))}
 								</DropdownMenuGroup>
 							</DropdownMenuContent>
 						</DropdownMenu>

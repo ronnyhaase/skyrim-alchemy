@@ -88,6 +88,11 @@ export function EffectsView({
 												kind="ingredient"
 												name={ingredient.name}
 											/>
+											{ingredient.addon && (
+												<sup className="pl-1 text-muted-foreground">
+													{ingredient.addon}
+												</sup>
+											)}
 										</li>
 									))}
 								</ul>
