@@ -39,10 +39,13 @@ function getEffectsForIngredient(ingredient: Ingredient, effects: Effect[]) {
 function filterIngredientsByAddon(
 	ingredients: Ingredient[],
 	selectedAddons?: readonly Addon[],
+	isPinned: (id: string) => boolean = () => false,
 ) {
 	return selectedAddons
-		? ingredients.filter((ingredient) =>
-				selectedAddons.some((addon) => addon === ingredient.addon),
+		? ingredients.filter(
+				(ingredient) =>
+					isPinned(ingredient.id) ||
+					selectedAddons.some((addon) => addon === ingredient.addon),
 			)
 		: ingredients;
 }
@@ -131,10 +134,12 @@ export function searchByEffect(
 		selectedAddons,
 	);
 	const filteredEffects = selectedAddons
-		? effects.filter((effect) =>
-				filteredIngredients.some((ingredient) =>
-					ingredient.effects.includes(effect.id),
-				),
+		? effects.filter(
+				(effect) =>
+					isPinned(effect.id) ||
+					filteredIngredients.some((ingredient) =>
+						ingredient.effects.includes(effect.id),
+					),
 			)
 		: effects;
 
@@ -207,6 +212,7 @@ export function searchByIngredient(
 	const filteredIngredients = filterIngredientsByAddon(
 		ingredients,
 		selectedAddons,
+		isPinned,
 	);
 
 	if (!normalizedSearchTerm) {
