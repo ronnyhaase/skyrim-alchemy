@@ -2,6 +2,7 @@ import { cn } from "cn";
 
 import { Item } from "@/components/item";
 import { ItemValue } from "@/components/item-value";
+import { NoResults } from "@/components/no-results";
 import { PinButton } from "@/components/pin-button";
 import {
 	Table,
@@ -15,13 +16,11 @@ import { matchesSearch, type IngredientSearchResult } from "@/utils/search";
 
 type IngredientsViewProps = {
 	rows: IngredientSearchResult[];
-	searchTerm: string;
 	normalizedSearchTerm: string;
 };
 
 export function IngredientsView({
 	rows,
-	searchTerm,
 	normalizedSearchTerm,
 }: IngredientsViewProps) {
 	return (
@@ -39,11 +38,7 @@ export function IngredientsView({
 							className="h-48 text-center whitespace-normal"
 							colSpan={2}
 						>
-							<p className="text-center text-muted-foreground text-2xl">
-								No ingredient or effect matched &quot;
-								{searchTerm}
-								&quot;.
-							</p>
+							<NoResults />
 						</TableCell>
 					</TableRow>
 				) : (

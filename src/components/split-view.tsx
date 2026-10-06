@@ -2,6 +2,7 @@ import { cn } from "cn";
 
 import { Item } from "@/components/item";
 import { ItemValue } from "@/components/item-value";
+import { NoResults } from "@/components/no-results";
 import { PinButton } from "@/components/pin-button";
 import {
 	Card,
@@ -19,24 +20,16 @@ import {
 type SplitViewProps = {
 	ingredientRows: IngredientSearchResult[];
 	effectRows: EffectSearchResult[];
-	searchTerm: string;
 	normalizedSearchTerm: string;
 };
 
 export function SplitView({
 	ingredientRows,
 	effectRows,
-	searchTerm,
 	normalizedSearchTerm,
 }: SplitViewProps) {
 	if (ingredientRows.length === 0 && effectRows.length === 0) {
-		return (
-			<p className="py-24 text-center text-muted-foreground text-2xl">
-				No ingredient or effect matched &quot;
-				{searchTerm}
-				&quot;.
-			</p>
-		);
+		return <NoResults className="py-24" />;
 	}
 
 	return (

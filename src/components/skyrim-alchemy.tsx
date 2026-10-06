@@ -274,14 +274,12 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 					<EffectsView
 						normalizedSearchTerm={normalizedSearchTerm}
 						rows={effectSearchResults}
-						searchTerm={searchTerm}
 					/>
 				) : null}
 				{activeView === "ingredient" ? (
 					<IngredientsView
 						normalizedSearchTerm={normalizedSearchTerm}
 						rows={ingredientSearchResults}
-						searchTerm={searchTerm}
 					/>
 				) : null}
 				{activeView === "split" ? (
@@ -289,7 +287,6 @@ function SkyrimAlchemyContent({ effects, ingredients }: SkyrimAlchemyProps) {
 						effectRows={effectSearchResults}
 						ingredientRows={ingredientSearchResults}
 						normalizedSearchTerm={normalizedSearchTerm}
-						searchTerm={searchTerm}
 					/>
 				) : null}
 			</main>
